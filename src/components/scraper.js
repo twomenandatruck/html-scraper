@@ -1,4 +1,10 @@
-import { get, title_case, page_type, write_csv } from "./utilities.js";
+import {
+  get,
+  title_case,
+  page_type,
+  write_csv,
+  write_file,
+} from "./utilities.js";
 import * as cheerio from "cheerio";
 import { XMLParser } from "fast-xml-parser";
 const parser = new XMLParser();
@@ -24,9 +30,14 @@ const read_dom = async (url) => {
 export const load_sitemap = async (url) => {
   const data = await get(url);
   const xml = await parser.parse(data);
-  return xml.urlset.url.map((url, i) => {
+  const urls = xml.urlset.url.map((url, i) => {
     return url.loc;
   });
+
+  await write_file(urls, "../outputs/sitemap.csv");
+
+  exit();
+  return urls;
 };
 
 export const scrape_loation_urls = async (location, callback) => {

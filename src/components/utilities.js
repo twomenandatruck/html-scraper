@@ -79,10 +79,12 @@ export const sanitize = (str, html = false) => {
   return str;
 };
 
-export const write_csv = async (content) => {
+export const write_csv = async (content, f = "pages.txt") => {
   try {
-    const filename = path.join(__dirname, "../outputs/pages.txt");
+    const filename = path.join(__dirname, "../outputs/", f);
+
     const row = [];
+
     Object.values(content).forEach((c) => {
       if (typeof c !== "string") c = sanitize(JSON.stringify(c));
       if (typeof c === "string") c = sanitize(`"${c}"`);
@@ -98,10 +100,22 @@ export const write_csv = async (content) => {
   }
 };
 
-export const empty_file = async () => {
+export const write_file = async (data, file) => {
   try {
-    const filename = path.join(__dirname, "../outputs/pages.csv");
-    await fs.promises.writeFile(filename, "", "w");
+    const filename = path.join(__dirname, file);
+    await fs.promises.writeFile(filename, data.join("\n"), { flag: "w" });
+
+    return true;
+  } catch (err) {
+    console.error(err);
+    return false;
+  }
+};
+
+export const empty_file = async (file = "../outputs/pages.csv") => {
+  try {
+    const filename = path.join(__dirname, file);
+    await fs.promises.writeFile(filename, "", { flag: "w" });
   } catch (err) {
     console.error(err);
   }
