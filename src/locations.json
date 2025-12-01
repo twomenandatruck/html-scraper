@@ -1,0 +1,3956 @@
+[
+  {
+    "location_id": "100001",
+    "location_name": "6759 Whittier_NR",
+    "dba_name": "ServiceMaster Emergency Response",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-emergency-response-la"
+  },
+  {
+    "location_id": "100002",
+    "location_name": "6759 Huntington Beach",
+    "dba_name": "ServiceMaster Emergency Response",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-emergency-response"
+  },
+  {
+    "location_id": "100003",
+    "location_name": "6820 El Dorado_NR",
+    "dba_name": "ServiceMaster of El Dorado",
+    "scorpion_url": "https://www.servicemasterrestore.com/el-dorado"
+  },
+  {
+    "location_id": "100004",
+    "location_name": "6820 Wichita",
+    "dba_name": "ServiceMaster By Best",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-best-wichita"
+  },
+  {
+    "location_id": "100005",
+    "location_name": "7573 Florence",
+    "dba_name": "ServiceMaster Fire & Water Restoration Florence",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-florence"
+  },
+  {
+    "location_id": "100006",
+    "location_name": "7573 Lexington_NR",
+    "dba_name": "ServiceMaster Fire and Water Restoration Columbia",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-columbia"
+  },
+  {
+    "location_id": "100007",
+    "location_name": "10007 Charlotte",
+    "dba_name": "ServiceMaster Restoration by McCoy",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-mccoy"
+  },
+  {
+    "location_id": "100008",
+    "location_name": "10012 Denton_NR",
+    "dba_name": "ServiceMaster Restoration by MZD - Denton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-mzd-denton"
+  },
+  {
+    "location_id": "100009",
+    "location_name": "10012 Highland Village",
+    "dba_name": "ServiceMaster Restoration by MZD - Tarrant Co.",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-mzd-highland-village"
+  },
+  {
+    "location_id": "100010",
+    "location_name": "10020 Birmingham",
+    "dba_name": "ServiceMaster Restoration by One Call - Birmingham",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-one-call"
+  },
+  {
+    "location_id": "100011",
+    "location_name": "10035 Watkinsville",
+    "dba_name": "ServiceMaster of Athens",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-athens"
+  },
+  {
+    "location_id": "100012",
+    "location_name": "10080 South San Francisco",
+    "dba_name": "ServiceMaster Restoration by Ocampo",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-ocampo"
+  },
+  {
+    "location_id": "100013",
+    "location_name": "10082 Manteca",
+    "dba_name": "ServiceMaster Restoration by Prasad",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-prasad"
+  },
+  {
+    "location_id": "100014",
+    "location_name": "10088 Mission",
+    "dba_name": "ServiceMaster Restoration by Five Star",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-five-star"
+  },
+  {
+    "location_id": "100015",
+    "location_name": "10091 Baton Rouge",
+    "dba_name": "ServiceMaster Restoration and Mitigation by Kennedy",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-mitigation-by-kennedy"
+  },
+  {
+    "location_id": "100016",
+    "location_name": "10099 Collierville",
+    "dba_name": "ServiceMaster Restoration by Richards",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-richards"
+  },
+  {
+    "location_id": "100017",
+    "location_name": "10121 Adrian",
+    "dba_name": "ServiceMaster of Lenawee County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-the-border"
+  },
+  {
+    "location_id": "100018",
+    "location_name": "10124 Milton",
+    "dba_name": "ServiceMaster Restoration by Premier",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-premier"
+  },
+  {
+    "location_id": "100019",
+    "location_name": "10135 Villa Park",
+    "dba_name": "ServiceMaster Cleaning Services - Villa Park",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-services-villa-park"
+  },
+  {
+    "location_id": "100020",
+    "location_name": "10154 Burr Ridge_NR",
+    "dba_name": "ServiceMaster S&R Systems Cook County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-systems-cook-county"
+  },
+  {
+    "location_id": "100021",
+    "location_name": "10154 Joliet_NR",
+    "dba_name": "ServiceMaster S&R Systems Will County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-systems-will-county"
+  },
+  {
+    "location_id": "100022",
+    "location_name": "10154 North Aurora",
+    "dba_name": "ServiceMaster of Aurora",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-aurora"
+  },
+  {
+    "location_id": "100023",
+    "location_name": "10154 St. Charles_NR",
+    "dba_name": "ServiceMaster of Geneva-St. Charles",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-geneva-st-charles"
+  },
+  {
+    "location_id": "100024",
+    "location_name": "10154 Yorkville_NR",
+    "dba_name": "ServiceMaster of Kendall County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-kendall-county"
+  },
+  {
+    "location_id": "100025",
+    "location_name": "10156 Clermont",
+    "dba_name": "ServiceMaster Restoration & Cleaning by ECO",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-by-eco"
+  },
+  {
+    "location_id": "100026",
+    "location_name": "10160 Alexander",
+    "dba_name": "ServiceMaster Restoration by Advanced - Alexander",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-advanced-alexander"
+  },
+  {
+    "location_id": "100027",
+    "location_name": "10160 Jonesboro",
+    "dba_name": "ServiceMaster Restoration by Advanced - Jonesboro",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-advanced-jonesboro"
+  },
+  {
+    "location_id": "100028",
+    "location_name": "10162 Missouri City",
+    "dba_name": "ServiceMaster Restoration by Integrity Construction Company",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-integrity-construction-company"
+  },
+  {
+    "location_id": "100029",
+    "location_name": "10168 Granada Hills",
+    "dba_name": "ServiceMaster Fire and Water Restoration by Apex",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-apex"
+  },
+  {
+    "location_id": "100030",
+    "location_name": "10171 Baraboo",
+    "dba_name": "ServiceMaster Restoration Services - Baraboo",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-baraboo"
+  },
+  {
+    "location_id": "100031",
+    "location_name": "10171 Oshkosh_NR",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - Oshkosh",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-oshkosh"
+  },
+  {
+    "location_id": "100032",
+    "location_name": "10179 Pinetop",
+    "dba_name": "ServiceMaster Complete Restoration Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-complete-restoration-services"
+  },
+  {
+    "location_id": "100033",
+    "location_name": "10183 Sacramento",
+    "dba_name": "ServiceMaster Restoration by First Response",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-first-response"
+  },
+  {
+    "location_id": "100034",
+    "location_name": "10184 North Versailles",
+    "dba_name": "ServiceMaster Restoration by All Pro - North Versailles",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-all-pro"
+  },
+  {
+    "location_id": "100035",
+    "location_name": "10186 Bloomington",
+    "dba_name": "ServiceMaster Restoration and Cleaning - Bloomington",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-services-bloomington"
+  },
+  {
+    "location_id": "100036",
+    "location_name": "10186 Evansville",
+    "dba_name": "ServiceMaster Restoration and Cleaning - Evansville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-services-evansville"
+  },
+  {
+    "location_id": "100037",
+    "location_name": "10189 San Antonio",
+    "dba_name": "ServiceMaster Restoration by Xtreme Clean",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-xtreme-clean"
+  },
+  {
+    "location_id": "100038",
+    "location_name": "10191 Foley",
+    "dba_name": "ServiceMaster Restoration by Griffin Company",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-griffin-company"
+  },
+  {
+    "location_id": "100039",
+    "location_name": "10203 Glendale",
+    "dba_name": "ServiceMaster Fire and Water Restoration by ERS",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-ers"
+  },
+  {
+    "location_id": "100040",
+    "location_name": "10205 Spring",
+    "dba_name": "ServiceMaster Fire & Water Recovery by Reliant Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-recovery-by-reliant-restoration"
+  },
+  {
+    "location_id": "100041",
+    "location_name": "10209 Woodland Hills",
+    "dba_name": "ServiceMaster Restoration by 365",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-365"
+  },
+  {
+    "location_id": "100042",
+    "location_name": "10216 Phoenix",
+    "dba_name": "ServiceMaster by ASG",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-asg"
+  },
+  {
+    "location_id": "100043",
+    "location_name": "10218 La Feria",
+    "dba_name": "ServiceMaster Restoration by Empire",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-empire"
+  },
+  {
+    "location_id": "100044",
+    "location_name": "10219 Amarillo_NR",
+    "dba_name": "ServiceMaster Restoration by TA",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-ta-amarillo"
+  },
+  {
+    "location_id": "100045",
+    "location_name": "10219 Lubbock",
+    "dba_name": "ServiceMaster Restoration by TA",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-ta"
+  },
+  {
+    "location_id": "100046",
+    "location_name": "10222 Connellsville",
+    "dba_name": "ServiceMaster Restoration by CBK",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-cbk"
+  },
+  {
+    "location_id": "100047",
+    "location_name": "10223 Lumberton",
+    "dba_name": "ServiceMaster Cleaning & Restoration by ERS",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-ers"
+  },
+  {
+    "location_id": "100048",
+    "location_name": "10225 Colton",
+    "dba_name": "ServiceMaster by Sunrise - Colton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-sunrise-colton"
+  },
+  {
+    "location_id": "100049",
+    "location_name": "10225 Las Vegas",
+    "dba_name": "ServiceMaster by Sunrise - Las Vegas",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-sunrise-las-vegas"
+  },
+  {
+    "location_id": "100050",
+    "location_name": "10225 The Dalles",
+    "dba_name": "ServiceMaster by Sunrise Fire and Water Restoration - Wasco County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-sunrise-fire-and-water-restoration-wasco-county"
+  },
+  {
+    "location_id": "100051",
+    "location_name": "10234 Hahira",
+    "dba_name": "ServiceMaster Restoration by Quality First",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-quality-first"
+  },
+  {
+    "location_id": "100052",
+    "location_name": "10235 Torrance",
+    "dba_name": "ServiceMaster Fire and Water Restoration by Masters",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-masters"
+  },
+  {
+    "location_id": "100053",
+    "location_name": "10236 Wharton",
+    "dba_name": "ServiceMaster Restoration by Timeless",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-timeless"
+  },
+  {
+    "location_id": "100054",
+    "location_name": "10238 Spokane",
+    "dba_name": "ServiceMaster Recovery by Antim's Quality Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-antims-quality-services"
+  },
+  {
+    "location_id": "100055",
+    "location_name": "10239 Holt",
+    "dba_name": "ServiceMaster Absolute Home and Restoration Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-absolute-home-and-restoration-services-mason"
+  },
+  {
+    "location_id": "100056",
+    "location_name": "10240 Wayne",
+    "dba_name": "ServiceMaster Recovery by Restoration Solutions",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-solutions"
+  },
+  {
+    "location_id": "100057",
+    "location_name": "10247 Portland",
+    "dba_name": "ServiceMaster Fire & Water Recovery by QRT",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-recovery-by-qrt"
+  },
+  {
+    "location_id": "100058",
+    "location_name": "10249 Falls Church",
+    "dba_name": "ServiceMaster of Falls Church",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-falls-church"
+  },
+  {
+    "location_id": "100059",
+    "location_name": "10250 Ft. Pierre",
+    "dba_name": "ServiceMaster of Pierre",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-pierre"
+  },
+  {
+    "location_id": "100060",
+    "location_name": "10253 Mission Viejo",
+    "dba_name": "ServiceMaster Recovery by Complete Water and Fire Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-complete-water-and-fire-restoration-mission-viejo"
+  },
+  {
+    "location_id": "100061",
+    "location_name": "10257 Cherry Hill",
+    "dba_name": "ServiceMaster of Cherry Hill",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-cherry-hill"
+  },
+  {
+    "location_id": "100062",
+    "location_name": "10261 Reseda",
+    "dba_name": "ServiceMaster Restoration by MRI",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-mri"
+  },
+  {
+    "location_id": "100063",
+    "location_name": "10262 Phoenix",
+    "dba_name": "ServiceMaster Restoration by Desert Dry",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-desert-dry"
+  },
+  {
+    "location_id": "100064",
+    "location_name": "10263 Kent",
+    "dba_name": "ServiceMaster Restoration by Ciocea",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-ciocea"
+  },
+  {
+    "location_id": "100065",
+    "location_name": "10264 Aberdeen_NR",
+    "dba_name": "ServiceMaster Cleaning & Restoration by Prins",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-prins"
+  },
+  {
+    "location_id": "100066",
+    "location_name": "10264 Watertown",
+    "dba_name": "ServiceMaster of Watertown",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-watertown"
+  },
+  {
+    "location_id": "100067",
+    "location_name": "10265 Chippewa Falls",
+    "dba_name": "ServiceMaster of Chippewa Valley",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-chippewa-valley"
+  },
+  {
+    "location_id": "100068",
+    "location_name": "10267 Cedar Falls",
+    "dba_name": "ServiceMaster Restoration by Complete Recovery",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-complete-recovery-cedar-falls"
+  },
+  {
+    "location_id": "100069",
+    "location_name": "10268 Roseburg",
+    "dba_name": "ServiceMaster Quality Restoration - Roseburg",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-quality-restoration-roseburg"
+  },
+  {
+    "location_id": "100070",
+    "location_name": "10273 Riverside",
+    "dba_name": "ServiceMaster Restoration by WFDR",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-wfdr"
+  },
+  {
+    "location_id": "100071",
+    "location_name": "10274 South El Monte",
+    "dba_name": "ServiceMaster Recovery by AHR",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-ahr"
+  },
+  {
+    "location_id": "100072",
+    "location_name": "10276 Diamond Bar",
+    "dba_name": "ServiceMaster Fire and Water Restoration by Fresh",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-fresh"
+  },
+  {
+    "location_id": "100073",
+    "location_name": "10277 Kingsville",
+    "dba_name": "ServiceMaster Restoration by Tropea",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-tropea"
+  },
+  {
+    "location_id": "100074",
+    "location_name": "10281 Manhattan",
+    "dba_name": "ServiceMaster of Joliet",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-joliet"
+  },
+  {
+    "location_id": "100075",
+    "location_name": "10282 Frisco",
+    "dba_name": "ServiceMaster Restore by Restoration Specialists - Frisco",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-by-restoration-specialists-frisco"
+  },
+  {
+    "location_id": "100076",
+    "location_name": "10284 Hermitage",
+    "dba_name": "ServiceMaster Restoration by David",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-david"
+  },
+  {
+    "location_id": "100077",
+    "location_name": "10285 Coral Springs",
+    "dba_name": "ServiceMaster Restoration by OJS - Parkland",
+    "scorpion_url": "https://www.servicemasterrestore.com/by-ojs-parkland"
+  },
+  {
+    "location_id": "100078",
+    "location_name": "10295 Chili",
+    "dba_name": "ServiceMaster of Clark and Jackson County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-clark-and-jackson-county"
+  },
+  {
+    "location_id": "100079",
+    "location_name": "10296 Orlando",
+    "dba_name": "ServiceMaster Restoration by Royalty",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-royalty"
+  },
+  {
+    "location_id": "100080",
+    "location_name": "10297 Leesburg",
+    "dba_name": "ServiceMaster Restoration by Hickox",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-hickox"
+  },
+  {
+    "location_id": "100081",
+    "location_name": "10300 Prospect",
+    "dba_name": "ServiceMaster Apple Valley",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-apple-valley"
+  },
+  {
+    "location_id": "100082",
+    "location_name": "10306 Monterey",
+    "dba_name": "ServiceMaster Restoration by Fast Response",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-fast-response"
+  },
+  {
+    "location_id": "100083",
+    "location_name": "10307 Greencastle",
+    "dba_name": "ServiceMaster of Greencastle",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-greencastle"
+  },
+  {
+    "location_id": "100084",
+    "location_name": "10308 Pensacola",
+    "dba_name": "ServiceMaster Restoration by EMCO",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emco"
+  },
+  {
+    "location_id": "100085",
+    "location_name": "10311 Riverside",
+    "dba_name": "ServiceMaster Fire and Water by E&A",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-by-e-a"
+  },
+  {
+    "location_id": "100086",
+    "location_name": "10318 Union Gap",
+    "dba_name": "ServiceMaster Cleaning and Restoration by RBD",
+    "scorpion_url": "https://www.servicemasterrestore.com/smbyrbd"
+  },
+  {
+    "location_id": "100087",
+    "location_name": "10335 Westport",
+    "dba_name": "ServiceMaster Restoration by Expert One",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-expert-one"
+  },
+  {
+    "location_id": "100088",
+    "location_name": "10339 Orlando",
+    "dba_name": "ServiceMaster Restoration by Quality Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-quality-services"
+  },
+  {
+    "location_id": "100089",
+    "location_name": "10866 Cedar City",
+    "dba_name": "ServiceMaster Restore of Color Country",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-of-color-country"
+  },
+  {
+    "location_id": "100090",
+    "location_name": "10905 Heber City",
+    "dba_name": "ServiceMaster of Deseret",
+    "scorpion_url": "https://www.servicemasterrestore.com/deseret"
+  },
+  {
+    "location_id": "100091",
+    "location_name": "10948 Broken Arrow",
+    "dba_name": "ServiceMaster Recovery by Extreme",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-extreme"
+  },
+  {
+    "location_id": "100092",
+    "location_name": "10948 Fort Gibson_NR",
+    "dba_name": "ServiceMaster Recovery by Extreme - Fort Gibson",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-extreme-fort-gibson"
+  },
+  {
+    "location_id": "100093",
+    "location_name": "11128 Oceanside",
+    "dba_name": "ServiceMaster Restoration by Spotless",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-spotless"
+  },
+  {
+    "location_id": "100094",
+    "location_name": "11162 Virginia Beach",
+    "dba_name": "ServiceMaster Restoration - Emergency Response Team",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-emergency-response-team"
+  },
+  {
+    "location_id": "100095",
+    "location_name": "11178 Houston",
+    "dba_name": "ServiceMaster Restoration by Professional Services Houston",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-professional-services-houston"
+  },
+  {
+    "location_id": "100096",
+    "location_name": "11187 West Islip",
+    "dba_name": "ServiceMaster Restoration by PRS",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-by-prs"
+  },
+  {
+    "location_id": "100097",
+    "location_name": "11224 Plano",
+    "dba_name": "ServiceMaster Restoration by BT Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-bt-services"
+  },
+  {
+    "location_id": "100098",
+    "location_name": "11272 Lancaster",
+    "dba_name": "ServiceMaster Restoration by Rite Way",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-rite-way"
+  },
+  {
+    "location_id": "100099",
+    "location_name": "11345 Camarillo",
+    "dba_name": "ServiceMaster Restoration by Attention to Detail",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-attention-to-detail"
+  },
+  {
+    "location_id": "100100",
+    "location_name": "11359 Indianapolis",
+    "dba_name": "ServiceMaster Restoration by LS James",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-ls-james"
+  },
+  {
+    "location_id": "100101",
+    "location_name": "11394 Lancaster",
+    "dba_name": "ServiceMaster Restoration by Precision",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-precision"
+  },
+  {
+    "location_id": "100102",
+    "location_name": "11398 Turlock",
+    "dba_name": "ServiceMaster Restoration by Oushana",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-oushana"
+  },
+  {
+    "location_id": "100103",
+    "location_name": "11426 Lodi",
+    "dba_name": "ServiceMaster Restoration by Senese",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-senese"
+  },
+  {
+    "location_id": "100104",
+    "location_name": "11441 North Hollywood",
+    "dba_name": "ServiceMaster Restoration by 24/7 EMS Pros",
+    "scorpion_url": "https://www.servicemasterrestore.com/smrby247pros-com"
+  },
+  {
+    "location_id": "100105",
+    "location_name": "11444 Saint Augustine",
+    "dba_name": "ServiceMaster Restoration by Legacy 7",
+    "scorpion_url": "https://www.servicemasterrestore.com/svm-restoration-by-legacy-7"
+  },
+  {
+    "location_id": "100106",
+    "location_name": "11475 Littleton",
+    "dba_name": "ServiceMaster Restoration by Lakota",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-lakota"
+  },
+  {
+    "location_id": "100107",
+    "location_name": "1229 Twin Falls",
+    "dba_name": "ServiceMaster of Magic Valley",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-magic-valley"
+  },
+  {
+    "location_id": "100108",
+    "location_name": "1360 Ashtabula",
+    "dba_name": "ServiceMaster of Ashtabula County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-ashtabula-county"
+  },
+  {
+    "location_id": "100109",
+    "location_name": "1405 North St. Paul",
+    "dba_name": "Northwest ServiceMaster",
+    "scorpion_url": "https://www.servicemasterrestore.com/northwest-servicemaster"
+  },
+  {
+    "location_id": "100110",
+    "location_name": "1414 St Louis Park",
+    "dba_name": "ServiceMaster of Minneapolis",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-minneapolis"
+  },
+  {
+    "location_id": "100111",
+    "location_name": "1531 Higginsville",
+    "dba_name": "ServiceMaster of Lafayette Cnty",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-lafayette-cnty"
+  },
+  {
+    "location_id": "100112",
+    "location_name": "1533 Pittsburg",
+    "dba_name": "ServiceMaster of Southeast Kansas",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-southeast-kansas"
+  },
+  {
+    "location_id": "100113",
+    "location_name": "1548 Junction City",
+    "dba_name": "ServiceMaster of Geary County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-geary-county"
+  },
+  {
+    "location_id": "100114",
+    "location_name": "1566 Washington",
+    "dba_name": "ServiceMaster of Martin and Daviess Counties",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-martin-and-daviess-counties"
+  },
+  {
+    "location_id": "100115",
+    "location_name": "1569 Indianapolis",
+    "dba_name": "ServiceMaster by FES",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-fes"
+  },
+  {
+    "location_id": "100116",
+    "location_name": "1585 Greenfield",
+    "dba_name": "ServiceMaster by Fentz",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-fentz"
+  },
+  {
+    "location_id": "100117",
+    "location_name": "1632 Boston",
+    "dba_name": "ServiceMaster of Neponset Bay",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-neponset-bay"
+  },
+  {
+    "location_id": "100118",
+    "location_name": "1637 Sandwich_NR",
+    "dba_name": "ServiceMaster South Shore, Inc. - Sandwich",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-south-shore-sandwich"
+  },
+  {
+    "location_id": "100119",
+    "location_name": "1637 Scituate",
+    "dba_name": "ServiceMaster South Shore, Inc.",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-south-shore-inc"
+  },
+  {
+    "location_id": "100120",
+    "location_name": "1639 Norwood",
+    "dba_name": "ServiceMaster by Gilmore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-gilmore"
+  },
+  {
+    "location_id": "100121",
+    "location_name": "1647 Woburn",
+    "dba_name": "ServiceMaster by Gaudet",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-gaudet"
+  },
+  {
+    "location_id": "100122",
+    "location_name": "1661 Medford",
+    "dba_name": "ServiceMaster Restore of Medford",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-medford"
+  },
+  {
+    "location_id": "100123",
+    "location_name": "1697 Portland",
+    "dba_name": "ServiceMaster of Portland",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-portland"
+  },
+  {
+    "location_id": "100124",
+    "location_name": "1718 Corvallis",
+    "dba_name": "ServiceMaster of Corvallis",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-corvallis"
+  },
+  {
+    "location_id": "100125",
+    "location_name": "1834 Bluffton",
+    "dba_name": "ServiceMaster of Beaufort County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-beaufort-county"
+  },
+  {
+    "location_id": "100126",
+    "location_name": "1855 North Charleston",
+    "dba_name": "ServiceMaster of Charleston",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-charleston"
+  },
+  {
+    "location_id": "100127",
+    "location_name": "1869 Gastonia",
+    "dba_name": "ServiceMaster of Cleveland County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-cleveland-county"
+  },
+  {
+    "location_id": "100128",
+    "location_name": "1974 Fredericksburg",
+    "dba_name": "ServiceMaster of Greater Washington",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-greater-washington"
+  },
+  {
+    "location_id": "100129",
+    "location_name": "1974 Woodbridge",
+    "dba_name": "ServiceMaster of Woodbridge",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-woodbridge"
+  },
+  {
+    "location_id": "100130",
+    "location_name": "1980 Alexandria",
+    "dba_name": "ServiceMaster National Capital Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/ncr-of-alexandria"
+  },
+  {
+    "location_id": "100131",
+    "location_name": "1996 Sterling",
+    "dba_name": "ServiceMaster of Centreville/Clifton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-centreville-clifton"
+  },
+  {
+    "location_id": "100132",
+    "location_name": "2023 Salisbury",
+    "dba_name": "ServiceMaster Restoration by Shore Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-shore-services"
+  },
+  {
+    "location_id": "100133",
+    "location_name": "2025 Cumberland",
+    "dba_name": "ServiceMaster Restore of Allegany County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-of-allegany-county"
+  },
+  {
+    "location_id": "100134",
+    "location_name": "2025 Fairmont_NR",
+    "dba_name": "ServiceMaster of Fairmont, West Virginia",
+    "scorpion_url": "https://www.servicemasterrestore.com/fairmont-wv"
+  },
+  {
+    "location_id": "100135",
+    "location_name": "2029 Salunga",
+    "dba_name": "ServiceMaster Fire and Water Cleanup Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-cleanup-services"
+  },
+  {
+    "location_id": "100136",
+    "location_name": "2076 Manasquan",
+    "dba_name": "ServiceMaster of The Shore Area",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-the-shore-area"
+  },
+  {
+    "location_id": "100137",
+    "location_name": "2087 Pitcairn",
+    "dba_name": "ServiceMaster Carpet & Upholstery Specialists",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-prof-bldg-maint-co"
+  },
+  {
+    "location_id": "100138",
+    "location_name": "2091 Oakmont",
+    "dba_name": "ServiceMaster of Greater Pittsburg",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-advantage-commercial-cleaning"
+  },
+  {
+    "location_id": "100139",
+    "location_name": "2098 Connellsville",
+    "dba_name": "ServiceMaster by Just in Time Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-just-in-time-services"
+  },
+  {
+    "location_id": "100140",
+    "location_name": "2103 Jeannette",
+    "dba_name": "ServiceMaster Complete Restoration By Stiffey",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-stiffey"
+  },
+  {
+    "location_id": "100141",
+    "location_name": "2116 Canonsburg",
+    "dba_name": "ServiceMaster by Martin Zupancic",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-martin-zupancic"
+  },
+  {
+    "location_id": "100142",
+    "location_name": "2127 Chambersburg",
+    "dba_name": "ServiceMaster Professional Cleaning Services - Chambersburg",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-cleaning-services-chambersburg"
+  },
+  {
+    "location_id": "100143",
+    "location_name": "2271 Tacoma",
+    "dba_name": "ServiceMaster of Tacoma",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-tacoma",
+    "uat_group": true
+  },
+  {
+    "location_id": "100144",
+    "location_name": "2274 Everett",
+    "dba_name": "ServiceMaster by SRS",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-srs"
+  },
+  {
+    "location_id": "100145",
+    "location_name": "2274 Woodinville",
+    "dba_name": "ServiceMaster of Seattle",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-seattle-woodinville",
+    "uat_group": true
+  },
+  {
+    "location_id": "100146",
+    "location_name": "2288 Arlington_NR",
+    "dba_name": "ServiceMaster Cleaning by Roth - Snohomish County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-by-roth-snohomish-county"
+  },
+  {
+    "location_id": "100147",
+    "location_name": "2288 Mount Vernon",
+    "dba_name": "ServiceMaster Cleaning by Roth - Skagit County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-by-roth-skagit-county"
+  },
+  {
+    "location_id": "100148",
+    "location_name": "2310 West Richland",
+    "dba_name": "ServiceMaster Cleaning Services by Young",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-services-by-young"
+  },
+  {
+    "location_id": "100149",
+    "location_name": "2331 Salina",
+    "dba_name": "ServiceMaster of Salina",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-salina-inc"
+  },
+  {
+    "location_id": "100150",
+    "location_name": "2332 Newton",
+    "dba_name": "ServiceMaster of Newton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-newton-janitorial-service"
+  },
+  {
+    "location_id": "100151",
+    "location_name": "2357 Garland",
+    "dba_name": "ServiceMaster of North Texas",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-north-dallas"
+  },
+  {
+    "location_id": "100152",
+    "location_name": "2401 Vicksburg",
+    "dba_name": "ServiceMaster by Mutter",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-building-maintenance-by-mutter"
+  },
+  {
+    "location_id": "100153",
+    "location_name": "2405 Brookhaven",
+    "dba_name": "ServiceMaster of Brookhaven",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-brookhaven"
+  },
+  {
+    "location_id": "100154",
+    "location_name": "2419 Reading",
+    "dba_name": "ServiceMaster Assured Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-assured-cleaning"
+  },
+  {
+    "location_id": "100155",
+    "location_name": "2440 Wantage",
+    "dba_name": "ServiceMaster Clean & Restore by Tri-State",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-tristate"
+  },
+  {
+    "location_id": "100156",
+    "location_name": "2505 Birmingham",
+    "dba_name": "ServiceMaster by Don Beck",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-don-beck"
+  },
+  {
+    "location_id": "100157",
+    "location_name": "2545 Colorado Springs",
+    "dba_name": "ServiceMaster of Colorado Springs",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-colorado-springs"
+  },
+  {
+    "location_id": "100158",
+    "location_name": "2591 Colorado Springs",
+    "dba_name": "ServiceMaster Disaster Restoration Services - Colorado Springs",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-building-maintenance-colorado-springs"
+  },
+  {
+    "location_id": "100159",
+    "location_name": "2620 East Norwalk",
+    "dba_name": "ServiceMaster of Darien, Inc.",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-new-canaan"
+  },
+  {
+    "location_id": "100160",
+    "location_name": "2622 Waterbury",
+    "dba_name": "ServiceMaster Albino",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-albino-waterbury"
+  },
+  {
+    "location_id": "100161",
+    "location_name": "2684 South Sioux City",
+    "dba_name": "ServiceMaster of Sooland",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-sooland"
+  },
+  {
+    "location_id": "100162",
+    "location_name": "2761 Tuscaloosa",
+    "dba_name": "ServiceMaster Professional Restoration Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-restoration-services-tuscaloosa"
+  },
+  {
+    "location_id": "100163",
+    "location_name": "2763 Alexandria",
+    "dba_name": "ServiceMaster by Clark",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-clark"
+  },
+  {
+    "location_id": "100164",
+    "location_name": "2768 Baton Rouge",
+    "dba_name": "ServiceMaster Restoration Services - Alexandria, LA",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-alexandria-la"
+  },
+  {
+    "location_id": "100165",
+    "location_name": "2768 Lake Charles",
+    "dba_name": "ServiceMaster Restoration Services - Lake Charles",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-lake-charles"
+  },
+  {
+    "location_id": "100166",
+    "location_name": "2768 Scott",
+    "dba_name": "ServiceMaster of Lafayette",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-lafayette-scott"
+  },
+  {
+    "location_id": "100167",
+    "location_name": "2770 New Orleans",
+    "dba_name": "ServiceMaster Building Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-building-services-new-orleans"
+  },
+  {
+    "location_id": "100168",
+    "location_name": "2775 Metairie",
+    "dba_name": "ServiceMaster Elite Cleaning Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-elite-cleaning-services"
+  },
+  {
+    "location_id": "100169",
+    "location_name": "2793 Houma",
+    "dba_name": "ServiceMaster Quality Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-quality-services"
+  },
+  {
+    "location_id": "100170",
+    "location_name": "2805 Longview",
+    "dba_name": "ServiceMaster Services - Longview",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-services-longview"
+  },
+  {
+    "location_id": "100171",
+    "location_name": "2805 Nacogdoches",
+    "dba_name": "ServiceMaster Services - Piney Woods",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-services-nacogdoches"
+  },
+  {
+    "location_id": "100172",
+    "location_name": "2805 Shreveport",
+    "dba_name": "ServiceMaster Restore NWLA",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-services-nwla"
+  },
+  {
+    "location_id": "100173",
+    "location_name": "2805 Tyler",
+    "dba_name": "ServiceMaster Services - Tyler",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-services-tyler"
+  },
+  {
+    "location_id": "100174",
+    "location_name": "2848 Spartanburg",
+    "dba_name": "ServiceMaster of Spartanburg",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-spartanburg"
+  },
+  {
+    "location_id": "100175",
+    "location_name": "2852 Easley",
+    "dba_name": "ServiceMaster of Easley",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-easley"
+  },
+  {
+    "location_id": "100176",
+    "location_name": "2859 Sylva",
+    "dba_name": "ServiceMaster by Hooper",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-hooper"
+  },
+  {
+    "location_id": "100177",
+    "location_name": "2873 Defiance",
+    "dba_name": "ServiceMaster by McCann",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-mccann"
+  },
+  {
+    "location_id": "100178",
+    "location_name": "2954 North Platte",
+    "dba_name": "ServiceMaster of North Platte",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-north-platte"
+  },
+  {
+    "location_id": "100179",
+    "location_name": "2973 Watsonville",
+    "dba_name": "ServiceMaster of Santa Cruz /Monterey/Salinas",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-santa-cruz"
+  },
+  {
+    "location_id": "100180",
+    "location_name": "2996 Augusta",
+    "dba_name": "ServiceMaster Professional Cleaning & Restoration Services - Augusta",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-augusta"
+  },
+  {
+    "location_id": "100181",
+    "location_name": "2996 Chattanooga",
+    "dba_name": "ServiceMaster Restoration by The Lookout",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-chattanooga"
+  },
+  {
+    "location_id": "100182",
+    "location_name": "2996 Douglasville",
+    "dba_name": "ServiceMaster of Douglasville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-douglasville"
+  },
+  {
+    "location_id": "100183",
+    "location_name": "2996 Gainesville",
+    "dba_name": "ServiceMaster Professional Cleaning & Restoration Services - Gainesville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-gainesville"
+  },
+  {
+    "location_id": "100184",
+    "location_name": "2996 Guntersville",
+    "dba_name": "ServiceMaster Xtreme Clean",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-huntsville"
+  },
+  {
+    "location_id": "100185",
+    "location_name": "2996 Hampton",
+    "dba_name": "ServiceMaster of South Metro",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-jonesboro"
+  },
+  {
+    "location_id": "100186",
+    "location_name": "2996 Jonesboro",
+    "dba_name": "ServiceMaster Professional Restoration - Atlanta",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-atlanta"
+  },
+  {
+    "location_id": "100187",
+    "location_name": "2996 Knoxville",
+    "dba_name": "ServiceMaster Restoration Services - Alcoa",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-alcoa"
+  },
+  {
+    "location_id": "100188",
+    "location_name": "2996 Rome",
+    "dba_name": "ServiceMaster by Twins",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-twins-rome"
+  },
+  {
+    "location_id": "100189",
+    "location_name": "3001 Marietta",
+    "dba_name": "ServiceMaster Restoration Services - Marietta",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-marietta"
+  },
+  {
+    "location_id": "100190",
+    "location_name": "3020 Auburn_NR",
+    "dba_name": "ServiceMaster Restoration Services - Auburn",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-auburn"
+  },
+  {
+    "location_id": "100191",
+    "location_name": "3020 Fortson",
+    "dba_name": "ServiceMaster Restoration Services - Fortson",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-service-fortson"
+  },
+  {
+    "location_id": "100192",
+    "location_name": "3020 LaGrange",
+    "dba_name": "ServiceMaster Restoration Services - LaGrange",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-service-lagrange"
+  },
+  {
+    "location_id": "100193",
+    "location_name": "3020 Newnan",
+    "dba_name": "ServiceMaster Restoration Services - Newnan",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-service-newnan"
+  },
+  {
+    "location_id": "100194",
+    "location_name": "3020 Oviedo",
+    "dba_name": "ServiceMaster Restoration Service - Oviedo",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-service-oviedo"
+  },
+  {
+    "location_id": "100195",
+    "location_name": "3020 Pensacola",
+    "dba_name": "ServiceMaster Restoration Service - Pensacola",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-service-pensacola"
+  },
+  {
+    "location_id": "100196",
+    "location_name": "3027 Athens",
+    "dba_name": "ServiceMaster 5 Points",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-5-points"
+  },
+  {
+    "location_id": "100197",
+    "location_name": "3027 Bethlehem",
+    "dba_name": "ServiceMaster of Gwinnett",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-gwinnett"
+  },
+  {
+    "location_id": "100198",
+    "location_name": "3047 Tappahannock",
+    "dba_name": "ServiceMaster of The Northern Neck",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-the-northern-neck-tappahannock"
+  },
+  {
+    "location_id": "100199",
+    "location_name": "3048 Fishersville",
+    "dba_name": "ServiceMaster of Shenandoah Valley",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-shenandoah-valley-inc-fishersville"
+  },
+  {
+    "location_id": "100200",
+    "location_name": "3048 Salem",
+    "dba_name": "ServiceMaster of Roanoke",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-shenandoah-valley-inc-salem"
+  },
+  {
+    "location_id": "100201",
+    "location_name": "3048 Winchester",
+    "dba_name": "ServiceMaster of Winchester",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-winchester"
+  },
+  {
+    "location_id": "100202",
+    "location_name": "3049 Lynchburg",
+    "dba_name": "ServiceMaster of Lynchburg",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-lynchburg"
+  },
+  {
+    "location_id": "100203",
+    "location_name": "3068 Durham",
+    "dba_name": "ServiceMaster Restoration Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-cleaning-durham"
+  },
+  {
+    "location_id": "100204",
+    "location_name": "3095 Ada",
+    "dba_name": "ServiceMaster Grand Rapids",
+    "scorpion_url": "https://www.servicemasterrestore.com/grand-rapids"
+  },
+  {
+    "location_id": "100205",
+    "location_name": "3095 Allegan",
+    "dba_name": "ServiceMaster Of Ottawa & Allegan County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-ottawa-and-allegan-county"
+  },
+  {
+    "location_id": "100206",
+    "location_name": "3139 Southfield",
+    "dba_name": "ServiceMaster of Birmingham",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-birmingham"
+  },
+  {
+    "location_id": "100207",
+    "location_name": "3242 DePew",
+    "dba_name": "ServiceMaster Recovery by Close â€“ Buffalo",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-close-buffalo"
+  },
+  {
+    "location_id": "100208",
+    "location_name": "3242 Rochester",
+    "dba_name": "ServiceMaster Recovery by Close - Rochester",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-close-rochester"
+  },
+  {
+    "location_id": "100209",
+    "location_name": "3242 Syracuse",
+    "dba_name": "ServiceMaster Recovery by Close - Syracuse",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-close-syracuse"
+  },
+  {
+    "location_id": "100210",
+    "location_name": "3252 Otego",
+    "dba_name": "ServiceMaster by Burch",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-burch"
+  },
+  {
+    "location_id": "100211",
+    "location_name": "3317 Crystal River",
+    "dba_name": "ServiceMaster Professional Services Citrus County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-citrus-county"
+  },
+  {
+    "location_id": "100212",
+    "location_name": "3419 Aurora",
+    "dba_name": "ServiceMaster DSI - Denver",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-aurora"
+  },
+  {
+    "location_id": "100213",
+    "location_name": "3419 Champaign",
+    "dba_name": "ServiceMaster DSI - Champaign",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-champaign"
+  },
+  {
+    "location_id": "100214",
+    "location_name": "3419 Charlotte",
+    "dba_name": "ServiceMaster DSI - Charlotte",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-stallings"
+  },
+  {
+    "location_id": "100215",
+    "location_name": "3419 Chicago",
+    "dba_name": "ServiceMaster DSI - Chicago",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-chicago"
+  },
+  {
+    "location_id": "100216",
+    "location_name": "3419 Downers Grove",
+    "dba_name": "ServiceMaster DSI - Downers Grove",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-downers-grove"
+  },
+  {
+    "location_id": "100217",
+    "location_name": "3419 Eagan",
+    "dba_name": "ServiceMaster DSI - Eagan",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-eagan"
+  },
+  {
+    "location_id": "100218",
+    "location_name": "3419 Ft. Myers",
+    "dba_name": "ServiceMaster DSI - Fort Myers",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-fort-myers"
+  },
+  {
+    "location_id": "100219",
+    "location_name": "3419 Indianapolis",
+    "dba_name": "ServiceMaster DSI - Indianapolis",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-indianapolis"
+  },
+  {
+    "location_id": "100220",
+    "location_name": "3419 Lake Zurich",
+    "dba_name": "ServiceMaster DSI - Lake Zurich",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-lake-zurich"
+  },
+  {
+    "location_id": "100221",
+    "location_name": "3419 Leeâ€™s Summit",
+    "dba_name": "ServiceMaster DSI - Kansas City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-kansas-city"
+  },
+  {
+    "location_id": "100222",
+    "location_name": "3419 Maple Grove",
+    "dba_name": "ServiceMaster DSI - Maple Grove",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-maple-grove"
+  },
+  {
+    "location_id": "100223",
+    "location_name": "3419 Miami",
+    "dba_name": "ServiceMaster DSI - Miami",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-miami"
+  },
+  {
+    "location_id": "100224",
+    "location_name": "3419 Princeton_NR",
+    "dba_name": "ServiceMaster DSI - Princeton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-princeton"
+  },
+  {
+    "location_id": "100225",
+    "location_name": "3419 Riverside",
+    "dba_name": "ServiceMaster DSI - Riverside",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-dsi-riverside"
+  },
+  {
+    "location_id": "100226",
+    "location_name": "3419 Rockford",
+    "dba_name": "ServiceMaster DSI - Rockford",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-rockford"
+  },
+  {
+    "location_id": "100227",
+    "location_name": "3419 Springfield IL",
+    "dba_name": "ServiceMaster DSI - Springfield, IL",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-springfield-illinois"
+  },
+  {
+    "location_id": "100228",
+    "location_name": "3419 Springfield MO",
+    "dba_name": "ServiceMaster DSI - Springfield, MO",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-springfield-missouri"
+  },
+  {
+    "location_id": "100229",
+    "location_name": "3419 Wichita",
+    "dba_name": "ServiceMaster DSI - Wichita",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-wichita"
+  },
+  {
+    "location_id": "100230",
+    "location_name": "3419 Windsor",
+    "dba_name": "ServiceMaster DSI - Madison",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-windsor"
+  },
+  {
+    "location_id": "100231",
+    "location_name": "3460 Oak Park",
+    "dba_name": "ServiceMaster by HKH North",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-hkh-oak-park"
+  },
+  {
+    "location_id": "100232",
+    "location_name": "3503 Atlantic",
+    "dba_name": "ServiceMaster by Rice - Atlantic",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-atlantic"
+  },
+  {
+    "location_id": "100233",
+    "location_name": "3503 Austin",
+    "dba_name": "ServiceMaster by Rice - Austin",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-austin"
+  },
+  {
+    "location_id": "100234",
+    "location_name": "3503 Carroll",
+    "dba_name": "ServiceMaster by Rice - Carroll",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-carroll"
+  },
+  {
+    "location_id": "100235",
+    "location_name": "3503 Clive",
+    "dba_name": "ServiceMaster by Rice - Des Moines",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-des-moines"
+  },
+  {
+    "location_id": "100236",
+    "location_name": "3503 Fairmont",
+    "dba_name": "ServiceMaster by Rice - Fairmont",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-fairmont"
+  },
+  {
+    "location_id": "100237",
+    "location_name": "3503 Fort Dodge",
+    "dba_name": "ServiceMaster by Rice - Fort Dodge",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-fort-dodge"
+  },
+  {
+    "location_id": "100238",
+    "location_name": "3503 Hiawatha",
+    "dba_name": "ServiceMaster by Rice - Cedar Rapids",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-cedar-rapids"
+  },
+  {
+    "location_id": "100239",
+    "location_name": "3503 Marshalltown_NR",
+    "dba_name": "ServiceMaster by Rice - Marshalltown",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-marshalltown"
+  },
+  {
+    "location_id": "100240",
+    "location_name": "3503 Milford",
+    "dba_name": "ServiceMaster by Rice - Milford",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-milford"
+  },
+  {
+    "location_id": "100241",
+    "location_name": "3503 Ottumwa",
+    "dba_name": "ServiceMaster By Rice - Ottumwa",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-ottumwa"
+  },
+  {
+    "location_id": "100242",
+    "location_name": "3503 Storm Lake",
+    "dba_name": "ServiceMaster by Rice â€“ Storm Lake",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-storm-lake"
+  },
+  {
+    "location_id": "100243",
+    "location_name": "3530 Santa Barbara",
+    "dba_name": "ServiceMaster Anytime",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-anytime"
+  },
+  {
+    "location_id": "100244",
+    "location_name": "3554 Fresno",
+    "dba_name": "ServiceMaster by Benevento",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-benevento-fresno"
+  },
+  {
+    "location_id": "100245",
+    "location_name": "3554 Visalia",
+    "dba_name": "ServiceMaster by Benevento",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-benevento"
+  },
+  {
+    "location_id": "100246",
+    "location_name": "3644 San Leandro",
+    "dba_name": "ServiceMaster of Alameda County, Inc.",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-alameda-county-inc"
+  },
+  {
+    "location_id": "100247",
+    "location_name": "3724 Dalton",
+    "dba_name": "ServiceMaster by Griffing",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-griffing"
+  },
+  {
+    "location_id": "100248",
+    "location_name": "3725 Strattanville",
+    "dba_name": "ServiceMaster by Bell",
+    "scorpion_url": "https://www.servicemasterrestore.com/smbybell"
+  },
+  {
+    "location_id": "100249",
+    "location_name": "3754 Heber City",
+    "dba_name": "ServiceMaster 24/7 Restoration - Heber City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-vernal-heber-city"
+  },
+  {
+    "location_id": "100250",
+    "location_name": "3754 Rock Springs",
+    "dba_name": "ServiceMaster 24/7 Restoration - Rock Springs",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-vernal-rock-springs"
+  },
+  {
+    "location_id": "100251",
+    "location_name": "3754 Vernal",
+    "dba_name": "ServiceMaster 24/7",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-vernal-vernal"
+  },
+  {
+    "location_id": "100252",
+    "location_name": "3756 Salt Lake City",
+    "dba_name": "ServiceMaster of Salt Lake",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-salt-lake-city"
+  },
+  {
+    "location_id": "100253",
+    "location_name": "3810 Las Vegas",
+    "dba_name": "ServiceMaster by Rebel",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rebel"
+  },
+  {
+    "location_id": "100254",
+    "location_name": "3857 Corpus Christi",
+    "dba_name": "ServiceMaster Central of Corpus Christi",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-central-of-corpus-christi"
+  },
+  {
+    "location_id": "100255",
+    "location_name": "3964 Hamilton",
+    "dba_name": "ServiceMaster of Hamilton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-hamilton"
+  },
+  {
+    "location_id": "100256",
+    "location_name": "3972 Wapakoneta",
+    "dba_name": "ServiceMaster by Case",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-case"
+  },
+  {
+    "location_id": "100257",
+    "location_name": "4003 Hebron",
+    "dba_name": "ServiceMaster Restoration by BTM",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-btm"
+  },
+  {
+    "location_id": "100258",
+    "location_name": "4034 Valley City",
+    "dba_name": "ServiceMaster of Valley City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-valley-city"
+  },
+  {
+    "location_id": "100259",
+    "location_name": "4040 Baxter",
+    "dba_name": "ServiceMaster of Brainerd",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-retka-baxter"
+  },
+  {
+    "location_id": "100260",
+    "location_name": "4040 Little Falls",
+    "dba_name": "ServiceMaster of Little Falls",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-retka-little-falls"
+  },
+  {
+    "location_id": "100261",
+    "location_name": "4040 Wadena",
+    "dba_name": "ServiceMaster of Wadena",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-retka-wadena"
+  },
+  {
+    "location_id": "100262",
+    "location_name": "4044 Alexandria",
+    "dba_name": "ServiceMaster of The Lakes Area",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-the-lakes-area"
+  },
+  {
+    "location_id": "100263",
+    "location_name": "4045 Bemidji_NR",
+    "dba_name": "ServiceMaster Restoration Services - Bemidji",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-services-bemidji"
+  },
+  {
+    "location_id": "100264",
+    "location_name": "4045 Maple Grove_NR",
+    "dba_name": "ServiceMaster Restoration Services - Maple Grove",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-services-maple-grove"
+  },
+  {
+    "location_id": "100265",
+    "location_name": "4045 Waite Park",
+    "dba_name": "ServiceMaster Restoration Services - St. Cloud-Waite Park",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-services-saint-cloud",
+    "uat_group": true
+  },
+  {
+    "location_id": "100266",
+    "location_name": "4080 Baltimore",
+    "dba_name": "ServiceMaster of Baltimore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-baltimore"
+  },
+  {
+    "location_id": "100267",
+    "location_name": "4134 Collinsville_NR",
+    "dba_name": "ServiceMaster of Metro East",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-metro-east"
+  },
+  {
+    "location_id": "100268",
+    "location_name": "4134 Saint Charles",
+    "dba_name": "ServiceMaster of St. Charles",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-st-charles-clayton-and-westport"
+  },
+  {
+    "location_id": "100269",
+    "location_name": "4134 St. Peters_NR",
+    "dba_name": "ServiceMaster Of Clayton & Westport",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-clayton-westport"
+  },
+  {
+    "location_id": "100270",
+    "location_name": "4163 Mokena",
+    "dba_name": "ServiceMaster by Bouck",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-bouck"
+  },
+  {
+    "location_id": "100271",
+    "location_name": "4195 Tulsa",
+    "dba_name": "ServiceMaster of Midtown Tulsa",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-midtown-tulsa"
+  },
+  {
+    "location_id": "100272",
+    "location_name": "4313 Mount Morris",
+    "dba_name": "ServiceMaster Professional Cleaning Services by Pagano",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-cleaning-services-by-pagano"
+  },
+  {
+    "location_id": "100273",
+    "location_name": "4315 Hampton",
+    "dba_name": "ServiceMaster by Mason - Hampton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-mason-hampton"
+  },
+  {
+    "location_id": "100274",
+    "location_name": "4315 Westerly",
+    "dba_name": "ServiceMaster by Mason - Westerly",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-mason-westerly"
+  },
+  {
+    "location_id": "100275",
+    "location_name": "4318 Essex",
+    "dba_name": "ServiceMaster of Old Saybrook, Middletown and Guilford",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-old-saybrook-middletown-and-guilford"
+  },
+  {
+    "location_id": "100276",
+    "location_name": "4324 Sterling",
+    "dba_name": "ServiceMaster by Williams",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-williams"
+  },
+  {
+    "location_id": "100277",
+    "location_name": "4329 White Plains",
+    "dba_name": "ServiceMaster of White Plains",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-white-plains"
+  },
+  {
+    "location_id": "100278",
+    "location_name": "4331 Hartford",
+    "dba_name": "ServiceMaster TRS - Hartford",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-stamford-hartford"
+  },
+  {
+    "location_id": "100279",
+    "location_name": "4331 Houston_NR",
+    "dba_name": "ServiceMaster TRS",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-trs-southwest-houston"
+  },
+  {
+    "location_id": "100280",
+    "location_name": "4331 Kingwood",
+    "dba_name": "ServiceMaster TRS â€“ Houston",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-trs-northeast-houston"
+  },
+  {
+    "location_id": "100281",
+    "location_name": "4331 New London",
+    "dba_name": "ServiceMaster TRS - New London",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-stamford-new-london"
+  },
+  {
+    "location_id": "100282",
+    "location_name": "4331 Stamford",
+    "dba_name": "ServiceMaster TRS - Stamford",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-stamford-stamford"
+  },
+  {
+    "location_id": "100283",
+    "location_name": "4336 Stamford",
+    "dba_name": "ServiceMaster Superior Cleaning & Restoration Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-superior-cleaning-services"
+  },
+  {
+    "location_id": "100284",
+    "location_name": "4372 Northfield",
+    "dba_name": "ServiceMaster by Ayotte - Northfield",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-ayotte"
+  },
+  {
+    "location_id": "100285",
+    "location_name": "4403 Kenosha",
+    "dba_name": "ServiceMaster Cleaning & Restoration by DCS - Kenosha",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-disaster-clean-up-services-kenosha"
+  },
+  {
+    "location_id": "100286",
+    "location_name": "4403 Wheeling",
+    "dba_name": "ServiceMaster Restore DCS - Cook County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-disaster-clean-up-services-des-plaines"
+  },
+  {
+    "location_id": "100287",
+    "location_name": "4453 Fairfield",
+    "dba_name": "ServiceMaster of Fairfield",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-fairfield"
+  },
+  {
+    "location_id": "100288",
+    "location_name": "4453 Stockton",
+    "dba_name": "ServiceMaster of Stockton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-stockton"
+  },
+  {
+    "location_id": "100289",
+    "location_name": "4491 Horseheads",
+    "dba_name": "ServiceMaster of the Tri-Counties",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-the-tri-counties-horseheads"
+  },
+  {
+    "location_id": "100290",
+    "location_name": "4496 Cartersville",
+    "dba_name": "ServiceMaster of Cobb County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-cobb-county-cartersville"
+  },
+  {
+    "location_id": "100291",
+    "location_name": "4496 Chattanooga",
+    "dba_name": "ServiceMaster Cleaning and Restoration - Chattanooga",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-cobb-county-chattanooga"
+  },
+  {
+    "location_id": "100292",
+    "location_name": "4559 Exton",
+    "dba_name": "ServiceMaster Professional Cleaning & Restoration - Exton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-cleaning-and-restoration"
+  },
+  {
+    "location_id": "100293",
+    "location_name": "4568 Perkasie",
+    "dba_name": "ServiceMaster of Bux Mont",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-bux-mont"
+  },
+  {
+    "location_id": "100294",
+    "location_name": "4671 Appleton_NR",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - Appleton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-appleton"
+  },
+  {
+    "location_id": "100295",
+    "location_name": "4671 Ashland",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - Ashland",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-ashland"
+  },
+  {
+    "location_id": "100296",
+    "location_name": "4671 Green Bay",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - Green Bay",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-green-bay"
+  },
+  {
+    "location_id": "100297",
+    "location_name": "4671 Oshkosh",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - Fond Du Lac",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-fond-du-lac"
+  },
+  {
+    "location_id": "100298",
+    "location_name": "4671 Rhinelander_NR",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - Rhinelander",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-rhinelander"
+  },
+  {
+    "location_id": "100299",
+    "location_name": "4671 Superior",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - Superior",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-superior"
+  },
+  {
+    "location_id": "100300",
+    "location_name": "4671 Wausau",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - Wausau",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-wausau"
+  },
+  {
+    "location_id": "100301",
+    "location_name": "4736 Thomasville",
+    "dba_name": "ServiceMaster of High Point",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-high-point"
+  },
+  {
+    "location_id": "100302",
+    "location_name": "4750 Brighton",
+    "dba_name": "ServiceMaster Express Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-express-services"
+  },
+  {
+    "location_id": "100303",
+    "location_name": "4750 Raleigh",
+    "dba_name": "ServiceMaster Rapid Recovery",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-clean-care-raleigh"
+  },
+  {
+    "location_id": "100304",
+    "location_name": "4840 Philadelphia",
+    "dba_name": "ServiceMaster Omega Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-omega-restoration"
+  },
+  {
+    "location_id": "100305",
+    "location_name": "4855 Clinton_NR",
+    "dba_name": "ServiceMaster Restore of Clinton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-of-clinton"
+  },
+  {
+    "location_id": "100306",
+    "location_name": "4855 Decorah_NR",
+    "dba_name": "ServiceMaster Cleaning Services - Decorah",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-services-decorah"
+  },
+  {
+    "location_id": "100307",
+    "location_name": "4855 Dubuque",
+    "dba_name": "ServiceMaster of the Key City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-the-key-city"
+  },
+  {
+    "location_id": "100308",
+    "location_name": "4856 Englewood",
+    "dba_name": "ServiceMaster Fire and Water Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-englewood"
+  },
+  {
+    "location_id": "100309",
+    "location_name": "4889 Redmond",
+    "dba_name": "ServiceMaster Restore of Redmond",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-redmond"
+  },
+  {
+    "location_id": "100310",
+    "location_name": "4940 Kingston",
+    "dba_name": "ServiceMaster Restoration by Creative Restoration & Flooring",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-creative-restoration-and-flooring"
+  },
+  {
+    "location_id": "100311",
+    "location_name": "4955 Hattiesburg_NR",
+    "dba_name": "ServiceMaster of Hattiesburg",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-hattiesburg"
+  },
+  {
+    "location_id": "100312",
+    "location_name": "4955 Laurel",
+    "dba_name": "ServiceMaster Action Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-action-cleaning-laurel"
+  },
+  {
+    "location_id": "100313",
+    "location_name": "5003 McPherson",
+    "dba_name": "ServiceMaster Professional Cleaning Services - McPherson",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-cleaning-services-mcpherson"
+  },
+  {
+    "location_id": "100314",
+    "location_name": "5005 Centerville",
+    "dba_name": "ServiceMaster Cleaning & Restoration by Smith",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-smith"
+  },
+  {
+    "location_id": "100315",
+    "location_name": "5006 Bethlehem",
+    "dba_name": "ServiceMaster By Holobinko - Bethlehem",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-holobinko-bethlehem"
+  },
+  {
+    "location_id": "100316",
+    "location_name": "5006 Bellefonte",
+    "dba_name": "ServiceMaster by Holobinko - Bellefonte",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-holobinko"
+  },
+  {
+    "location_id": "100317",
+    "location_name": "5006 Lemoyne",
+    "dba_name": "ServiceMaster by Holobinko - Harrisburg",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-lemoyne"
+  },
+  {
+    "location_id": "100318",
+    "location_name": "5075 Yorktown",
+    "dba_name": "ServiceMaster by Farrar Holden",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-farrar-holden"
+  },
+  {
+    "location_id": "100319",
+    "location_name": "5090 Alpena",
+    "dba_name": "ServiceMaster Home & Office",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-home-and-office"
+  },
+  {
+    "location_id": "100320",
+    "location_name": "5108 Elkton",
+    "dba_name": "ServiceMaster Quality Clean",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-quality-clean"
+  },
+  {
+    "location_id": "100321",
+    "location_name": "5173 Chicago",
+    "dba_name": "ServiceMaster Advanced Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-cleaning-chicago-5062"
+  },
+  {
+    "location_id": "100322",
+    "location_name": "5253 Rochester",
+    "dba_name": "ServiceMaster Disaster Associates - Rochester",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-disaster-associates-rochester"
+  },
+  {
+    "location_id": "100323",
+    "location_name": "5253 Stoneham",
+    "dba_name": "ServiceMaster Disaster Associates - Stoneham",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-disaster-associates-stoneham"
+  },
+  {
+    "location_id": "100324",
+    "location_name": "5304 Springfield",
+    "dba_name": "ServiceMaster of Greater Springfield",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-greater-springfield"
+  },
+  {
+    "location_id": "100325",
+    "location_name": "5333 Canton",
+    "dba_name": "ServiceMaster Restoration by Bailey",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-bailey"
+  },
+  {
+    "location_id": "100326",
+    "location_name": "5388 Canoga Park",
+    "dba_name": "ServiceMaster Professional Restoration - Canoga Park",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-restoration-canoga-park"
+  },
+  {
+    "location_id": "100327",
+    "location_name": "5399 Aberdeen",
+    "dba_name": "ServiceMaster 1st Choice - Aberdeen",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-1st-choice-aberdeen"
+  },
+  {
+    "location_id": "100328",
+    "location_name": "5402 Matthews",
+    "dba_name": "ServiceMaster Cleaning & Disaster Services of Charlotte",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-disaster-services-of-charlotte"
+  },
+  {
+    "location_id": "100329",
+    "location_name": "5462 Conyers",
+    "dba_name": "Servicemaster by Lovejoy",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-lovejoy-conyers"
+  },
+  {
+    "location_id": "100330",
+    "location_name": "5490 Two Harbors",
+    "dba_name": "ServiceMaster Of Lake & Cook Counties",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-lake-and-cook-counties"
+  },
+  {
+    "location_id": "100331",
+    "location_name": "5555 Candler",
+    "dba_name": "ServiceMaster of Buncombe County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-buncombe-county"
+  },
+  {
+    "location_id": "100332",
+    "location_name": "5563 Devils Lake",
+    "dba_name": "ServiceMaster of Devil's Lake",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-devils-lake"
+  },
+  {
+    "location_id": "100333",
+    "location_name": "5584 Rochester",
+    "dba_name": "ServiceMaster of Rochester",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-rochester"
+  },
+  {
+    "location_id": "100334",
+    "location_name": "5590 Pawtucket_NR",
+    "dba_name": "ServiceMaster Dynamic Cleaning - Pawtucket",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-dynamic-cleaning-pawtucket"
+  },
+  {
+    "location_id": "100335",
+    "location_name": "5590 Plainville",
+    "dba_name": "ServiceMaster Dynamic Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-dynamic-cleaning"
+  },
+  {
+    "location_id": "100336",
+    "location_name": "5590 Worcester_NR",
+    "dba_name": "ServiceMaster Dynamic Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-dynamic-cleaning-worcester"
+  },
+  {
+    "location_id": "100337",
+    "location_name": "5618 Moses Lake",
+    "dba_name": "ServiceMaster by Francisco",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-moses-lake"
+  },
+  {
+    "location_id": "100338",
+    "location_name": "5618 Wenatchee",
+    "dba_name": "ServiceMaster Cleaning & Restoration - Wenatchee",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-wenatchee"
+  },
+  {
+    "location_id": "100339",
+    "location_name": "5652 Kirkland",
+    "dba_name": "ServiceMaster Total Cleaning Service",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-total-cleaning-service"
+  },
+  {
+    "location_id": "100340",
+    "location_name": "5803 Deltona",
+    "dba_name": "ServiceMaster Fire Water Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-water-restoration"
+  },
+  {
+    "location_id": "100341",
+    "location_name": "5817 Haledon",
+    "dba_name": "ServiceMaster Metropolitan",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-metropolitan-pinebrook"
+  },
+  {
+    "location_id": "100342",
+    "location_name": "5936 Fort Madison",
+    "dba_name": "ServiceMaster Cleaning & Restoration - Fort Madison",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-fort-madison"
+  },
+  {
+    "location_id": "100343",
+    "location_name": "5962 Euless",
+    "dba_name": "ServiceMaster Advanced Restorations",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-advanced-restorations"
+  },
+  {
+    "location_id": "100344",
+    "location_name": "5985 Cordova",
+    "dba_name": "ServiceMaster by Cornerstone",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-cornerstone",
+    "uat_group": true
+  },
+  {
+    "location_id": "100345",
+    "location_name": "5985 Nashville",
+    "dba_name": "ServiceMaster by Cornerstone - Nashville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-cornerstone-nashville"
+  },
+  {
+    "location_id": "100346",
+    "location_name": "6015 Chicago",
+    "dba_name": "ServiceMaster Professional Cleaners",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-cleaning-chicago-13864"
+  },
+  {
+    "location_id": "100347",
+    "location_name": "6024 Kalispell",
+    "dba_name": "ServiceMaster of Flathead County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-flathead-county-kalispell"
+  },
+  {
+    "location_id": "100348",
+    "location_name": "6024 Missoula",
+    "dba_name": "ServiceMaster of Missoula",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-flathead-county-missoula"
+  },
+  {
+    "location_id": "100349",
+    "location_name": "6099 Amsterdam",
+    "dba_name": "ServiceMaster by Integrity - Amsterdam",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-integrity-amsterdam"
+  },
+  {
+    "location_id": "100350",
+    "location_name": "6099 Utica",
+    "dba_name": "ServiceMaster by Integrity - Utica",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-integrity-utica"
+  },
+  {
+    "location_id": "100351",
+    "location_name": "6116 Charlotte",
+    "dba_name": "ServiceMaster of York County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-york-county"
+  },
+  {
+    "location_id": "100352",
+    "location_name": "6127 Smithville",
+    "dba_name": "ServiceMaster Advanced Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-advanced-services"
+  },
+  {
+    "location_id": "100353",
+    "location_name": "6173 Albuquerque",
+    "dba_name": "ServiceMaster of Albuquerque & West Mesa",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-albuquerque"
+  },
+  {
+    "location_id": "100354",
+    "location_name": "6173 Azusa",
+    "dba_name": "ServiceMaster by T.A. Russell",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-ta-russell"
+  },
+  {
+    "location_id": "100355",
+    "location_name": "6173 Lake Havasu City",
+    "dba_name": "ServiceMaster by River Valley Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-river-valley-restoration"
+  },
+  {
+    "location_id": "100356",
+    "location_name": "6226 Dothan",
+    "dba_name": "ServiceMaster Disaster Services - Dothan",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-reed-dothan"
+  },
+  {
+    "location_id": "100357",
+    "location_name": "6226 Miramar",
+    "dba_name": "ServiceMaster by Reed - Miramar",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-reed-miramar"
+  },
+  {
+    "location_id": "100358",
+    "location_name": "6239 Fletcher",
+    "dba_name": "ServiceMaster of Hendersonville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-hendersonville"
+  },
+  {
+    "location_id": "100359",
+    "location_name": "6251 Anderson",
+    "dba_name": "ServiceMaster of Anderson",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-anderson-anderson"
+  },
+  {
+    "location_id": "100360",
+    "location_name": "6292 Kenner",
+    "dba_name": "ServiceMaster of Greater New Orleans",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-greater-new-orleans"
+  },
+  {
+    "location_id": "100361",
+    "location_name": "6314 Sarasota",
+    "dba_name": "ServiceMaster Restoration & Carpet Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-carpet-cleaning"
+  },
+  {
+    "location_id": "100362",
+    "location_name": "6335 Columbia",
+    "dba_name": "ServiceMaster of Columbia",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-columbia"
+  },
+  {
+    "location_id": "100363",
+    "location_name": "6345 Garden City",
+    "dba_name": "ServiceMaster Quality Restore - Garden City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-quality-restore-garden-city"
+  },
+  {
+    "location_id": "100364",
+    "location_name": "6400 Baltimore",
+    "dba_name": "ServiceMaster by Singer",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-singer"
+  },
+  {
+    "location_id": "100365",
+    "location_name": "6400 New Castle_NR",
+    "dba_name": "ServiceMaster of Wilmington",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-wilmington"
+  },
+  {
+    "location_id": "100366",
+    "location_name": "6434 Lexington",
+    "dba_name": "ServiceMaster of Mid Nebraska",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-mid-nebraska"
+  },
+  {
+    "location_id": "100367",
+    "location_name": "6467 Clarksville",
+    "dba_name": "ServiceMaster Fire, Water and Wind Damage Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-water-and-wind-damage-restoration"
+  },
+  {
+    "location_id": "100368",
+    "location_name": "6514 Fresno",
+    "dba_name": "ServiceMaster at Fresno",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-fresno"
+  },
+  {
+    "location_id": "100369",
+    "location_name": "6514 Merced",
+    "dba_name": "ServiceMaster Cleaning & Restoration - Merced",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-merced"
+  },
+  {
+    "location_id": "100370",
+    "location_name": "6516 Cookeville",
+    "dba_name": "ServiceMaster Professional Restoration - Cookeville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-restoration-cookeville"
+  },
+  {
+    "location_id": "100371",
+    "location_name": "6567 Pompano Beach",
+    "dba_name": "ServiceMaster Remediation Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-remediation-services"
+  },
+  {
+    "location_id": "100372",
+    "location_name": "6593 Council Bluffs_NR",
+    "dba_name": "ServiceMaster Restoration Service by Schmader - Council Bluffs",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-service-by-schmader-council-bluffs"
+  },
+  {
+    "location_id": "100373",
+    "location_name": "6593 Omaha",
+    "dba_name": "ServiceMaster of South Central Omaha",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-south-central-omaha"
+  },
+  {
+    "location_id": "100374",
+    "location_name": "6626 West Monroe",
+    "dba_name": "ServiceMaster of NELA",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-plus-of-monroe"
+  },
+  {
+    "location_id": "100375",
+    "location_name": "6663 Columbia",
+    "dba_name": "ServiceMaster by Stechyn & Son",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-stechyn-and-son-columbia"
+  },
+  {
+    "location_id": "100376",
+    "location_name": "6663 Florence",
+    "dba_name": "ServiceMaster Restoration by SMP2",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-stechyn-and-son-florence"
+  },
+  {
+    "location_id": "100377",
+    "location_name": "6707 Raymond",
+    "dba_name": "ServiceMaster Premier Cleaning Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-premier-cleaning-services"
+  },
+  {
+    "location_id": "100378",
+    "location_name": "6710 Norwalk",
+    "dba_name": "ServiceMaster of Norwalk/Westport",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-norwalk-westport"
+  },
+  {
+    "location_id": "100379",
+    "location_name": "6717 North Richland Hills",
+    "dba_name": "ServiceMaster TEAM",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-team-north-dallas-fort-worth"
+  },
+  {
+    "location_id": "100380",
+    "location_name": "6722 Windsor",
+    "dba_name": "ServiceMaster of Weld County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-weld-county"
+  },
+  {
+    "location_id": "100381",
+    "location_name": "6722 Cheyenne",
+    "dba_name": "ServiceMaster by Country Lane",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-country-lane-cheyenne"
+  },
+  {
+    "location_id": "100382",
+    "location_name": "6723 Gonzales",
+    "dba_name": "ServiceMaster Restoration & Cleaning Specialists",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-specialists"
+  },
+  {
+    "location_id": "100383",
+    "location_name": "6726 Holland",
+    "dba_name": "ServiceMaster TEAM",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-team"
+  },
+  {
+    "location_id": "100384",
+    "location_name": "6727 Ft. Smith",
+    "dba_name": "ServiceMaster By Quality Restoration - Fort Smith",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-quality-restoration-fort-smith"
+  },
+  {
+    "location_id": "100385",
+    "location_name": "6727 Springdale",
+    "dba_name": "ServiceMaster By Quality Restoration - Springdale",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-quality-restoration-springdale"
+  },
+  {
+    "location_id": "100386",
+    "location_name": "6742 Eagle",
+    "dba_name": "ServiceMaster Restoration and Cleaning Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-eagle"
+  },
+  {
+    "location_id": "100387",
+    "location_name": "6742 Glenwood Springs",
+    "dba_name": "ServiceMaster of Aspen/Glenwood",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-aspen-glenwood"
+  },
+  {
+    "location_id": "100388",
+    "location_name": "6742 Silverthorne",
+    "dba_name": "ServiceMaster of Summit County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-summit-silverthorne"
+  },
+  {
+    "location_id": "100389",
+    "location_name": "6758 Spruce Pine",
+    "dba_name": "ServiceMaster of WNC",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-wnc"
+  },
+  {
+    "location_id": "100390",
+    "location_name": "6770 Vero Beach",
+    "dba_name": "ServiceMaster by Glenn's",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-glenns"
+  },
+  {
+    "location_id": "100391",
+    "location_name": "6775 Mt. Sinai",
+    "dba_name": "ServiceMaster by American Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-american-restoration-medford"
+  },
+  {
+    "location_id": "100392",
+    "location_name": "6781 Lodi",
+    "dba_name": "ServiceMaster Advantage",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-advantage-lodi"
+  },
+  {
+    "location_id": "100393",
+    "location_name": "6791 Leeds",
+    "dba_name": "ServiceMaster Disaster Response",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-disaster-response"
+  },
+  {
+    "location_id": "100394",
+    "location_name": "6809 St. Marys",
+    "dba_name": "ServiceMaster Camden Charlton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-camden-charlton"
+  },
+  {
+    "location_id": "100395",
+    "location_name": "6812 Jamestown",
+    "dba_name": "ServiceMaster of Jamestown",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-jamestown"
+  },
+  {
+    "location_id": "100396",
+    "location_name": "6828 Livermore",
+    "dba_name": "ServiceMaster CleanCare Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleancare-restoration"
+  },
+  {
+    "location_id": "100397",
+    "location_name": "6851 Eagle Pass",
+    "dba_name": "ServiceMaster Restore by ProRemediation",
+    "scorpion_url": "https://www.servicemasterrestore.com/proremediation-eaglepass"
+  },
+  {
+    "location_id": "100398",
+    "location_name": "6851 Laredo",
+    "dba_name": "ServiceMaster by Pro Remediation",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-pro-remediation"
+  },
+  {
+    "location_id": "100399",
+    "location_name": "6855 Ronkonkoma",
+    "dba_name": "ServiceMaster by Premier Drying Solutions",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-premier-drying-solutions"
+  },
+  {
+    "location_id": "100400",
+    "location_name": "6866 Waimea",
+    "dba_name": "ServiceMaster by Kleidosty",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-kleidosty"
+  },
+  {
+    "location_id": "100401",
+    "location_name": "6872 Prescott Valley",
+    "dba_name": "ServiceMaster of Prescott",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-prescott"
+  },
+  {
+    "location_id": "100402",
+    "location_name": "6890 Sycamore",
+    "dba_name": "ServiceMaster Restoration & Cleaning Services by Skip",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-services-by-skip"
+  },
+  {
+    "location_id": "100403",
+    "location_name": "6905 Waco",
+    "dba_name": "ServiceMaster by Centex",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-centex-waco"
+  },
+  {
+    "location_id": "100404",
+    "location_name": "6916 Chicago",
+    "dba_name": "ServiceMaster by M & B",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-m-and-b"
+  },
+  {
+    "location_id": "100405",
+    "location_name": "6918 Glenview",
+    "dba_name": "Servicemaster Cleaning and Restoration Pro",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-pro"
+  },
+  {
+    "location_id": "100406",
+    "location_name": "6961 Mesquite",
+    "dba_name": "ServiceMaster Restoration by AAA - Mesquite",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-aaa-mesquite"
+  },
+  {
+    "location_id": "100407",
+    "location_name": "6961 St. George",
+    "dba_name": "ServiceMaster Restoration by AAA",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-aaa"
+  },
+  {
+    "location_id": "100408",
+    "location_name": "6963 Maryland Heights",
+    "dba_name": "ServiceMaster Select",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-select"
+  },
+  {
+    "location_id": "100409",
+    "location_name": "6973 Cleves",
+    "dba_name": "ServiceMaster by Thomas",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-thomas"
+  },
+  {
+    "location_id": "100410",
+    "location_name": "6977 Fort Wayne",
+    "dba_name": "ServiceMaster by Monroe Restoration - Ft. Wayne",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-monroe-restoration-fort-wayne"
+  },
+  {
+    "location_id": "100411",
+    "location_name": "6977 Elkhart",
+    "dba_name": "ServiceMaster by Monroe Restoration - Elkhart",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-monroe-restoration-elkhart"
+  },
+  {
+    "location_id": "100412",
+    "location_name": "6977 South Bend",
+    "dba_name": "ServiceMaster by Monroe Restoration - South Bend",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-monroe-restoration-south-bend"
+  },
+  {
+    "location_id": "100413",
+    "location_name": "6990 Colby",
+    "dba_name": "ServiceMaster of Northwest Kansas",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-northwest-kansas"
+  },
+  {
+    "location_id": "100414",
+    "location_name": "6993 Moline",
+    "dba_name": "ServiceMaster by Blaze",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-blaze-restoration"
+  },
+  {
+    "location_id": "100415",
+    "location_name": "7007 Iowa Falls",
+    "dba_name": "ServiceMaster Cleaning Services - Iowa Falls",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-services-iowa-falls"
+  },
+  {
+    "location_id": "100416",
+    "location_name": "7020 Benicia",
+    "dba_name": "ServiceMaster Restoration Services - Benicia",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-benicia"
+  },
+  {
+    "location_id": "100417",
+    "location_name": "7020 Berkley_NR",
+    "dba_name": "ServiceMaster Restoration Services - Berkeley",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-berkeley"
+  },
+  {
+    "location_id": "100418",
+    "location_name": "7020 Concord",
+    "dba_name": "ServiceMaster Restoration Services - Concord",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-concord"
+  },
+  {
+    "location_id": "100419",
+    "location_name": "7020 Milpitas",
+    "dba_name": "ServiceMaster Restoration Services - South Bay",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-south-bay"
+  },
+  {
+    "location_id": "100420",
+    "location_name": "7020 Palo Alto",
+    "dba_name": "ServiceMaster Restoration Services - Palo Alto",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-palo-alto"
+  },
+  {
+    "location_id": "100421",
+    "location_name": "7020 Reno",
+    "dba_name": "ServiceMaster Restoration Services - Reno",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-reno"
+  },
+  {
+    "location_id": "100422",
+    "location_name": "7020 Sacramento",
+    "dba_name": "ServiceMaster Restoration Services - Sacramento",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-sacramento"
+  },
+  {
+    "location_id": "100423",
+    "location_name": "7020 Santa Rosa",
+    "dba_name": "ServiceMaster Restoration Services - Santa Rosa",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-santa-rosa"
+  },
+  {
+    "location_id": "100424",
+    "location_name": "7027 Theodore",
+    "dba_name": "ServiceMaster Advanced Cleaning & Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-advanced-cleaning-theodore"
+  },
+  {
+    "location_id": "100425",
+    "location_name": "7086 Elgin_NR",
+    "dba_name": "ServiceMaster Kwik Restore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-elgin-schaumburg"
+  },
+  {
+    "location_id": "100426",
+    "location_name": "7086 Hartford",
+    "dba_name": "ServiceMaster Kwik Restore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-kwik-hartford"
+  },
+  {
+    "location_id": "100427",
+    "location_name": "7086 Sturtevant_NR",
+    "dba_name": "ServiceMaster Kwik Restore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-kwik-restore-sturtevant"
+  },
+  {
+    "location_id": "100428",
+    "location_name": "7088 Lafayette",
+    "dba_name": "ServiceMaster by Clean Air Management",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-clean-air-management"
+  },
+  {
+    "location_id": "100429",
+    "location_name": "7104 Hudson_NR",
+    "dba_name": "ServiceMaster Restoration and Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-hudson"
+  },
+  {
+    "location_id": "100430",
+    "location_name": "7104 Turtle Lake",
+    "dba_name": "ServiceMaster Restoration and Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-turtle-lake"
+  },
+  {
+    "location_id": "100431",
+    "location_name": "7114 Hampstead",
+    "dba_name": "ServiceMaster Restoration of Wilmington",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-of-wilmington"
+  },
+  {
+    "location_id": "100432",
+    "location_name": "7125 Sonora",
+    "dba_name": "ServiceMaster Restore Sierras",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-sierras"
+  },
+  {
+    "location_id": "100433",
+    "location_name": "7133 Phoenix",
+    "dba_name": "ServiceMaster Restoration by Tactical",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-tactical"
+  },
+  {
+    "location_id": "100434",
+    "location_name": "7171 Charlottesville",
+    "dba_name": "ServiceMaster of Charlottesville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-charlottesville"
+  },
+  {
+    "location_id": "100435",
+    "location_name": "7171 Madison",
+    "dba_name": "ServiceMaster of Culpeper & Warrenton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-charlottesville-madison"
+  },
+  {
+    "location_id": "100436",
+    "location_name": "7198 Chambersburg",
+    "dba_name": "ServiceMaster of Greater Harrisburg and West Shore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-greater-harrisburg"
+  },
+  {
+    "location_id": "100437",
+    "location_name": "7202 Falling Waters",
+    "dba_name": "ServiceMaster of Martinsburg & Hagerstown",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-martinsburg-and-hagerstown"
+  },
+  {
+    "location_id": "100438",
+    "location_name": "7215 Staten Island",
+    "dba_name": "ServiceMaster Restoration by Complete",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-complete"
+  },
+  {
+    "location_id": "100439",
+    "location_name": "7222 Fremont_NR",
+    "dba_name": "ServiceMaster of Fremont",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-fremont"
+  },
+  {
+    "location_id": "100440",
+    "location_name": "7236 Dodge City",
+    "dba_name": "ServiceMaster Rapid Response - Dodge City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-rapid-response"
+  },
+  {
+    "location_id": "100441",
+    "location_name": "7261 Capital Heights",
+    "dba_name": "ServiceMaster by America's Restoration Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-americas-restoration-services"
+  },
+  {
+    "location_id": "100442",
+    "location_name": "7269 Bakersfield",
+    "dba_name": "ServiceMaster At Bakersfield",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-at-bakersfield",
+    "uat_group": true
+  },
+  {
+    "location_id": "100443",
+    "location_name": "7273 Chantilly",
+    "dba_name": "ServiceMaster Restoration Services - Gainesville, VA",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-gainesville"
+  },
+  {
+    "location_id": "100444",
+    "location_name": "7273 Clifton Heights",
+    "dba_name": "ServiceMaster Restoration Services - Clifton Heights",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-clifton-heights-pa"
+  },
+  {
+    "location_id": "100445",
+    "location_name": "7273 Merrimack",
+    "dba_name": "ServiceMaster Restoration Services - Merrimack",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-merrimack"
+  },
+  {
+    "location_id": "100446",
+    "location_name": "7273 Plantation",
+    "dba_name": "ServiceMaster Restoration Services - Pompano Beach",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-pompanobeach"
+  },
+  {
+    "location_id": "100447",
+    "location_name": "7273 Saco",
+    "dba_name": "ServiceMaster Restoration Services - Saco",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-saco"
+  },
+  {
+    "location_id": "100448",
+    "location_name": "7273 Williston",
+    "dba_name": "ServiceMaster Restoration Services - Williston",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-williston"
+  },
+  {
+    "location_id": "100449",
+    "location_name": "7275 Middletown",
+    "dba_name": "ServiceMaster by Calco Clean",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-calco-clean"
+  },
+  {
+    "location_id": "100450",
+    "location_name": "7280 Dayton",
+    "dba_name": "ServiceMaster Absolute Restoration and Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-absolute-restoration-and-cleaning"
+  },
+  {
+    "location_id": "100451",
+    "location_name": "7304 Roebuck",
+    "dba_name": "ServiceMaster of the Upstate",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-the-upstate"
+  },
+  {
+    "location_id": "100452",
+    "location_name": "7313 Bellevue",
+    "dba_name": "ServiceMaster Restoration of Sarpy County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-sarpy-county"
+  },
+  {
+    "location_id": "100453",
+    "location_name": "7313 Lincoln",
+    "dba_name": "ServiceMaster Restoration of Lancaster County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-lancaster-county"
+  },
+  {
+    "location_id": "100454",
+    "location_name": "7324 Shelby",
+    "dba_name": "ServiceMaster Quality Clean & Restore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-quality-clean-and-restore"
+  },
+  {
+    "location_id": "100455",
+    "location_name": "7336 Meridian",
+    "dba_name": "ServiceMaster Cleaning & Restoration Services - Meridian",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-services-meridian"
+  },
+  {
+    "location_id": "100456",
+    "location_name": "7350 Prospect",
+    "dba_name": "ServiceMaster by Isler",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-isler"
+  },
+  {
+    "location_id": "100457",
+    "location_name": "7378 Buffalo Grove_NR",
+    "dba_name": "ServiceMaster of Buffalo Grove",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-buffalo-grove"
+  },
+  {
+    "location_id": "100458",
+    "location_name": "7378 Chicago",
+    "dba_name": "ServiceMaster Restoration by Zaba",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-zaba-restoration-chicago"
+  },
+  {
+    "location_id": "100459",
+    "location_name": "7378 Chicago S Wells_NR",
+    "dba_name": "ServiceMaster of Lake Shore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-lake-shore"
+  },
+  {
+    "location_id": "100460",
+    "location_name": "7378 Skokie",
+    "dba_name": "ServiceMaster Restoration by Zaba",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-zaba-skokie"
+  },
+  {
+    "location_id": "100461",
+    "location_name": "7379 Romulus",
+    "dba_name": "ServiceMaster Excellence",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-excellence"
+  },
+  {
+    "location_id": "100462",
+    "location_name": "7383 Corvallis_NR",
+    "dba_name": "ServiceMaster Restoration & Cleaning Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-corvallis"
+  },
+  {
+    "location_id": "100463",
+    "location_name": "7383 Salem",
+    "dba_name": "ServiceMaster of Salem",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-salem"
+  },
+  {
+    "location_id": "100464",
+    "location_name": "7387 Omaha",
+    "dba_name": "ServiceMaster of Omaha",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-omaha"
+  },
+  {
+    "location_id": "100465",
+    "location_name": "7433 Anaheim_NR",
+    "dba_name": "ServiceMaster Recovery by C2C Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/by-c2c-restoration-anaheim"
+  },
+  {
+    "location_id": "100466",
+    "location_name": "7433 North Hollywood",
+    "dba_name": "ServiceMaster Recovery by C2C Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-c2c-restoration-sun-valley"
+  },
+  {
+    "location_id": "100467",
+    "location_name": "7433 San Diego",
+    "dba_name": "ServiceMaster Recovery by C2C Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-c2c-restoration-san-diego"
+  },
+  {
+    "location_id": "100468",
+    "location_name": "7442 El Paso",
+    "dba_name": "ServiceMaster Professional Restoration - El Paso",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-restoration-el-paso"
+  },
+  {
+    "location_id": "100469",
+    "location_name": "7451 Galloway",
+    "dba_name": "ServiceMaster Restoration by Martin",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-martin"
+  },
+  {
+    "location_id": "100470",
+    "location_name": "7455 Marysville",
+    "dba_name": "ServiceMaster Cleaning & Restoration - Yuba, Sutter, and Butte County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-yuba-sutter-and-butte-county"
+  },
+  {
+    "location_id": "100471",
+    "location_name": "7467 Harlingen",
+    "dba_name": "ServiceMaster Recovery by H&M",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-hm"
+  },
+  {
+    "location_id": "100472",
+    "location_name": "7474 Hayden_NR",
+    "dba_name": "ServiceMaster by Compass - Coeur d'Alene",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-compass-coeur-d-alene"
+  },
+  {
+    "location_id": "100473",
+    "location_name": "7474 Spokane",
+    "dba_name": "ServiceMaster by Compass",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-compass"
+  },
+  {
+    "location_id": "100474",
+    "location_name": "7496 Mount Airy",
+    "dba_name": "ServiceMaster Restoration by Cross",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-cross"
+  },
+  {
+    "location_id": "100475",
+    "location_name": "7501 Wichita",
+    "dba_name": "ServiceMaster Quality Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-quality-cleaning-wichita"
+  },
+  {
+    "location_id": "100476",
+    "location_name": "7514 Nampa",
+    "dba_name": "ServiceMaster Fire and Water Clean Up by CPR",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-clean-up-by-certified-professional-restorers"
+  },
+  {
+    "location_id": "100477",
+    "location_name": "7526 Airmont",
+    "dba_name": "ServiceMaster Restoration by Quick Response",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-quick-response"
+  },
+  {
+    "location_id": "100478",
+    "location_name": "7529 Flowood",
+    "dba_name": "ServiceMaster Restoration by OneCall",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-onecall-flowood"
+  },
+  {
+    "location_id": "100479",
+    "location_name": "7529 Gulfport",
+    "dba_name": "ServiceMaster Restoration by OneCall",
+    "scorpion_url": "https://www.servicemasterrestore.com/serivcemaster-restoration-by-onecall-gulfport"
+  },
+  {
+    "location_id": "100480",
+    "location_name": "7529 Starkville",
+    "dba_name": "ServiceMaster Restoration by One Call - Starkville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-onecall"
+  },
+  {
+    "location_id": "100481",
+    "location_name": "7532 Newton",
+    "dba_name": "ServiceMaster of Newton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-newton"
+  },
+  {
+    "location_id": "100482",
+    "location_name": "7544 Springfield",
+    "dba_name": "ServiceMaster by McKenzie/Taylor",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-mckenzie-taylor"
+  },
+  {
+    "location_id": "100483",
+    "location_name": "7550 Atlanta",
+    "dba_name": "ServiceMaster of Dunwoody/Sandy Springs",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-lovejoy-atlanta"
+  },
+  {
+    "location_id": "100484",
+    "location_name": "7559 West Plains",
+    "dba_name": "ServiceMaster of West Plains",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-west-plains"
+  },
+  {
+    "location_id": "100485",
+    "location_name": "7567 Lewiston",
+    "dba_name": "ServiceMaster Cleaning & Restoration of Lewiston/Clarkston",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-of-lewiston-clarkston"
+  },
+  {
+    "location_id": "100486",
+    "location_name": "7572 Mooreville",
+    "dba_name": "ServiceMaster Fire and Water Recovery",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-recovery-tupelo"
+  },
+  {
+    "location_id": "100487",
+    "location_name": "7579 Diamond Springs",
+    "dba_name": "ServiceMaster Cleaning & Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-services-cameron-park"
+  },
+  {
+    "location_id": "100488",
+    "location_name": "7589 Cranford",
+    "dba_name": "ServiceMaster Restoration Services - Cranford",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-cranford"
+  },
+  {
+    "location_id": "100489",
+    "location_name": "7594 Steamboat Springs",
+    "dba_name": "ServiceMaster Cleaning and Restoration by SteamExpress",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-steamexpress"
+  },
+  {
+    "location_id": "100490",
+    "location_name": "7595 San Angelo",
+    "dba_name": "ServiceMaster Restoration & Cleaning by Texas Best",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-by-texas-best"
+  },
+  {
+    "location_id": "100491",
+    "location_name": "7599 Bend",
+    "dba_name": "ServiceMaster Recovery Specialists",
+    "scorpion_url": "https://www.servicemasterrestore.com/recovery-specialists-bend"
+  },
+  {
+    "location_id": "100492",
+    "location_name": "7599 Grants Pass",
+    "dba_name": "ServiceMaster Cleaning and Restoration Services by LOMROE",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-services-by-lomroe"
+  },
+  {
+    "location_id": "100493",
+    "location_name": "7599 Klamath Falls",
+    "dba_name": "ServiceMaster of Klamath Falls",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-klamath-falls"
+  },
+  {
+    "location_id": "100494",
+    "location_name": "7605 Carterville",
+    "dba_name": "ServiceMaster by SI",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-services-by-si"
+  },
+  {
+    "location_id": "100495",
+    "location_name": "7614 Virginia Beach",
+    "dba_name": "ServiceMaster Disaster Recovery Services - Virginia Beach",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-disaster-recovery-services"
+  },
+  {
+    "location_id": "100496",
+    "location_name": "7620 Richmond",
+    "dba_name": "ServiceMaster Fire & Water Restoration South of the James",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-south-of-the-james"
+  },
+  {
+    "location_id": "100497",
+    "location_name": "7622 Gilbert",
+    "dba_name": "ServiceMaster Restoration by Cadiente",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-cadiente"
+  },
+  {
+    "location_id": "100498",
+    "location_name": "7624 North Lima",
+    "dba_name": "ServiceMaster Restoration by All Action",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-all-action"
+  },
+  {
+    "location_id": "100499",
+    "location_name": "7626 Chula Vista",
+    "dba_name": "ServiceMaster Absolute Water & Fire Damage Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-absolute-water-and-fire-damage-services"
+  },
+  {
+    "location_id": "100500",
+    "location_name": "7626 Corona_NR",
+    "dba_name": "ServiceMaster Absolute Water & Fire Damage Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/absolute-water-and-fire-riverside"
+  },
+  {
+    "location_id": "100501",
+    "location_name": "7627 Lakeland",
+    "dba_name": "ServiceMaster Fire & Water Recovery",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-recovery-lakeland"
+  },
+  {
+    "location_id": "100502",
+    "location_name": "7637 Hamden",
+    "dba_name": "ServiceMaster Restoration Services - New Haven County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-hamden"
+  },
+  {
+    "location_id": "100503",
+    "location_name": "7644 Buffalo",
+    "dba_name": "ServiceMaster Restoration Services - Buffalo",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-buffalo"
+  },
+  {
+    "location_id": "100504",
+    "location_name": "7647 Anchorage",
+    "dba_name": "ServiceMaster of Anchorage",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-anchorage"
+  },
+  {
+    "location_id": "100505",
+    "location_name": "7657 Hillsboro",
+    "dba_name": "ServiceMaster Restoration by MMCT",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-mmct-hillsboro"
+  },
+  {
+    "location_id": "100506",
+    "location_name": "7657 Park Hills_NR",
+    "dba_name": "ServiceMaster Restoration by MMCT - Park Hills",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-mmct-park-hills"
+  },
+  {
+    "location_id": "100507",
+    "location_name": "7657 Scott City",
+    "dba_name": "ServiceMaster Restoration by MMCT - Cape Girardeau",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-mmct-cape-girardeau"
+  },
+  {
+    "location_id": "100508",
+    "location_name": "7658 Round Rock",
+    "dba_name": "ServiceMaster Restoration by All Pro - Austin",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-all-pro-austin"
+  },
+  {
+    "location_id": "100509",
+    "location_name": "7663 Fergus Falls",
+    "dba_name": "ServiceMaster by Moline- Wahpeton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-professionals-wahpeton"
+  },
+  {
+    "location_id": "100510",
+    "location_name": "7663 Bismarck",
+    "dba_name": "ServiceMaster by Moline - Bismarck",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-professionals-bismarck"
+  },
+  {
+    "location_id": "100511",
+    "location_name": "7663 West Fargo",
+    "dba_name": "ServiceMaster by Moline - Fargo",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-professionals-west-fargo"
+  },
+  {
+    "location_id": "100512",
+    "location_name": "7668 Munds Park",
+    "dba_name": "ServiceMaster Restoration by ORC - Munds Park",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-orc-munds-park"
+  },
+  {
+    "location_id": "100513",
+    "location_name": "7668 Phoenix",
+    "dba_name": "ServiceMaster Restoration by ORC - Phoenix",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-orc-phoenix"
+  },
+  {
+    "location_id": "100514",
+    "location_name": "7672 Chicago",
+    "dba_name": "ServiceMaster Fire & Water Cleanup",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-cleanup"
+  },
+  {
+    "location_id": "100515",
+    "location_name": "7672 Chicago Huron_NR",
+    "dba_name": "ServiceMaster Restoration By Simons",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-simons"
+  },
+  {
+    "location_id": "100516",
+    "location_name": "7672 Oak Park_NR",
+    "dba_name": "ServiceMaster of Oak Park & River Forest",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-oak-park-and-river-forest"
+  },
+  {
+    "location_id": "100517",
+    "location_name": "7677 Midland",
+    "dba_name": "ServiceMaster Restoration by FUSON",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-fuson"
+  },
+  {
+    "location_id": "100518",
+    "location_name": "7677 Traverse City",
+    "dba_name": "ServiceMaster by Fuson - Traverse City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-fuson-traverse-city"
+  },
+  {
+    "location_id": "100519",
+    "location_name": "7681 Farmington Hills",
+    "dba_name": "ServiceMaster Restoration by D.S.M.",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsm"
+  },
+  {
+    "location_id": "100520",
+    "location_name": "9104 Tifton",
+    "dba_name": "ServiceMaster Fire & Water by Massey Restoration Group",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-by-massey-restoration-group"
+  },
+  {
+    "location_id": "100521",
+    "location_name": "9115 Bloomfield",
+    "dba_name": "ServiceMaster Restore by RRT",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-by-rrt"
+  },
+  {
+    "location_id": "100522",
+    "location_name": "9117 Grand Rapids",
+    "dba_name": "ServiceMaster Cleaning and Restoration by Peterson",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-peterson"
+  },
+  {
+    "location_id": "100523",
+    "location_name": "9125 Lenexa",
+    "dba_name": "ServiceMaster Restoration by Diamond Quality Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-diamond-quality-services-ks"
+  },
+  {
+    "location_id": "100524",
+    "location_name": "9125 North Little Rock",
+    "dba_name": "ServiceMaster by Diamond Quality Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-diamond-quality-services"
+  },
+  {
+    "location_id": "100525",
+    "location_name": "9130 Islip",
+    "dba_name": "ServiceMaster by Clean Sweep Inc.",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-clean-sweep"
+  },
+  {
+    "location_id": "100526",
+    "location_name": "9165 Erie",
+    "dba_name": "ServiceMaster of Boulder",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-boulder"
+  },
+  {
+    "location_id": "100527",
+    "location_name": "9165 Fort Collins",
+    "dba_name": "ServiceMaster of Fort Collins and Loveland",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-fort-collins"
+  },
+  {
+    "location_id": "100528",
+    "location_name": "9168 Brentwood",
+    "dba_name": "ServiceMaster Fire & Water Clean-Up",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-clean-up"
+  },
+  {
+    "location_id": "100529",
+    "location_name": "9169 Valley Stream",
+    "dba_name": "ServiceMaster Restoration Services by GBS",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-by-gbs"
+  },
+  {
+    "location_id": "100530",
+    "location_name": "9194 Irvine",
+    "dba_name": "ServiceMaster Restoration by BuildPro",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-buildpro"
+  },
+  {
+    "location_id": "100531",
+    "location_name": "9202 Oakhurst",
+    "dba_name": "ServiceMaster Cleaning and Restoration by Replacements & More",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-replacements-and-more"
+  },
+  {
+    "location_id": "100532",
+    "location_name": "9206 Chicago",
+    "dba_name": "ServiceMaster of Lincoln Park",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-lincoln-park"
+  },
+  {
+    "location_id": "100533",
+    "location_name": "9207 Granger",
+    "dba_name": "ServiceMaster Fire and Water Restoration by 24/7",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-24-7-disaster-services"
+  },
+  {
+    "location_id": "100534",
+    "location_name": "9207 Stevensville",
+    "dba_name": "ServiceMaster of Berrien County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-berrien-county"
+  },
+  {
+    "location_id": "100535",
+    "location_name": "9215 Athens",
+    "dba_name": "ServiceMaster By Brown Construction",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-by-brown-construction"
+  },
+  {
+    "location_id": "100536",
+    "location_name": "9219 Erie",
+    "dba_name": "ServiceMaster Restoration by Advanced - Erie",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-advanced-erie"
+  },
+  {
+    "location_id": "100537",
+    "location_name": "9226 Yuma",
+    "dba_name": "ServiceMaster Yuma",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-yuma"
+  },
+  {
+    "location_id": "100538",
+    "location_name": "9249 Fort Wayne",
+    "dba_name": "ServiceMaster by Crossroads - Fort Wayne",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-crossroads-fort-wayne"
+  },
+  {
+    "location_id": "100539",
+    "location_name": "9249 Indianapolis",
+    "dba_name": "ServiceMaster by Crossroads",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-by-crossroads"
+  },
+  {
+    "location_id": "100540",
+    "location_name": "9249 Lafayette",
+    "dba_name": "ServiceMaster by Crossroads - Lafayette",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-crossroads-lafayette"
+  },
+  {
+    "location_id": "100541",
+    "location_name": "9266 Bridge City",
+    "dba_name": "ServiceMaster by TLC",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-services-by-tlc"
+  },
+  {
+    "location_id": "100542",
+    "location_name": "9327 North Palm Springs",
+    "dba_name": "ServiceMaster Cleaning and Restoration by Levi - Riverside County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-levi-riverside-county"
+  },
+  {
+    "location_id": "100543",
+    "location_name": "9327 Riverside",
+    "dba_name": "ServiceMaster Cleaning and Restoration by Levi - Los Angeles",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-levi-los-angeles"
+  },
+  {
+    "location_id": "100544",
+    "location_name": "9327 San Diego",
+    "dba_name": "ServiceMaster Cleaning and Restoration by Levi - San Diego",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-levi-san-diego"
+  },
+  {
+    "location_id": "100545",
+    "location_name": "9338 Macon",
+    "dba_name": "ServiceMaster of Middle Georgia",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-middle-georgia"
+  },
+  {
+    "location_id": "100546",
+    "location_name": "9347 Arlington",
+    "dba_name": "ServiceMaster Fire and Water Recovery by A.R.T.I.",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-recovery-by-arti"
+  },
+  {
+    "location_id": "100547",
+    "location_name": "9374 Tooele",
+    "dba_name": "ServiceMaster of Tooele County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-tooele-county"
+  },
+  {
+    "location_id": "100548",
+    "location_name": "9376 Kailua",
+    "dba_name": "ServiceMaster Fire And Water Restoration by Rapid Response - Kailua",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-rapid-response-kailua"
+  },
+  {
+    "location_id": "100549",
+    "location_name": "9403 Daville",
+    "dba_name": "ServiceMaster Restoration Services by Long",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-commercial-cleaning-by-long"
+  },
+  {
+    "location_id": "100550",
+    "location_name": "9405 Texarkana",
+    "dba_name": "ServiceMaster by Unique Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-unique-restoration-nash"
+  },
+  {
+    "location_id": "100551",
+    "location_name": "9420 Hunt Valley",
+    "dba_name": "ServiceMaster Restoration Services by Paramount",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-by-paramount"
+  },
+  {
+    "location_id": "100552",
+    "location_name": "9428 Hopwood",
+    "dba_name": "ServiceMaster Supreme Fire & Water Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-supreme-fire-and-water-restoration"
+  },
+  {
+    "location_id": "100553",
+    "location_name": "9435 Madison Heights",
+    "dba_name": "ServiceMaster Restoration by Wise",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-wise"
+  },
+  {
+    "location_id": "100554",
+    "location_name": "9449 Knoxville",
+    "dba_name": "ServiceMaster 24/7 Restoration - Knoxville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-24-7-restoration"
+  },
+  {
+    "location_id": "100555",
+    "location_name": "9457 Montgomery",
+    "dba_name": "ServiceMaster Recovery by CGI Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-cgi-restoration"
+  },
+  {
+    "location_id": "100556",
+    "location_name": "9460 Albuquerque_NR",
+    "dba_name": "ServiceMaster Fire & Water Restoration by Rapid Response - Albuquerque",
+    "scorpion_url": "https://www.servicemasterrestore.com/svm-rapid-response-albuquerque"
+  },
+  {
+    "location_id": "100557",
+    "location_name": "9460 Santa Fe",
+    "dba_name": "ServiceMaster Fire and Water Restoration by Rapid Response",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-rapid-response"
+  },
+  {
+    "location_id": "100558",
+    "location_name": "9464 Nashville",
+    "dba_name": "ServiceMaster Fire and Water Restoration by GM",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-gm-restoration"
+  },
+  {
+    "location_id": "100559",
+    "location_name": "9479 Riverside",
+    "dba_name": "ServiceMaster Recovery Services by 24/7",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-services-by-24-7-365-riverside"
+  },
+  {
+    "location_id": "100560",
+    "location_name": "9499 Lisle",
+    "dba_name": "ServiceMaster Restoration Services - Lisle",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-lisle"
+  },
+  {
+    "location_id": "100561",
+    "location_name": "9504 Santa Clarita",
+    "dba_name": "ServiceMaster Fire and Water Restoration by PBC",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-pbc"
+  },
+  {
+    "location_id": "100562",
+    "location_name": "9505 Riverside",
+    "dba_name": "ServiceMaster Restoration Services by Capital Recovery",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-by-capital-recovery"
+  },
+  {
+    "location_id": "100563",
+    "location_name": "9508 Loomis",
+    "dba_name": "ServiceMaster Recovery Services by LW",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-services-by-lw"
+  },
+  {
+    "location_id": "100564",
+    "location_name": "9511 Watertown",
+    "dba_name": "ServiceMaster by Cleaning Masters",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-by-cleaning-masters"
+  },
+  {
+    "location_id": "100565",
+    "location_name": "9513 Jefferson City",
+    "dba_name": "ServiceMaster Restoration Services by Aerodry - Jefferson City & Lake of the Ozarks",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-by-aerodry"
+  },
+  {
+    "location_id": "100566",
+    "location_name": "9530 Bakersfield",
+    "dba_name": "ServiceMaster On Call",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-on-call"
+  },
+  {
+    "location_id": "100567",
+    "location_name": "9539 Red Wing",
+    "dba_name": "ServiceMaster Restoration by ECC",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-ecc"
+  },
+  {
+    "location_id": "100568",
+    "location_name": "9553 Buffalo",
+    "dba_name": "ServiceMaster Restoration by Fresh Start",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-fresh-start"
+  },
+  {
+    "location_id": "100569",
+    "location_name": "9561 Valapariso",
+    "dba_name": "ServiceMaster by Tekton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-tekton"
+  },
+  {
+    "location_id": "100570",
+    "location_name": "9564 Spring Valley",
+    "dba_name": "ServiceMaster Restoration by Elite",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-elite"
+  },
+  {
+    "location_id": "100571",
+    "location_name": "9565 Redwood",
+    "dba_name": "ServiceMaster Restoration by Prime",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-prime"
+  },
+  {
+    "location_id": "100572",
+    "location_name": "9585 Ranier",
+    "dba_name": "ServiceMaster of International Falls",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-international-falls"
+  },
+  {
+    "location_id": "100573",
+    "location_name": "9610 Hayward",
+    "dba_name": "ServiceMaster Restoration Services by Ideal Group",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-by-ideal-group"
+  },
+  {
+    "location_id": "100574",
+    "location_name": "9611 Riverside",
+    "dba_name": "ServiceMaster Recovery Services by Right Call",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-services-by-right-call"
+  },
+  {
+    "location_id": "100575",
+    "location_name": "9621 San Mateo",
+    "dba_name": "ServiceMaster Restoration by Ward/Tek, Inc.",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-ward-tek"
+  },
+  {
+    "location_id": "100576",
+    "location_name": "9625 Pleasant Valley",
+    "dba_name": "ServiceMaster Restoration & Cleaning Services by Gadonniex",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-services-by-gadonniex"
+  },
+  {
+    "location_id": "100577",
+    "location_name": "9640 Jamestown",
+    "dba_name": "ServiceMaster Emergency Experts by Gault",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-emergency-experts-by-gault"
+  },
+  {
+    "location_id": "100578",
+    "location_name": "9648 Middletown",
+    "dba_name": "ServiceMaster Restoration by Integrity",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-integrity"
+  },
+  {
+    "location_id": "100579",
+    "location_name": "9652 Ridgeland",
+    "dba_name": "ServiceMaster Restoration by Webb",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-webb"
+  },
+  {
+    "location_id": "100580",
+    "location_name": "9667 San Dimas",
+    "dba_name": "ServiceMaster Restoration by Rapid Recovery",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-rapid-recovery"
+  },
+  {
+    "location_id": "100581",
+    "location_name": "9669 Irvine",
+    "dba_name": "ServiceMaster Water & Fire Advanced Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-water-and-fire-advanced-restoration"
+  },
+  {
+    "location_id": "100582",
+    "location_name": "9673 Ventura",
+    "dba_name": "ServiceMaster Restoration by EMT - Ventura County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emt-ventura-county"
+  },
+  {
+    "location_id": "100583",
+    "location_name": "9673 Clark",
+    "dba_name": "ServiceMaster Restoration by EMT - Clark County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emt-clark-county"
+  },
+  {
+    "location_id": "100584",
+    "location_name": "9673 Los Angeles 2",
+    "dba_name": "ServiceMaster Restoration by EMT - Los Angeles County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emt-los-angeles-county"
+  },
+  {
+    "location_id": "100585",
+    "location_name": "9673 Orange 1",
+    "dba_name": "ServiceMaster Restoration by EMT - Orange County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emt-orange-county"
+  },
+  {
+    "location_id": "100586",
+    "location_name": "9673 Riverside 1",
+    "dba_name": "ServiceMaster Restoration by EMT - San Bernardino County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emt-san-bernardino-county"
+  },
+  {
+    "location_id": "100587",
+    "location_name": "9673 San Bernardino 1",
+    "dba_name": "ServiceMaster Restoration by EMT - Ontario",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emt-ontario"
+  },
+  {
+    "location_id": "100588",
+    "location_name": "9673 San Diego 1",
+    "dba_name": "ServiceMaster Restoration by EMT - Escondido",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emt-escondido"
+  },
+  {
+    "location_id": "100589",
+    "location_name": "9673 Temecula_NR",
+    "dba_name": "ServiceMaster Restoration by EMT - Temecula",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-emt-temecula"
+  },
+  {
+    "location_id": "100590",
+    "location_name": "9674 Cullman",
+    "dba_name": "ServiceMaster Restoration by Howard",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-howard"
+  },
+  {
+    "location_id": "100591",
+    "location_name": "9678 Harrison",
+    "dba_name": "ServiceMaster 1 Call Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-1-call-restoration"
+  },
+  {
+    "location_id": "100592",
+    "location_name": "9705 Wichita Falls",
+    "dba_name": "ServiceMaster of Wichita Falls",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-commercial-services"
+  },
+  {
+    "location_id": "100593",
+    "location_name": "9713 San Francisco",
+    "dba_name": "ServiceMaster of San Francisco",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-san-francisco"
+  },
+  {
+    "location_id": "100594",
+    "location_name": "9728 Redlands",
+    "dba_name": "ServiceMaster Restoration by Benjamin",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-benjamin"
+  },
+  {
+    "location_id": "100595",
+    "location_name": "9763 Canoga Park",
+    "dba_name": "ServiceMaster Water & Fire Restoration by J and S",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-water-and-fire-restoration-by-j-and-s"
+  },
+  {
+    "location_id": "100596",
+    "location_name": "9775 Newberry",
+    "dba_name": "ServiceMaster Restoration by GB Johnson",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-gb-johnson"
+  },
+  {
+    "location_id": "100597",
+    "location_name": "9778 Camarillo",
+    "dba_name": "ServiceMaster Restoration by Restoration Pros",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-restoration-pros"
+  },
+  {
+    "location_id": "100598",
+    "location_name": "9778 Santa Barbara_NR",
+    "dba_name": "ServiceMaster Restore by Restoration Pros - Santa Barbara",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-santa-barbara"
+  },
+  {
+    "location_id": "100599",
+    "location_name": "9797 Columbus",
+    "dba_name": "ServiceMaster Cleaning & Restoration Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-services-columbus"
+  },
+  {
+    "location_id": "100600",
+    "location_name": "9815 Savannah",
+    "dba_name": "ServiceMaster of Savannah",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-savannah"
+  },
+  {
+    "location_id": "100601",
+    "location_name": "9821 Anaheim",
+    "dba_name": "ServiceMaster Restoration by Disaster Recovery Experts",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-disaster-recovery-experts"
+  },
+  {
+    "location_id": "100602",
+    "location_name": "9821 Los Angeles_NR",
+    "dba_name": "ServiceMaster Restoration by Disaster Recovery Experts",
+    "scorpion_url": "https://www.servicemasterrestore.com/disaster-recovery-experts-la"
+  },
+  {
+    "location_id": "100603",
+    "location_name": "9822 Lexington",
+    "dba_name": "ServiceMaster Fire and Water Restoration Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-services"
+  },
+  {
+    "location_id": "100604",
+    "location_name": "9827 Richmond",
+    "dba_name": "ServiceMaster of Richmond",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-richmond"
+  },
+  {
+    "location_id": "100605",
+    "location_name": "9831 Oxford",
+    "dba_name": "ServiceMaster by Montgomery",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-montgomery"
+  },
+  {
+    "location_id": "100606",
+    "location_name": "9837 Ashland",
+    "dba_name": "ServiceMaster Fire and Water Restoration by A-1",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-fire-and-water-restoration-by-a-1-restore"
+  },
+  {
+    "location_id": "100607",
+    "location_name": "9845 Grandville",
+    "dba_name": "ServiceMaster Restoration by the Disaster Response Experts",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-the-disaster-response-experts"
+  },
+  {
+    "location_id": "100608",
+    "location_name": "9845 Springlake",
+    "dba_name": "ServiceMaster Fire & Water Clean-up By Aqua Pros",
+    "scorpion_url": "https://www.servicemasterrestore.com/sm-clean-up-by-aqua-pros"
+  },
+  {
+    "location_id": "100609",
+    "location_name": "9884 Chicago",
+    "dba_name": "ServiceMaster Restoration and Cleaning by Hardemon & Associates",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-and-cleaning-by-hardemon-and-associates"
+  },
+  {
+    "location_id": "100610",
+    "location_name": "9888 Dearborn Heights",
+    "dba_name": "ServiceMaster Restoration by Jouny",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-jouny"
+  },
+  {
+    "location_id": "100611",
+    "location_name": "9898 American Canyon_NR",
+    "dba_name": "ServiceMaster Cleaning and Restoration by Levi - Napa County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-by-levi-napa-county"
+  },
+  {
+    "location_id": "100612",
+    "location_name": "9908 Eastchester",
+    "dba_name": "ServiceMaster Restoration by Marano",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-marano"
+  },
+  {
+    "location_id": "100613",
+    "location_name": "9919 Bloomington",
+    "dba_name": "ServiceMaster KRS - Bloomington",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-by-krs"
+  },
+  {
+    "location_id": "100614",
+    "location_name": "9919 Morton_NR",
+    "dba_name": "ServiceMaster KRS - Peoria",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-krs-peoria"
+  },
+  {
+    "location_id": "100615",
+    "location_name": "9919 Wisconsin",
+    "dba_name": "ServiceMaster KRS - Milwaukee",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-krs"
+  },
+  {
+    "location_id": "100616",
+    "location_name": "9936 Great Falls",
+    "dba_name": "ServiceMaster All Purpose Cleaning",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-all-purpose-cleaning"
+  },
+  {
+    "location_id": "100617",
+    "location_name": "9953 Oakwood",
+    "dba_name": "ServiceMaster Restoration by David R. Dean & Associates",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-david-r-dean-and-associates-oakwood"
+  },
+  {
+    "location_id": "100618",
+    "location_name": "9958 Columbus",
+    "dba_name": "ServiceMaster by Angler - Columbus",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-angler-columbus"
+  },
+  {
+    "location_id": "100619",
+    "location_name": "9958 Dayton",
+    "dba_name": "ServiceMaster by Angler - Dayton",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-angler-dayton"
+  },
+  {
+    "location_id": "100620",
+    "location_name": "9958 Louisville",
+    "dba_name": "ServiceMaster by Angler - Louisville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-angler-louisville"
+  },
+  {
+    "location_id": "100621",
+    "location_name": "9962 Ada",
+    "dba_name": "ServiceMaster Restoration by RSI - Ada",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-rsi-ada"
+  },
+  {
+    "location_id": "100622",
+    "location_name": "9962 Oklahoma City",
+    "dba_name": "ServiceMaster Restoration by RSI - Oklahoma City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-rsi-oklahoma-city"
+  },
+  {
+    "location_id": "100623",
+    "location_name": "9962 Tulsa",
+    "dba_name": "ServiceMaster Restoration by RSI - Tulsa",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-rsi-tulsa",
+    "uat_group": true
+  },
+  {
+    "location_id": "100624",
+    "location_name": "9976 Columbus",
+    "dba_name": "ServiceMaster Restoration by Neverman Construction Company",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-neverman-construction-company"
+  },
+  {
+    "location_id": "100625",
+    "location_name": "10249 Wilmington",
+    "dba_name": "ServiceMaster of Brandywine Valley",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-brandywine-valley"
+  },
+  {
+    "location_id": "100626",
+    "location_name": "10307 Crawfordsville",
+    "dba_name": "ServiceMaster of Crawfordsville",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-crawfordsville"
+  },
+  {
+    "location_id": "100627",
+    "location_name": "10321 Oklahoma City",
+    "dba_name": "ServiceMaster By Eagle Eye Cleaning and Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-eagle-eye-cleaning-and-restoration"
+  },
+  {
+    "location_id": "100628",
+    "location_name": "10881 Dover",
+    "dba_name": "ServiceMaster Total Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-total-restoration"
+  },
+  {
+    "location_id": "100629",
+    "location_name": "10930 Somerset",
+    "dba_name": "ServiceMaster Cleaning and Disaster Restoration Services - Somerset",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-disaster-restoration-services-somerset"
+  },
+  {
+    "location_id": "100630",
+    "location_name": "10990 Ammon",
+    "dba_name": "ServiceMaster Fire and Water Restoration by Houts",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-and-restoration-ammon"
+  },
+  {
+    "location_id": "100631",
+    "location_name": "11096 Norfolk",
+    "dba_name": "ServiceMaster of Norfolk",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-norfolk"
+  },
+  {
+    "location_id": "100632",
+    "location_name": "11126 Chicago",
+    "dba_name": "ServiceMaster by Elite Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-elite-restoration"
+  },
+  {
+    "location_id": "100633",
+    "location_name": "1697 Longview 2",
+    "dba_name": "ServiceMaster by JTS",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-jts"
+  },
+  {
+    "location_id": "100634",
+    "location_name": "2873 Lima",
+    "dba_name": "ServiceMaster Restore by McCann - Lima",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restore-by-mccann-lima"
+  },
+  {
+    "location_id": "100635",
+    "location_name": "3088 Kalamazoo",
+    "dba_name": "ServiceMaster of Kalamazoo",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-kalamazoo"
+  },
+  {
+    "location_id": "100636",
+    "location_name": "3277 Fernandina Beach",
+    "dba_name": "ServiceMaster of Amelia Island",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-amelia-island"
+  },
+  {
+    "location_id": "100637",
+    "location_name": "3419 Tampa",
+    "dba_name": "ServiceMaster DSI - Tampa",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-dsi-tampa"
+  },
+  {
+    "location_id": "100638",
+    "location_name": "3503 Mason City",
+    "dba_name": "ServiceMaster by Rice â€“ Mason City",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-rice-mason-city"
+  },
+  {
+    "location_id": "100639",
+    "location_name": "4671 LaCrosse",
+    "dba_name": "ServiceMaster Recovery by Restoration Holdings - La Crosse",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-recovery-by-restoration-holdings-la-crosse"
+  },
+  {
+    "location_id": "100640",
+    "location_name": "5112 Foster City",
+    "dba_name": "ServiceMaster Disaster Restoration Services",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-disaster-restoration-services-san-carlos"
+  },
+  {
+    "location_id": "100641",
+    "location_name": "5555 Waynesville",
+    "dba_name": "ServiceMaster of Haywood County",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-haywood-county"
+  },
+  {
+    "location_id": "100642",
+    "location_name": "5614 Livonia",
+    "dba_name": "ServiceMaster Disaster Services - Farmington Hills",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-disaster-services-farmington-hills"
+  },
+  {
+    "location_id": "100643",
+    "location_name": "6024 Billings_NR",
+    "dba_name": "ServiceMaster Restoration by Big Sky - Billings",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-big-sky-billings"
+  },
+  {
+    "location_id": "100644",
+    "location_name": "6863 Marion",
+    "dba_name": "ServiceMaster by Restoration Contractors - Marion",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-restoration-contractors-marion"
+  },
+  {
+    "location_id": "100645",
+    "location_name": "7020 Chico",
+    "dba_name": "ServiceMaster Restoration Services - Chico",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-chico"
+  },
+  {
+    "location_id": "100646",
+    "location_name": "7020 Eureka",
+    "dba_name": "ServiceMaster Restoration Services - Eureka",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-eureka"
+  },
+  {
+    "location_id": "100647",
+    "location_name": "7020 Redding",
+    "dba_name": "ServiceMaster Restoration Services - Redding",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-redding"
+  },
+  {
+    "location_id": "100648",
+    "location_name": "7051 Santa Ana",
+    "dba_name": "ServiceMaster by One Call Restoration",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-one-call-restoration"
+  },
+  {
+    "location_id": "100649",
+    "location_name": "7086 Lake Barrington",
+    "dba_name": "ServiceMaster Kwik Restore",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-kwik-cary"
+  },
+  {
+    "location_id": "100650",
+    "location_name": "7273 Green Island",
+    "dba_name": "ServiceMaster Restoration Services - Green Island",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-services-green-island"
+  },
+  {
+    "location_id": "100651",
+    "location_name": "7536 Abilene",
+    "dba_name": "ServiceMaster A-Town/Hi-Tech Cleaning & Restoration - Abilene",
+    "scorpion_url": "https://www.servicemasterrestore.com/hi-tech-cleaning-and-restoration-abilene"
+  },
+  {
+    "location_id": "100652",
+    "location_name": "7536 Midland",
+    "dba_name": "ServiceMaster A-Town/Hi-Tech Cleaning & Restoration - Midland",
+    "scorpion_url": "https://www.servicemasterrestore.com/hi-tech-cleaning-and-restoration-midland"
+  },
+  {
+    "location_id": "100653",
+    "location_name": "7590 Pittsfield",
+    "dba_name": "ServiceMaster of the Berkshires",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-the-berkshires"
+  },
+  {
+    "location_id": "100654",
+    "location_name": "7663 Eveleth",
+    "dba_name": "ServiceMaster Cleaning Services - Eveleth",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-cleaning-services-eveleth"
+  },
+  {
+    "location_id": "100655",
+    "location_name": "7677 Flushing",
+    "dba_name": "ServiceMaster by Fuson â€“ Flint",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-by-fuson-flint"
+  },
+  {
+    "location_id": "100656",
+    "location_name": "9226 El Centro",
+    "dba_name": "ServiceMaster Critical Recovery",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-critical-recovery"
+  },
+  {
+    "location_id": "100657",
+    "location_name": "9397 Jacksonville",
+    "dba_name": "ServiceMaster Restoration of First Coast",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-of-first-coast"
+  },
+  {
+    "location_id": "100658",
+    "location_name": "9720 Burbank",
+    "dba_name": "ServiceMaster Restoration by the Experts",
+    "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-restoration-by-the-experts"
+  }
+]

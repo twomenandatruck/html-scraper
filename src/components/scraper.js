@@ -1,7 +1,10 @@
-import fetch from "node-fetch";
+import { get, title_case, page_type, write_csv } from "./utilities.js";
 import * as cheerio from "cheerio";
-import fs from "fs";
-import path from "path";
+import { XMLParser } from "fast-xml-parser";
+const parser = new XMLParser();
+
+import fs, { read } from "fs";
+import path, { parse } from "path";
 import urlModule from "url";
 import { fileURLToPath } from "url";
 
@@ -9,30 +12,47 @@ import { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const title_case = (str) => {
-  return str.replace(
-    /\w\S*/g,
-    (text) => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase()
+const read_dom = async (url) => {
+  try {
+    const data = await get(url);
+    return cheerio.load(data);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+export const load_sitemap = async (url) => {
+  const data = await get(url);
+  const xml = await parser.parse(data);
+  return xml.urlset.url.map((url, i) => {
+    return url.loc;
+  });
+};
+
+export const scrape_loation_urls = async (location, callback) => {
+  return await Promise.all(
+    location.pages.map((u) =>
+      scrape(u, location.scorpion_url, location.location_name.replace(" ", "_"))
+    )
   );
 };
 
-export async function scrape(url) {
+export const scrape = async (url, home_url, filename) => {
   console.log(`Starting scrape for ${url}`);
   try {
-    const response = await fetch(url, { method: "GET" });
-    if (!response.ok) throw new Error(response.statusText);
-    const data = await response.text();
-
-    const $ = cheerio.load(data);
+    const $ = await read_dom(url);
     const page = $("html");
-    const mainContent = $("#MainContent");
+    const mainContent = $("#MainContent, #ReviewsSystemV1List, #BlogEntry");
+
+    const title = page.find("title").text();
 
     const content = {
-      url: url,
-      meta: {
-        title: page.find("title").text(),
-        description: page.find("meta[name='description']").attr("content"),
-      },
+      location: filename,
+      home_page: home_url,
+      page_url: url,
+      meta_title: title,
+      meta_description: page.find("meta[name='description']").attr("content"),
+      page_type: url == home_url ? "main" : page_type(url),
       sections: [],
       images: [],
     };
@@ -66,11 +86,16 @@ export async function scrape(url) {
       n++;
       if (n === headers.length) break;
     }
-
     content.sections = sections;
 
-    const imageDir = path.join(__dirname, "images", new URL(url).hostname);
+    /*
+    const imageDir = path.join(
+      __dirname,
+      "../outputs/images",
+      new URL(url).hostname
+    );
 
+   
     await fs.mkdir(imageDir, { recursive: true });
 
     await Promise.all(
@@ -89,11 +114,13 @@ export async function scrape(url) {
         })
         .get()
     );
+    */
 
-    console.log(JSON.stringify(content, null, 2));
-    return content;
+    await write_csv(content);
+
+    return true;
   } catch (err) {
     console.error(err);
-    return null;
+    return false;
   }
-}
+};
