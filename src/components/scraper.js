@@ -35,8 +35,6 @@ export const load_sitemap = async (url) => {
   });
 
   await write_file(urls, "../outputs/sitemap.csv");
-
-  exit();
   return urls;
 };
 

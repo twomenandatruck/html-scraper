@@ -11,7 +11,7 @@ const uat_group = locations.filter((l) => l.uat_group === true);
 
 (async () => {
   await empty_file();
-
+  
   const sitemap = await load_sitemap(
     `https://www.servicemasterrestore.com/sitemap.xml`
   );
