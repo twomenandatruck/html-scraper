@@ -48,12 +48,18 @@ const force_utf8 = (str) => {
 };
 
 const remove_line_breaks = (str) => {
-  return str.replaceAll(/\r?\n|\r/g, "");
+  return str.replaceAll(/\r|\n/g, "");
+};
+
+const remove_tabs = (str) => {
+  str = str.replaceAll(/\t/g, "");
+  return str.replaceAll("\t", "");
 };
 
 export const sanitize = (str, html = false) => {
   str = force_utf8(str);
   str = remove_line_breaks(str);
+  str = remove_tabs(str);
 
   str = html
     ? sanitizeHtml(str, {
@@ -87,7 +93,7 @@ export const write_csv = async (content, f = "pages.txt") => {
 
     Object.values(content).forEach((c) => {
       if (typeof c !== "string") c = sanitize(JSON.stringify(c));
-      if (typeof c === "string") c = sanitize(`"${c}"`);
+      if (typeof c === "string") c = sanitize(`"${c}"`, true);
       row.push(force_utf8(c));
     });
 
@@ -112,11 +118,24 @@ export const write_file = async (data, file) => {
   }
 };
 
-export const empty_file = async (file = "../outputs/pages.csv") => {
+export const empty_file = async (file = "../outputs/pages.txt") => {
   try {
     const filename = path.join(__dirname, file);
-    await fs.promises.writeFile(filename, "", { flag: "w" });
+    const headers = [
+      "location",
+      "location_home",
+      "page_path",
+      "meta_title",
+      "meta_description",
+      "page_type",
+      "content",
+    ];
+    await fs.promises.writeFile(filename, headers.join("\t") + "\n", {
+      flag: "w",
+    });
+    return true;
   } catch (err) {
     console.error(err);
+    return false;
   }
 };
