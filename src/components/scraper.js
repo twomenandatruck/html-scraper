@@ -1,11 +1,4 @@
-import {
-  get,
-  title_case,
-  page_type,
-  write_csv,
-  write_file,
-  read_dom,
-} from "./utilities.js";
+import * as utilities from "./utilities.js";
 import * as cheerio from "cheerio";
 import { XMLParser } from "fast-xml-parser";
 const parser = new XMLParser();
@@ -22,11 +15,11 @@ const __dirname = dirname(__filename);
 export const load_sitemap = async (url) => {
   const data = await get(url);
   const xml = await parser.parse(data);
-  const urls = xml.urlset.url.map((url, i) => {
-    return url.loc;
+  const entries = xml.urlset.url.map((url, i) => {
+    return { path: url.loc, last_mod: url.lastmod };
   });
 
-  await write_file(urls, "../outputs/sitemap.csv");
+  await write_csv(entires, "../outputs/sitemap.csv");
   return urls;
 };
 
@@ -49,7 +42,7 @@ export const scrape_corporate_urls = async (pages) => {
 export const scrape = async (url, home_url, filename) => {
   console.log(`Starting scrape for ${url}`);
   try {
-    const $ = await read_dom(url);
+    const $ = await utilities.read_dom(url);
     const page = $("html");
     const mainContent = $(
       "#MainContent, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry"
@@ -90,7 +83,7 @@ export const scrape = async (url, home_url, filename) => {
 
       sections.push({
         index: n,
-        header: title_case(headers[n].text),
+        header: utilities.title_case(headers[n].text),
         paragraphs: content.join(),
       });
 
