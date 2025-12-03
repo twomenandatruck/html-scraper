@@ -4,6 +4,7 @@ import {
   page_type,
   write_csv,
   write_file,
+  read_dom,
 } from "./utilities.js";
 import * as cheerio from "cheerio";
 import { XMLParser } from "fast-xml-parser";
@@ -18,15 +19,6 @@ import { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const read_dom = async (url) => {
-  try {
-    const data = await get(url);
-    return cheerio.load(data);
-  } catch (err) {
-    console.error(err);
-  }
-};
-
 export const load_sitemap = async (url) => {
   const data = await get(url);
   const xml = await parser.parse(data);
@@ -38,10 +30,18 @@ export const load_sitemap = async (url) => {
   return urls;
 };
 
-export const scrape_loation_urls = async (location, callback) => {
+export const scrape_location_urls = async (location, callback) => {
   return await Promise.all(
     location.pages.map((u) =>
       scrape(u, location.scorpion_url, location.location_name.replace(" ", "_"))
+    )
+  );
+};
+
+export const scrape_corporate_urls = async (pages) => {
+  return await Promise.all(
+    pages.map((u) =>
+      scrape(u, "https://www.servicemasterrestore.com/", "0000_corporate")
     )
   );
 };
@@ -51,7 +51,9 @@ export const scrape = async (url, home_url, filename) => {
   try {
     const $ = await read_dom(url);
     const page = $("html");
-    const mainContent = $("#MainContent, #ReviewsSystemV1List, #BlogEntry");
+    const mainContent = $(
+      "#MainContent, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry"
+    );
 
     const title = page.find("title").text();
 

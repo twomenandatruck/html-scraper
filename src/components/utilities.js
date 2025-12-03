@@ -4,6 +4,7 @@ import path, { parse } from "path";
 import urlModule from "url";
 import { fileURLToPath } from "url";
 import sanitizeHtml from "sanitize-html";
+import * as cheerio from "cheerio";
 
 import { dirname } from "path";
 import { json } from "stream/consumers";
@@ -74,6 +75,7 @@ export const sanitize = (str, html = false) => {
           "li",
           "ol",
           "ul",
+          "article",
         ],
         allowedAttributes: {
           a: ["href"],
@@ -137,5 +139,14 @@ export const empty_file = async (file = "../outputs/pages.txt") => {
   } catch (err) {
     console.error(err);
     return false;
+  }
+};
+
+export const read_dom = async (url) => {
+  try {
+    const data = await get(url);
+    return cheerio.load(data);
+  } catch (err) {
+    console.error(err);
   }
 };
