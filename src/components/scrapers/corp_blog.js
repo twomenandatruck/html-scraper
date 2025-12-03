@@ -1,7 +1,7 @@
 import { parseArgs } from "util";
-import * as utilities from "./utilities.js";
+import * as utilities from "../utilities.js";
 
-export const scrape_corp_blog = async (url) => {
+export default async (url) => {
   try {
     const $ = await utilities.read_dom(url);
 
@@ -39,9 +39,3 @@ export const scrape_corp_blog = async (url) => {
     return false;
   }
 };
-
-scrape_corp_blog(
-  "https://www.servicemasterrestore.com/blog/flood-damage/what-documents-do-we-need-to-protect-/",
-  "/",
-  ""
-);
