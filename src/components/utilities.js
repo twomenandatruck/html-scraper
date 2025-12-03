@@ -75,7 +75,6 @@ export const sanitize = (str, html = false) => {
           "li",
           "ol",
           "ul",
-          "article",
         ],
         allowedAttributes: {
           a: ["href"],
