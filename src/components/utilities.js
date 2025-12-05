@@ -13,7 +13,14 @@ const __dirname = dirname(__filename);
 
 export const get = async (url) => {
   try {
-    const response = await fetch(url, { method: "GET" });
+    const options = {
+      method: "GET",
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+      },
+    };
+    const response = await fetch(url, options);
     if (!response.ok) throw new Error(response.statusText);
     return await response.text();
   } catch (err) {
@@ -86,25 +93,41 @@ export const sanitize = (str, html = false) => {
   return str;
 };
 
-export const write_csv = async (content, f = "pages.txt") => {
-  try {
-    const filename = path.join(__dirname, "../outputs/", f);
+const escapeCsv = (value) => {
+  if (value == null) return "";
+  const str = String(value);
+  return /[,"\n\r]/.test(str) ? `"${str.replace(/"/g, '""')}"` : str;
+};
 
-    const row = [];
+export const write_csv = async (file, data, delim = "\t") => {
+  const filename = path.join(__dirname, file);
+  if (!data || data.length === 0) return fs.promises.writeFile(filename, "");
 
-    Object.values(content).forEach((c) => {
-      if (typeof c !== "string") c = sanitize(JSON.stringify(c));
-      if (typeof c === "string") c = sanitize(`"${c}"`, true);
-      row.push(force_utf8(c));
-    });
+  let headers, rows;
 
-    await fs.promises.appendFile(filename, row.join("\t") + "\n");
-
-    return true;
-  } catch (err) {
-    console.error(err);
-    return false;
+  if (Array.isArray(data[0])) {
+    // Array of arrays: first row = headers
+    [headers, ...rows] = data;
+  } else {
+    // Array of objects
+    headers = Object.keys(data[0]);
+    rows = data;
   }
+
+  const lines = [
+    headers.map(escapeCsv).join(delim),
+    ...rows.map((row) =>
+      headers
+        .map((h) => {
+          let val = Array.isArray(row) ? row[headers.indexOf(h)] : row[h];
+          if (val && typeof val === "object") val = JSON.stringify(val);
+          return escapeCsv(val);
+        })
+        .join(delim)
+    ),
+  ];
+
+  await fs.promises.writeFile(filename, lines.join("\n"), "utf-8");
 };
 
 export const write_file = async (data, file) => {
@@ -119,21 +142,14 @@ export const write_file = async (data, file) => {
   }
 };
 
-export const empty_file = async (file = "../outputs/pages.txt") => {
+export const empty_file = async (file, headers) => {
   try {
-    const filename = path.join(__dirname, file);
-    const headers = [
-      "location",
-      "location_home",
-      "page_path",
-      "meta_title",
-      "meta_description",
-      "page_type",
-      "content",
-    ];
+    const filename = path.join(__dirname, "../outputs", file);
+
     await fs.promises.writeFile(filename, headers.join("\t") + "\n", {
       flag: "w",
     });
+
     return true;
   } catch (err) {
     console.error(err);

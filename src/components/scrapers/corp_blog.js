@@ -1,12 +1,11 @@
-import { parseArgs } from "util";
 import * as utilities from "../utilities.js";
 
-export default async (url) => {
+export default async (page) => {
+  console.log(`Scraping content from ${page.path}.`);
   try {
-    const $ = await utilities.read_dom(url);
-
-    const page = $("html");
-
+    const $ = await utilities.read_dom(page.path);
+    if (!$) return false;
+    const html = $("html");
     const main = $("#MainZone");
 
     const sections = [
@@ -15,7 +14,7 @@ export default async (url) => {
         headers: main.find("h1").text(),
         paragraphs: $("#MainZone article div p")
           .map((i, el) => {
-            return `<p>${$(el).html().trim()}</p>`;
+            return `<p>${utilities.sanitize($(el).html().trim())}</p>`;
           })
           .get(),
       },
@@ -24,13 +23,14 @@ export default async (url) => {
     const content = {
       location: "corporate",
       home_page: "https://www.servicemasterrestore.com/",
-      page_url: url,
-      meta_title: page.find("title").text(),
-      meta_description: page.find("meta[name='description']").attr("content"),
-      page_type: utilities.page_type(url),
+      page_url: page.path,
+      last_modified: page.lastmod,
+      meta_title: html.find("title").text(),
+      meta_description: html.find("meta[name='description']").attr("content"),
+      page_type: utilities.page_type(page.path),
       blog_category: main.find(".category").text() || "",
       sections: sections,
-      images: page.find("figure img").attr("src"),
+      images: html.find("figure img").attr("src"),
     };
 
     return content;

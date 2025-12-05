@@ -1,26 +1,18 @@
 import * as utilities from "./utilities.js";
-import * as cheerio from "cheerio";
 import { XMLParser } from "fast-xml-parser";
 const parser = new XMLParser();
 
-import fs, { read } from "fs";
-import path, { parse } from "path";
-import urlModule from "url";
-import { fileURLToPath } from "url";
-
-import { dirname } from "path";
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import * as scraper from "./scrapers/index.js";
 
 export const load_sitemap = async (url) => {
-  const data = await get(url);
+  const data = await utilities.get(url);
   const xml = await parser.parse(data);
   const entries = xml.urlset.url.map((url, i) => {
     return { path: url.loc, last_mod: url.lastmod };
   });
 
-  await write_csv(entires, "../outputs/sitemap.csv");
-  return urls;
+  await utilities.write_csv("../outputs/sitemap.txt", entries);
+  return entries;
 };
 
 export const scrape_location_urls = async (location, callback) => {
@@ -32,11 +24,19 @@ export const scrape_location_urls = async (location, callback) => {
 };
 
 export const scrape_corporate_urls = async (pages) => {
-  return await Promise.all(
-    pages.map((u) =>
-      scrape(u, "https://www.servicemasterrestore.com/", "0000_corporate")
+  const content = await Promise.all(
+    pages.map((p) =>
+      scraper.corp_blog(
+        p,
+        "https://www.servicemasterrestore.com/",
+        "0000_corporate"
+      )
     )
   );
+
+  await utilities.write_csv("../outputs/corporate_pages.txt", content);
+
+  return true;
 };
 
 export const scrape = async (url, home_url, filename) => {
@@ -56,7 +56,7 @@ export const scrape = async (url, home_url, filename) => {
       page_url: url,
       meta_title: title,
       meta_description: page.find("meta[name='description']").attr("content"),
-      page_type: url == home_url ? "main" : page_type(url),
+      page_type: url == home_url ? "main" : utilities.page_type(url),
       sections: [],
       images: [],
     };
