@@ -8,6 +8,7 @@ import * as cheerio from "cheerio";
 
 import { dirname } from "path";
 import { json } from "stream/consumers";
+import { corp_blog } from "./scrapers";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -164,4 +165,9 @@ export const read_dom = async (url) => {
   } catch (err) {
     console.error(err);
   }
+};
+
+export const scrape_template = async (page_type) => {
+  if (page_type === "corp_blog") return "corp_blog";
+  return "basic";
 };
