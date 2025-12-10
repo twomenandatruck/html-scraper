@@ -14,15 +14,16 @@ import corporate_urls from "./corporate.json" with {type: "json" };
     `https://www.servicemasterrestore.com/sitemap.xml`
   );
 
-  /*
+  
   uat_group.forEach(async (location) => {
     location.pages = sitemap.filter((url) => url.includes(location.scorpion_url));
     const loc_results = await scrape_location_urls(location);
-    // console.log(results);
-  });*/
+  });
 
+  /*
   const filtered = sitemap.filter((obj) => 
     corporate_urls.some((val) => obj.path.includes(val))
   ); 
   const corp_results =  await scrape_corporate_urls(filtered);
+  */
 })();
