@@ -1,2 +1,3 @@
 import corp_blog from "./corp_blog.js";
-export { corp_blog };
+import basic from "./basic.js";
+export { corp_blog, basic };
