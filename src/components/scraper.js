@@ -15,10 +15,14 @@ export const load_sitemap = async (url) => {
   return entries;
 };
 
-export const scrape_location_urls = async (location, callback) => {
+export const scrape_location_urls = async (location) => {
   return await Promise.all(
     location.pages.map((u) =>
-      scrape(u, location.scorpion_url, location.location_name.replace(" ", "_"))
+      scrape({
+        path: u,
+        home: location.scorpion_url,
+        name: location.location_name.replace(" ", "_"),
+      })
     )
   );
 };
@@ -39,58 +43,12 @@ export const scrape_corporate_urls = async (pages) => {
   return true;
 };
 
-export const scrape = async (url, home_url, filename) => {
-  console.log(`Starting scrape for ${url}`);
+export const scrape = async (page) => {
+  console.log(`Starting scrape for ${page.path}`);
+  const page_type = utilities.page_type(page.path);
+  const template = utilities.scrape_template(page_type);
   try {
-    const $ = await utilities.read_dom(url);
-    const page = $("html");
-    const mainContent = $(
-      "#MainContent, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry"
-    );
-
-    const title = page.find("title").text();
-
-    const content = {
-      location: filename,
-      home_page: home_url,
-      page_url: url,
-      meta_title: title,
-      meta_description: page.find("meta[name='description']").attr("content"),
-      page_type: url == home_url ? "main" : utilities.page_type(url),
-      sections: [],
-      images: [],
-    };
-
-    const headers = mainContent
-      .find("h1,h2,h3,h4,h5")
-      .map((i, el) => {
-        return {
-          tag: $(el).prop("tagName"),
-          text: $(el).text().trim(),
-        };
-      })
-      .get();
-
-    let n = 0;
-    const sections = [];
-    while (n < headers.length) {
-      const content = $(`${headers[n].tag}:contains(${headers[n].text})`)
-        .nextUntil("H1,H2,H3,H4,H5")
-        .map((i, el) => {
-          return `<p>${$(el).html().trim()}</p>`;
-        })
-        .get();
-
-      sections.push({
-        index: n,
-        header: utilities.title_case(headers[n].text),
-        paragraphs: content.join(),
-      });
-
-      n++;
-      if (n === headers.length) break;
-    }
-    content.sections = sections;
+    const content = await scraper[template](page);
 
     /*
     const imageDir = path.join(
