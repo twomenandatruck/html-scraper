@@ -2,23 +2,49 @@ import * as utilities from "./utilities.js";
 import { XMLParser } from "fast-xml-parser";
 const parser = new XMLParser();
 
+import { pLimit } from "plimit-lit";
+const limit = pLimit(10);
+
 import * as scraper from "./scrapers/index.js";
+import { copyFileSync } from "fs";
 
 export const load_sitemap = async (url) => {
   const data = await utilities.get(url);
   const xml = await parser.parse(data);
   const entries = xml.urlset.url.map((url, i) => {
-    return { path: url.loc, last_mod: url.lastmod };
+    return { id: i, path: url.loc, last_mod: url.lastmod };
   });
 
   await utilities.write_csv("../outputs/sitemap.txt", entries);
   return entries;
 };
+4;
 
-export const scrape_location_urls = async (location, callback) => {
+/*
+ pages is expect to be an array of page objects, containing path, home, and lastmod
+*/
+export const scrape_pages = async (pages) => {
+  const results = await Promise.all(pages.map((p) => scrape(p)));
+
+  return results;
+};
+
+export const scrape_location_pages = async (locations) => {
+  const flattened = locations.flatMap((location) =>
+    location.pages.map((page) => ({
+      id: page.id,
+      path: page.path,
+      lastmod: page.last_mod,
+      home: location.scorpion_url,
+      name: location.location_name.replace(" ", "_"),
+    }))
+  );
+
   return await Promise.all(
-    location.pages.map((u) =>
-      scrape(u, location.scorpion_url, location.location_name.replace(" ", "_"))
+    flattened.map((page) =>
+      limit(() =>
+        scrape(page.id, page.path, page.lastmod, page.home, page.name)
+      )
     )
   );
 };
@@ -34,97 +60,26 @@ export const scrape_corporate_urls = async (pages) => {
     )
   );
 
-  await utilities.write_csv("../outputs/corporate_pages.txt", content);
-
-  return true;
+  return content;
 };
 
-export const scrape = async (url, home_url, filename) => {
-  console.log(`Starting scrape for ${url}`);
-  try {
-    const $ = await utilities.read_dom(url);
-    const page = $("html");
-    const mainContent = $(
-      "#MainContent, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry"
-    );
+export const scrape = async (id, path, lastmod, home, name) => {
+  console.log(`Starting scrape for ${path}`);
 
-    const title = page.find("title").text();
+  const page_type = utilities.page_type(path);
+  const page_category =
+    page_type === "service" ? utilities.service_category(path) : "";
+  const template = utilities.scrape_template(page_type);
 
-    const content = {
-      location: filename,
-      home_page: home_url,
-      page_url: url,
-      meta_title: title,
-      meta_description: page.find("meta[name='description']").attr("content"),
-      page_type: url == home_url ? "main" : utilities.page_type(url),
-      sections: [],
-      images: [],
-    };
+  const content = await scraper[template]({
+    id,
+    path,
+    lastmod,
+    home,
+    name,
+    page_type,
+    page_category,
+  });
 
-    const headers = mainContent
-      .find("h1,h2,h3,h4,h5")
-      .map((i, el) => {
-        return {
-          tag: $(el).prop("tagName"),
-          text: $(el).text().trim(),
-        };
-      })
-      .get();
-
-    let n = 0;
-    const sections = [];
-    while (n < headers.length) {
-      const content = $(`${headers[n].tag}:contains(${headers[n].text})`)
-        .nextUntil("H1,H2,H3,H4,H5")
-        .map((i, el) => {
-          return `<p>${$(el).html().trim()}</p>`;
-        })
-        .get();
-
-      sections.push({
-        index: n,
-        header: utilities.title_case(headers[n].text),
-        paragraphs: content.join(),
-      });
-
-      n++;
-      if (n === headers.length) break;
-    }
-    content.sections = sections;
-
-    /*
-    const imageDir = path.join(
-      __dirname,
-      "../outputs/images",
-      new URL(url).hostname
-    );
-
-   
-    await fs.mkdir(imageDir, { recursive: true });
-
-    await Promise.all(
-      page
-        .find("#MainContent img")
-        .map(async (i, el) => {
-          let src = $(el).attr("src");
-          if (src) {
-            src = urlModule.resolve(url, src);
-            content.images.push(src);
-            const imgPath = path.join(imageDir, path.basename(src));
-            const response = await fetch(src, { method: "GET" });
-            const buffer = await response.buffer();
-            fs.writeFileSync("image.jpg", buffer);
-          }
-        })
-        .get()
-    );
-    */
-
-    await write_csv(content);
-
-    return true;
-  } catch (err) {
-    console.error(err);
-    return false;
-  }
+  return content;
 };

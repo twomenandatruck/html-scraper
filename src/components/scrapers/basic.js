@@ -5,53 +5,51 @@ export default async (page) => {
     const $ = await utilities.read_dom(page.path);
     const html = $("html");
     const mainContent = $(
-      "#MainContent, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry"
+      "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone"
     );
 
     const title = $("title").text();
 
-    const content = {
-      location: page.name,
-      home_page: page.home,
-      page_url: page.path,
-      meta_title: title,
-      meta_description: html.find("meta[name='description']").attr("content"),
-      page_type:
-        page.path == page.home ? "main" : utilities.page_type(page.path),
-      sections: [],
-      images: [],
-    };
-
+    const rows = [];
     const headers = mainContent
       .find("h1,h2,h3,h4,h5")
       .map((i, el) => {
         return {
-          tag: $(el).prop("tagName"),
-          text: $(el).text().trim(),
+          tag: $(el).prop("tagName").toLowerCase(),
+          text: $(el).html().trim(),
         };
       })
       .get();
 
     let n = 0;
-    const sections = [];
     while (n < headers.length) {
-      const content = $(`${headers[n].tag}:contains(${headers[n].text})`)
+      const paragraphs = $(`${headers[n].tag}:contains(${headers[n].text})`)
         .nextUntil("H1,H2,H3,H4,H5")
         .map((i, el) => {
-          return `<p>${utilities.sanitize($(el).html().trim(), true)}</p>`;
+          return utilities.sanitize(`<p>${$(el).html().trim()}</p>`);
         })
         .get();
 
-      sections.push({
-        index: n,
-        header: utilities.title_case(headers[n].text),
-        paragraphs: content.join(),
+      rows.push({
+        location: page.name,
+        home_page: page.home,
+        last_modified: page.lastmod,
+        page_id: page.id,
+        page_url: page.path,
+        meta_title: title,
+        meta_description: html.find("meta[name='description']").attr("content"),
+        page_type: page.page_type,
+        service_category: page.page_category,
+        header: `<${headers[n].tag.toLowerCase()}>${utilities.title_case(
+          headers[n].text
+        )}</${headers[n].tag.toLowerCase()}>`,
+        paragraphs: paragraphs.join(),
+        images: [],
       });
 
       n++;
       if (n === headers.length) break;
     }
-    content.sections = sections;
 
     /*
         const imageDir = path.join(
@@ -80,7 +78,8 @@ export default async (page) => {
             .get()
         );
         */
-    return content;
+
+    return rows;
   } catch (err) {
     console.error(err);
     return false;
