@@ -856,7 +856,8 @@
     "location_name": "2271 Tacoma",
     "dba_name": "ServiceMaster of Tacoma",
     "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-tacoma",
-    "uat_group": true
+    "uat_group": true,
+    "test_group": true
   },
   {
     "location_id": "100144",

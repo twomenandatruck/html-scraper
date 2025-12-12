@@ -2,27 +2,49 @@ import * as utilities from "./utilities.js";
 import { XMLParser } from "fast-xml-parser";
 const parser = new XMLParser();
 
+import { pLimit } from "plimit-lit";
+const limit = pLimit(10);
+
 import * as scraper from "./scrapers/index.js";
+import { copyFileSync } from "fs";
 
 export const load_sitemap = async (url) => {
   const data = await utilities.get(url);
   const xml = await parser.parse(data);
   const entries = xml.urlset.url.map((url, i) => {
-    return { path: url.loc, last_mod: url.lastmod };
+    return { id: i, path: url.loc, last_mod: url.lastmod };
   });
 
   await utilities.write_csv("../outputs/sitemap.txt", entries);
   return entries;
 };
+4;
 
-export const scrape_location_urls = async (location) => {
+/*
+ pages is expect to be an array of page objects, containing path, home, and lastmod
+*/
+export const scrape_pages = async (pages) => {
+  const results = await Promise.all(pages.map((p) => scrape(p)));
+
+  return results;
+};
+
+export const scrape_location_pages = async (locations) => {
+  const flattened = locations.flatMap((location) =>
+    location.pages.map((page) => ({
+      id: page.id,
+      path: page.path,
+      lastmod: page.last_mod,
+      home: location.scorpion_url,
+      name: location.location_name.replace(" ", "_"),
+    }))
+  );
+
   return await Promise.all(
-    location.pages.map((u) =>
-      scrape({
-        path: u,
-        home: location.scorpion_url,
-        name: location.location_name.replace(" ", "_"),
-      })
+    flattened.map((page) =>
+      limit(() =>
+        scrape(page.id, page.path, page.lastmod, page.home, page.name)
+      )
     )
   );
 };
@@ -38,51 +60,26 @@ export const scrape_corporate_urls = async (pages) => {
     )
   );
 
-  await utilities.write_csv("../outputs/corporate_pages.txt", content);
-
-  return true;
+  return content;
 };
 
-export const scrape = async (page) => {
-  console.log(`Starting scrape for ${page.path}`);
-  const page_type = utilities.page_type(page.path);
+export const scrape = async (id, path, lastmod, home, name) => {
+  console.log(`Starting scrape for ${path}`);
+
+  const page_type = utilities.page_type(path);
+  const page_category =
+    page_type === "service" ? utilities.service_category(path) : "";
   const template = utilities.scrape_template(page_type);
-  try {
-    const content = await scraper[template](page);
 
-    /*
-    const imageDir = path.join(
-      __dirname,
-      "../outputs/images",
-      new URL(url).hostname
-    );
+  const content = await scraper[template]({
+    id,
+    path,
+    lastmod,
+    home,
+    name,
+    page_type,
+    page_category,
+  });
 
-   
-    await fs.mkdir(imageDir, { recursive: true });
-
-    await Promise.all(
-      page
-        .find("#MainContent img")
-        .map(async (i, el) => {
-          let src = $(el).attr("src");
-          if (src) {
-            src = urlModule.resolve(url, src);
-            content.images.push(src);
-            const imgPath = path.join(imageDir, path.basename(src));
-            const response = await fetch(src, { method: "GET" });
-            const buffer = await response.buffer();
-            fs.writeFileSync("image.jpg", buffer);
-          }
-        })
-        .get()
-    );
-    */
-
-    await write_csv(content);
-
-    return true;
-  } catch (err) {
-    console.error(err);
-    return false;
-  }
+  return content;
 };

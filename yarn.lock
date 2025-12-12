@@ -554,6 +554,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"plimit-lit@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "plimit-lit@npm:3.0.1"
+  dependencies:
+    queue-lit: "npm:^3.0.0"
+  checksum: 10c0/24b37c64efc1c15c5c416e9ea7e825d4c5c15e58cc2a45f14fcc3aeffe5c67bae960915a4a733c759f88d022117092d20dfa9ea3c4907aa38594c6375d94a75b
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^8.3.11":
   version: 8.5.6
   resolution: "postcss@npm:8.5.6"
@@ -576,6 +585,13 @@ __metadata:
   version: 1.1.0
   resolution: "proxy-from-env@npm:1.1.0"
   checksum: 10c0/fe7dd8b1bdbbbea18d1459107729c3e4a2243ca870d26d34c2c1bcd3e4425b7bcc5112362df2d93cc7fb9746f6142b5e272fd1cc5c86ddf8580175186f6ad42b
+  languageName: node
+  linkType: hard
+
+"queue-lit@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "queue-lit@npm:3.0.0"
+  checksum: 10c0/26b52d9cf6d429bdc66670528445c4d052823268b1015dcfba38b3ba4141b0455564edfd01c45d60aec10f05ee363720080bee1dcd05dbd42ac0740e04918373
   languageName: node
   linkType: hard
 
@@ -618,6 +634,7 @@ __metadata:
     fs: "npm:^0.0.1-security"
     node-fetch: "npm:^3.3.2"
     path: "npm:^0.12.7"
+    plimit-lit: "npm:^3.0.1"
     sanitize-html: "npm:^2.17.0"
     xml2js: "npm:^0.6.2"
   languageName: unknown
