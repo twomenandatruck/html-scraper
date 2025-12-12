@@ -1,13 +1,12 @@
 import fetch from "node-fetch";
-import fs, { read } from "fs";
-import path, { parse } from "path";
-import urlModule from "url";
+import fs from "fs";
+import path from "path";
 import { fileURLToPath } from "url";
 import sanitizeHtml from "sanitize-html";
 import * as cheerio from "cheerio";
 
 import { dirname } from "path";
-import { json } from "stream/consumers";
+import { execSync } from "child_process";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -36,21 +35,6 @@ export const title_case = (str) => {
   );
 };
 
-export const page_type = (url) => {
-  const service_terms = ["damage", "trauma", "bio-hazard", "services", "mold"];
-
-  if (url.includes("blog")) return "blog";
-  if (service_terms.some((t) => url.includes(t))) return "service";
-  if (url.includes("areas-we-serve")) return "city";
-  if (url.includes("team")) return "team";
-  if (url.includes("contact")) return "contact";
-  if (url.includes("about-us")) return "about";
-  if (url.includes("career")) return "careers";
-  if (url.includes("testimonials")) return "reviews";
-
-  return "other";
-};
-
 const force_utf8 = (str) => {
   return Buffer.from(str, "utf8").toString("utf8");
 };
@@ -64,10 +48,15 @@ const remove_tabs = (str) => {
   return str.replaceAll("\t", "");
 };
 
+const remove_empty_p = (str) => {
+  return str.replaceAll("<p></p>", "");
+};
+
 export const sanitize = (str, html = false) => {
   str = force_utf8(str);
   str = remove_line_breaks(str);
   str = remove_tabs(str);
+  str = remove_empty_p(str);
 
   str = html
     ? sanitizeHtml(str, {
@@ -97,6 +86,16 @@ const escapeCsv = (value) => {
   if (value == null) return "";
   const str = String(value);
   return /[,"\n\r]/.test(str) ? `"${str.replace(/"/g, '""')}"` : str;
+};
+
+export const write_row = async (file, data, delim = "\t") => {
+  const filename = path.join(__dirname, file);
+  const headers = Object.keys(data);
+  const values = Object.values(data);
+
+  console.log({ headers, values });
+
+  await fs.promises.appendFile(filename, values.join(delim) + "\n");
 };
 
 export const write_csv = async (file, data, delim = "\t") => {
@@ -142,21 +141,6 @@ export const write_file = async (data, file) => {
   }
 };
 
-export const empty_file = async (file, headers) => {
-  try {
-    const filename = path.join(__dirname, "../outputs", file);
-
-    await fs.promises.writeFile(filename, headers.join("\t") + "\n", {
-      flag: "w",
-    });
-
-    return true;
-  } catch (err) {
-    console.error(err);
-    return false;
-  }
-};
-
 export const read_dom = async (url) => {
   try {
     const data = await get(url);
@@ -164,4 +148,42 @@ export const read_dom = async (url) => {
   } catch (err) {
     console.error(err);
   }
+};
+
+export const page_type = (url) => {
+  const service_terms = ["damage", "trauma", "bio-hazard", "services", "mold"];
+
+  if (url.includes("blog")) return "blog";
+  if (service_terms.some((t) => url.includes(t))) return "service";
+  if (url.includes("areas-we-serve")) return "city";
+  if (url.includes("team")) return "team";
+  if (url.includes("contact")) return "contact";
+  if (url.includes("about-us")) return "about";
+  if (url.includes("career")) return "careers";
+  if (url.includes("testimonials")) return "reviews";
+
+  return "basic";
+};
+
+export const service_category = (url) => {
+  const audience = url.includes("residential") ? "residential" : "commercial";
+
+  if (["water-damage"].some((v) => url.includes(v))) return "water damage";
+  if (["fire-damage", "fire-and-smoke-damage"].some((v) => url.includes(v)))
+    return `${audience} fire damage`;
+  if (["weather-damange", "storm-damage"].some((v) => url.includes(v)))
+    return `${audience} weather damage`;
+  if (["mold"].some((v) => url.includes(v)))
+    return `${audience} mold remediation`;
+  if (["trauma", "bio-hazard"].some((v) => url.includes(v)))
+    return `${audience} bio-hazard`;
+  if (["odor-damage"].some((v) => url.includes(v)))
+    return `${audience} odor damange`;
+  // ... else ...
+  return `${audience} specialty`;
+};
+
+export const scrape_template = (page_type) => {
+  if (page_type === "corp_blog") return "corp_blog";
+  return "basic";
 };
