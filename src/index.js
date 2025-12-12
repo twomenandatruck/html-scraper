@@ -25,7 +25,7 @@ import { utimes } from "fs";
 
   const content_rows = (await scrape_location_pages(results)).flat();
 
-  await utilities.write_csv("../outputs.pages.txt");
+  await utilities.write_csv("../outputs/pages.txt");
   await utilities.write_csv("../outputs/pages.txt", Object.keys(content_rows[0]));
   await utilities.write_csv("../outputs/pages.txt",content_rows.flat());
   /*
