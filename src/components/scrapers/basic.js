@@ -16,7 +16,7 @@ export default async (page) => {
       .map((i, el) => {
         return {
           tag: $(el).prop("tagName").toLowerCase(),
-          text: utilities.sanitize($(el).html().trim(), true),
+          text: utilities.sanitize($(el).html().trim(), true, ["img"]),
         };
       })
       .get();
