@@ -53,7 +53,11 @@ const remove_empty_p = (str) => {
   return str.replaceAll("<p></p>", "");
 };
 
-export const sanitize = (str, html = false) => {
+export const sanitize = (
+  str,
+  html = false,
+  tags = ["b", "i", "em", "strong", "a", "p", "br", "li", "ol", "ul", "img"]
+) => {
   str = force_utf8(str);
   str = remove_line_breaks(str);
   str = remove_tabs(str);
@@ -61,22 +65,12 @@ export const sanitize = (str, html = false) => {
 
   str = html
     ? sanitizeHtml(str, {
-        allowedTags: [
-          "b",
-          "i",
-          "em",
-          "strong",
-          "a",
-          "p",
-          "br",
-          "li",
-          "ol",
-          "ul",
-        ],
+        allowedTags: tags,
         allowedAttributes: {
           a: ["href"],
+          img: ["src"],
         },
-        allowedIframeHostnames: ["www.youtube.com"],
+        allowedIframeHostnames: ["youtube.com"],
       })
     : str;
 
