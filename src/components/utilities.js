@@ -40,11 +40,12 @@ const force_utf8 = (str) => {
 };
 
 const remove_line_breaks = (str) => {
-  return str.replaceAll(/\r|\n/g, "");
+  str = str.replaceAll("\n", "");
+  str = str.replaceAll("\r", "");
+  return str;
 };
 
 const remove_tabs = (str) => {
-  str = str.replaceAll(/\t/g, "");
   return str.replaceAll("\t", "");
 };
 

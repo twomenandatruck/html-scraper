@@ -25,9 +25,9 @@ import { utimes } from "fs";
 
   const content_rows = (await scrape_location_pages(results)).flat();
 
-  await utilities.write_csv("../outputs/pages.txt");
-  await utilities.write_csv("../outputs/pages.txt", Object.keys(content_rows[0]));
-  await utilities.write_csv("../outputs/pages.txt",content_rows.flat());
+  await utilities.write_csv("../outputs/pages.txt");                                    // clear text file
+  await utilities.write_csv("../outputs/pages.txt", Object.keys(content_rows[0]));      // write headers to text file
+  await utilities.write_csv("../outputs/pages.txt", content_rows);                      // write content to text file
   /*
   const filtered = sitemap.filter((obj) => 
     corporate_urls.some((val) => obj.path.includes(val))
