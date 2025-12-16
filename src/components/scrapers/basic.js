@@ -8,7 +8,7 @@ export default async (page) => {
       "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone"
     );
 
-    const title = $("title").text();
+    const title = utilities.sanitize($("title").text());
 
     const rows = [];
     const headers = mainContent
@@ -16,13 +16,17 @@ export default async (page) => {
       .map((i, el) => {
         return {
           tag: $(el).prop("tagName").toLowerCase(),
-          text: $(el).html().trim(),
+          text: utilities.sanitize($(el).html().trim(), true),
         };
       })
       .get();
 
     let n = 0;
     while (n < headers.length) {
+      const header_text = utilities.sanitize(
+        utilities.title_case(headers[n].text)
+      );
+      const header_tag = headers[n].tag.toLowerCase();
       const paragraphs = $(`${headers[n].tag}:contains(${headers[n].text})`)
         .nextUntil("H1,H2,H3,H4,H5")
         .map((i, el) => {
@@ -33,16 +37,17 @@ export default async (page) => {
       rows.push({
         location: page.name,
         home_page: page.home,
-        last_modified: page.lastmod,
         page_id: page.id,
+        paragraph_index: n,
+        last_modified: page.lastmod,
         page_url: page.path,
         meta_title: title,
-        meta_description: html.find("meta[name='description']").attr("content"),
+        meta_description: utilities.sanitize(
+          html.find("meta[name='description']").attr("content")
+        ),
         page_type: page.page_type,
         service_category: page.page_category,
-        header: `<${headers[n].tag.toLowerCase()}>${utilities.title_case(
-          headers[n].text
-        )}</${headers[n].tag.toLowerCase()}>`,
+        header: `<${header_tag}>${header_text}</${header_tag}>`,
         paragraphs: paragraphs.join(),
         images: [],
       });
