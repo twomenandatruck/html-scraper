@@ -870,7 +870,8 @@
     "location_name": "2274 Woodinville",
     "dba_name": "ServiceMaster of Seattle",
     "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-of-seattle-woodinville",
-    "uat_group": true
+    "uat_group": true,
+    "test_group": true
   },
   {
     "location_id": "100146",
@@ -1591,7 +1592,8 @@
     "location_name": "4045 Waite Park",
     "dba_name": "ServiceMaster Restoration Services - St. Cloud-Waite Park",
     "scorpion_url": "https://www.servicemasterrestore.com/servicemaster-professional-services-saint-cloud",
-    "uat_group": true
+    "uat_group": true,
+    "test_group": true
   },
   {
     "location_id": "100266",
