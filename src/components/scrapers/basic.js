@@ -77,7 +77,7 @@ export default async (page) => {
         meta_description: utilities.sanitize(
           html.find("meta[name='description']").attr("content")
         ),
-        header: `<${header_tag}>${headers[n]}</${header_tag}>`,
+        header: `<${header_tag}>${header_text}</${header_tag}>`,
         paragraphs: paragraphs.join(),
         sub_menu: null,
         images: [],
