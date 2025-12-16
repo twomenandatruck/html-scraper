@@ -21,6 +21,13 @@ export default async (page) => {
       })
       .get();
 
+    const sub_menu = $("#SideNav ul")
+      .find("li")
+      .map((i, el) => {
+        return utilities.sanitize(`<li>${$(el).html().trim()}</li>`, true);
+      })
+      .get();
+
     let n = 0;
     while (n < headers.length) {
       const header_text = utilities.sanitize(
@@ -50,7 +57,7 @@ export default async (page) => {
         ),
         header: `<${header_tag}>${headers[n]}</${header_tag}>`,
         paragraphs: paragraphs.join(),
-        sub_menu: "",
+        sub_menu: `<ul>${sub_menu.join()}</ul>`,
         images: [],
       });
 
