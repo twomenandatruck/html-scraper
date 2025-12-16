@@ -151,7 +151,7 @@ export const read_dom = async (url) => {
   }
 };
 
-export const page_type = (url) => {
+export const page_type = (url, home = "/") => {
   const service_terms = ["damage", "trauma", "bio-hazard", "services", "mold"];
 
   if (url.includes("blog")) return "blog";
@@ -162,6 +162,7 @@ export const page_type = (url) => {
   if (url.includes("about-us")) return "about";
   if (url.includes("career")) return "careers";
   if (url.includes("testimonials")) return "reviews";
+  if (url == home) return "main";
 
   return "basic";
 };
