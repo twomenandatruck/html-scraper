@@ -28,6 +28,28 @@ export default async (page) => {
       })
       .get();
 
+    if (sub_menu.length > 0) {
+      rows.push({
+        location: page.name,
+        page_id: page.id,
+        paragraph_index: -1,
+        home_page: page.home,
+        last_modified: page.lastmod,
+        page_url: page.path,
+        page_type: page.page_type,
+        page_category: page.page_category,
+        page_audience: page.page_audience,
+        meta_title: title,
+        meta_description: utilities.sanitize(
+          html.find("meta[name='description']").attr("content")
+        ),
+        header: "sub-menu",
+        paragraphs: null,
+        sub_menu: `<ul>${sub_menu.join()}</ul>`,
+        images: null,
+      });
+    }
+
     let n = 0;
     while (n < headers.length) {
       const header_text = utilities.sanitize(
@@ -57,7 +79,7 @@ export default async (page) => {
         ),
         header: `<${header_tag}>${headers[n]}</${header_tag}>`,
         paragraphs: paragraphs.join(),
-        sub_menu: `<ul>${sub_menu.join()}</ul>`,
+        sub_menu: null,
         images: [],
       });
 
