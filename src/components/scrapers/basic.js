@@ -36,19 +36,21 @@ export default async (page) => {
 
       rows.push({
         location: page.name,
-        home_page: page.home,
         page_id: page.id,
         paragraph_index: n,
+        home_page: page.home,
         last_modified: page.lastmod,
         page_url: page.path,
+        page_type: page.page_type,
+        page_category: page.page_category,
+        page_audience: page.page_audience,
         meta_title: title,
         meta_description: utilities.sanitize(
           html.find("meta[name='description']").attr("content")
         ),
-        page_type: page.page_type,
-        service_category: page.page_category,
         header: `<${header_tag}>${header_text}</${header_tag}>`,
         paragraphs: paragraphs.join(),
+        sub_menu: "",
         images: [],
       });
 

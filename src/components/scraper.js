@@ -66,9 +66,10 @@ export const scrape_corporate_urls = async (pages) => {
 export const scrape = async (id, path, lastmod, home, name) => {
   console.log(`Starting scrape for ${path}`);
 
-  const page_type = utilities.page_type(path);
+  const page_type = utilities.page_type(path, home);
+  const page_audience = utilities.page_audience(path) || "all";
   const page_category =
-    page_type === "service" ? utilities.service_category(path) : "";
+    page_type === "service" ? utilities.page_category(path) : "";
   const template = utilities.scrape_template(page_type);
 
   const content = await scraper[template]({
@@ -79,6 +80,7 @@ export const scrape = async (id, path, lastmod, home, name) => {
     name,
     page_type,
     page_category,
+    page_audience,
   });
 
   return content;

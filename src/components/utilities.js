@@ -151,38 +151,38 @@ export const read_dom = async (url) => {
   }
 };
 
-export const page_type = (url, home = "/") => {
+export const page_type = (path, home = "/") => {
   const service_terms = ["damage", "trauma", "bio-hazard", "services", "mold"];
 
-  if (url.includes("blog")) return "blog";
-  if (service_terms.some((t) => url.includes(t))) return "service";
-  if (url.includes("areas-we-serve")) return "city";
-  if (url.includes("team")) return "team";
-  if (url.includes("contact")) return "contact";
-  if (url.includes("about-us")) return "about";
-  if (url.includes("career")) return "careers";
-  if (url.includes("testimonials")) return "reviews";
-  if (url == home) return "main";
+  if (path.includes("blog")) return "blog";
+  if (service_terms.some((t) => path.includes(t))) return "service";
+  if (path.includes("areas-we-serve")) return "city";
+  if (path.includes("team")) return "team";
+  if (path.includes("contact")) return "contact";
+  if (path.includes("about-us")) return "about";
+  if (path.includes("career")) return "careers";
+  if (path.includes("testimonials")) return "reviews";
+  if (`${path}` == `${home}/`) return "main";
 
   return "basic";
 };
 
-export const service_category = (url) => {
-  const audience = url.includes("residential") ? "residential" : "commercial";
-
+export const page_category = (url) => {
   if (["water-damage"].some((v) => url.includes(v))) return "water damage";
   if (["fire-damage", "fire-and-smoke-damage"].some((v) => url.includes(v)))
-    return `${audience} fire damage`;
+    return `fire damage`;
   if (["weather-damange", "storm-damage"].some((v) => url.includes(v)))
-    return `${audience} weather damage`;
-  if (["mold"].some((v) => url.includes(v)))
-    return `${audience} mold remediation`;
+    return `weather damage`;
+  if (["mold"].some((v) => url.includes(v))) return `mold remediation`;
   if (["trauma", "bio-hazard"].some((v) => url.includes(v)))
-    return `${audience} bio-hazard`;
-  if (["odor-damage"].some((v) => url.includes(v)))
-    return `${audience} odor damange`;
+    return `bio-hazard`;
+  if (["odor-damage"].some((v) => url.includes(v))) return `odor damange`;
   // ... else ...
-  return `${audience} specialty`;
+  return `specialty`;
+};
+
+export const page_audience = (url) => {
+  return url.includes("residential") ? "residential" : "commercial";
 };
 
 export const scrape_template = (page_type) => {
