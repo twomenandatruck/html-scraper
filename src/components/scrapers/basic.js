@@ -83,7 +83,6 @@ export default async (page) => {
       if (el.tag.includes('h')) {
         if (i > 0) {
           // this is a new header, push all paragraphs and reset collection.
-          console.log('closing the row')
           rows.push(row);
           row = new_row(page);
         }
