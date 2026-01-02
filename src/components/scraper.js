@@ -85,3 +85,5 @@ export const scrape = async (id, path, lastmod, home, name) => {
 
   return content;
 };
+
+//console.log(await scrape(1, 'https://www.servicemasterrestore.com/servicemaster-of-tacoma/why-us/about-us/', '2025-01-02', 'https://www.servicemasterrestore.com/servicemaster-of-tacoma/', 'tacoma'));

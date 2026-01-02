@@ -1,28 +1,38 @@
 import * as utilities from "../utilities.js";
 
+const new_row = (page) => {
+  return {
+    location: page.name,
+    page_id: page.id,
+    paragraph_index: -1,
+    home_page: page.home,
+    last_modified: page.lastmod,
+    page_url: page.path,
+    page_type: page.page_type,
+    page_category: page.page_category,
+    page_audience: page.page_audience,
+    meta_title: page.title,
+    meta_description: page.desc,
+    header: null,
+    paragraphs: "",
+    sub_menu: null,
+    images: null,
+  }
+}
+
 export default async (page) => {
   try {
     const $ = await utilities.read_dom(page.path);
     const html = $("html");
-    const mainContent = $(
-      "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone"
-    );
 
-    const title = utilities.sanitize($("title").text());
+    page.title = utilities.sanitize($("title").text());
+    page.desc = utilities.sanitize(html.find("meta[name='description']").attr("content"));
 
     const rows = [];
-    const headers = mainContent
-      .find("h1,h2,h3,h4,h5")
-      .map((i, el) => {
-        return {
-          tag: $(el).prop("tagName").toLowerCase(),
-          text: utilities.sanitize($(el).html().trim(), true, ["img"]),
-        };
-      })
-      .get();
 
-    const sub_menu = $("#SideNav > ul")
-      .find("li")
+    // check for a sub-nav on the page
+    const sub_menu = $("#SideNav")
+      .find("ul:first-child")
       .map((i, el) => {
         return utilities.sanitize(`<li>${$(el).html().trim()}</li>`, true);
       })
@@ -39,53 +49,55 @@ export default async (page) => {
         page_type: page.page_type,
         page_category: page.page_category,
         page_audience: page.page_audience,
-        meta_title: title,
-        meta_description: utilities.sanitize(
-          html.find("meta[name='description']").attr("content")
-        ),
+        meta_title: page.title,
+        meta_description: page.desc,
         header: "sub-menu",
-        paragraphs: null,
-        sub_menu: `<ul>${sub_menu.join()}</ul>`,
+        paragraphs: "",
+        sub_menu: `<ul>${sub_menu.join("")}</ul>`,
         images: null,
       });
     }
 
-    let n = 0;
-    while (n < headers.length) {
-      const header_text = utilities.sanitize(
-        utilities.title_case(headers[n].text)
-      );
-      const header_tag = headers[n].tag.toLowerCase();
-      const paragraphs = $(`${headers[n].tag}:contains(${headers[n].text})`)
-        .nextUntil("H1,H2,H3,H4,H5")
-        .map((i, el) => {
-          return utilities.sanitize(`<p>${$(el).html().trim()}</p>`);
-        })
-        .get();
+    // look for the content elements on the page
+    const mainContent = $(
+      "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone"
+    );
+    const elements = mainContent.find("h1,h2,h3,h4,h5,p").map((i, el) => {
+      return {
+        tag: $(el).prop("tagName").toLowerCase(),
+        value: $(el).html()
+      }
+    })
+      .get();
 
-      rows.push({
-        location: page.name,
-        page_id: page.id,
-        paragraph_index: n,
-        home_page: page.home,
-        last_modified: page.lastmod,
-        page_url: page.path,
-        page_type: page.page_type,
-        page_category: page.page_category,
-        page_audience: page.page_audience,
-        meta_title: title,
-        meta_description: utilities.sanitize(
-          html.find("meta[name='description']").attr("content")
-        ),
-        header: `<${header_tag}>${header_text}</${header_tag}>`,
-        paragraphs: paragraphs.join(),
-        sub_menu: null,
-        images: [],
-      });
+    let row = new_row(page);
+    let h, i = 0;
+    while (i < elements.length) {
+      const el = elements[i];
 
-      n++;
-      if (n === headers.length) break;
+      if (el.tag == 'p') {
+        // another paragraph tag, add it!
+        row.paragraphs += `<${el.tag}>${utilities.sanitize(el.value, true)}</${el.tag}>`;
+      }
+
+      if (el.tag.includes('h')) {
+        if (i > 0) {
+          // this is a new header, push all paragraphs and reset collection.
+          console.log('closing the row')
+          rows.push(row);
+          row = new_row(page);
+        }
+
+        // asign the new header
+        row.header = `<${el.tag}>${utilities.sanitize(el.value, true, ['img'])}</${el.tag}>`
+        row.paragraph_index = h++;
+      }
+
+      if (i > elements.length) break;
+      i++;
     }
+    // push remaining content into rows
+    rows.push(row);
 
     /*
         const imageDir = path.join(
