@@ -21,7 +21,7 @@ export default async (page) => {
       })
       .get();
 
-    const sub_menu = $("#SideNav ul")
+    const sub_menu = $("#SideNav > ul")
       .find("li")
       .map((i, el) => {
         return utilities.sanitize(`<li>${$(el).html().trim()}</li>`, true);

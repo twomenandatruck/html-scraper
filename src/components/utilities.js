@@ -146,7 +146,7 @@ export const read_dom = async (url) => {
 };
 
 export const page_type = (path, home = "/") => {
-  const service_terms = ["damage", "trauma", "bio-hazard", "services", "mold"];
+  const service_terms = ["damage", "trauma", "bio-hazard", "mold"];
 
   if (path.includes("blog")) return "blog";
   if (service_terms.some((t) => path.includes(t))) return "service";
