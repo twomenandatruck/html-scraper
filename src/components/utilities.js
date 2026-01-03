@@ -68,7 +68,7 @@ export const sanitize = (
         allowedTags: tags,
         allowedAttributes: {
           a: ["href"],
-          img: ["src"],
+          img: ["src", "alt", "data-src"],
         },
         allowedIframeHostnames: ["youtube.com"],
       })
