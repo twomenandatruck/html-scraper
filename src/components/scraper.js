@@ -86,6 +86,8 @@ export const scrape = async (id, path, lastmod, home, name) => {
   return content;
 };
 
+/**** Use this for testing an individual page */
+/*
 console.log(
   await scrape(
     1,
@@ -95,4 +97,4 @@ console.log(
     "tacoma"
   )
 );
-
+*/
