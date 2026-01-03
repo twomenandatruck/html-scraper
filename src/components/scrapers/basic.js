@@ -17,8 +17,8 @@ const new_row = (page) => {
     paragraphs: "",
     sub_menu: null,
     images: null,
-  }
-}
+  };
+};
 
 export default async (page) => {
   try {
@@ -26,7 +26,9 @@ export default async (page) => {
     const html = $("html");
 
     page.title = utilities.sanitize($("title").text());
-    page.desc = utilities.sanitize(html.find("meta[name='description']").attr("content"));
+    page.desc = utilities.sanitize(
+      html.find("meta[name='description']").attr("content")
+    );
 
     const rows = [];
 
@@ -60,15 +62,19 @@ export default async (page) => {
 
     // look for the content elements on the page
     const mainContent = $(
-      "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone"
+      "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone, #LocalStaffSystemV1"
     );
-    const elements = mainContent.find("h1,h2,h3,h4,h5,p").map((i, el) => {
-      return {
-        tag: $(el).prop("tagName").toLowerCase(),
-        value: $(el).html()
-      }
-    })
+    const elements = mainContent
+      .find("h1,h2,h3,h4,h5,p,ul")
+      .map((i, el) => {
+        return {
+          tag: $(el).prop("tagName").toLowerCase(),
+          value: $(el).html(),
+        };
+      })
       .get();
+
+    console.log(elements);
 
     let row = new_row(page);
     let h = 0;
@@ -76,12 +82,14 @@ export default async (page) => {
     while (i < elements.length) {
       const el = elements[i];
 
-      if (el.tag == 'p') {
+      if (el.tag == "p" || el.tag == "ul") {
         // another paragraph tag, add it!
-        row.paragraphs += `<${el.tag}>${utilities.sanitize(el.value, true)}</${el.tag}>`;
+        row.paragraphs += `<${el.tag}>${utilities.sanitize(el.value, true)}</${
+          el.tag
+        }>`;
       }
 
-      if (el.tag.includes('h')) {
+      if (el.tag.includes("h")) {
         if (i > 0) {
           // this is a new header, push all paragraphs and reset collection.
           rows.push(row);
@@ -89,7 +97,9 @@ export default async (page) => {
         }
 
         // asign the new header
-        row.header = `<${el.tag}>${utilities.sanitize(el.value, true, ['img'])}</${el.tag}>`
+        row.header = `<${el.tag}>${utilities.sanitize(el.value, true, [
+          "img",
+        ])}</${el.tag}>`;
         row.paragraph_index = h++;
       }
 
