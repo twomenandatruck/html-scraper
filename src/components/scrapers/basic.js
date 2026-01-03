@@ -74,8 +74,6 @@ export default async (page) => {
       })
       .get();
 
-    console.log(elements);
-
     let row = new_row(page);
     let h = 0;
     let i = 0;
