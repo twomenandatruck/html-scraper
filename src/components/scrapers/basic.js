@@ -71,7 +71,8 @@ export default async (page) => {
       .get();
 
     let row = new_row(page);
-    let h, i = 0;
+    let h = 0;
+    let i = 0;
     while (i < elements.length) {
       const el = elements[i];
 
