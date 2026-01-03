@@ -107,6 +107,12 @@ export default async (page) => {
     // push remaining content into rows
     rows.push(row);
 
+    // check for an empty page before we send back the content
+    const count_p = rows.filter((obj) => obj.paragraphs.trim() !== "");
+    if (count_p.length == 0) console.warn(`Paragraphs empty on ${page.path}.`);
+    if (count_p.length > 0)
+      console.log(`Extracted ${count_p.length} paragraphs from ${page.path}.`);
+
     /*
         const imageDir = path.join(
           __dirname,
