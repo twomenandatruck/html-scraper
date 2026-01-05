@@ -5,7 +5,7 @@ import {
 } from "./components/scraper.js";
 
 import locations from "./locations.json"  with { type: "json" };
-const uat_group = locations.filter((l) => l.test_group === true);
+const uat_group = locations.filter((l) => l.uat_group === true);
 
 import * as utilities from "./components/utilities.js";
 
