@@ -14,5 +14,8 @@
     "plimit-lit": "^3.0.1",
     "sanitize-html": "^2.17.0",
     "xml2js": "^0.6.2"
+  },
+  "scripts": {
+    "go": "node ./src/index.js"
   }
 }
