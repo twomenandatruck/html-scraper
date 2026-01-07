@@ -34,7 +34,7 @@ export const scrape_location_pages = async (locations) => {
     location.pages.map((page) => ({
       id: page.id,
       path: page.path,
-      lastmod: page.last_mod,
+      lastmod: page.lastmod,
       home: location.scorpion_url,
       name: location.location_name.replace(" ", "_"),
     }))
@@ -50,22 +50,22 @@ export const scrape_location_pages = async (locations) => {
 };
 
 export const scrape_corporate_urls = async (pages) => {
-  const content = await Promise.all(
+  return await Promise.all(
     pages.map((p) =>
-      scraper.corp_blog(
-        p,
-        "https://www.servicemasterrestore.com/",
-        "0000_corporate"
+      limit(() =>
+        scrape(
+          100000,
+          p.path,
+          p.lastmod,
+          "https://www.servicemasterrestore.com/",
+          "corporate"
+        )
       )
     )
   );
-
-  return content;
 };
 
 export const scrape = async (id, path, lastmod, home, name) => {
-  console.log(`Starting scrape for ${path}`);
-
   const page_type = utilities.page_type(path, home);
   const page_audience = utilities.page_audience(path) || "all";
   const page_category =
