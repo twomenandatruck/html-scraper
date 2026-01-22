@@ -40,7 +40,7 @@ const run_corp = async (sitemap) => {
     `https://www.servicemasterrestore.com/sitemap.xml`
   );
 
-  // await run_local(sitemap);
+  await run_local(sitemap);
 
   await run_corp(sitemap);
 })();
