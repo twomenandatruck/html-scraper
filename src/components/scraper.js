@@ -34,7 +34,7 @@ export const scrape_location_pages = async (locations) => {
     location.pages.map((page) => ({
       id: page.id,
       path: page.path,
-      lastmod: page.lastmod,
+      lastmod: page.last_mod,
       home: location.scorpion_url,
       name: location.location_name.replace(" ", "_"),
     }))
@@ -54,7 +54,7 @@ export const scrape_corporate_urls = async (pages) => {
     pages.map((p) =>
       limit(() =>
         scrape(
-          100000,
+          p.id,
           p.path,
           p.lastmod,
           "https://www.servicemasterrestore.com/",
