@@ -8,9 +8,11 @@ const new_row = (page) => {
     home_page: page.home,
     last_modified: page.lastmod,
     page_url: page.path,
-    page_type: page.page_type,
-    page_category: page.page_category,
-    page_audience: page.page_audience,
+    page_type: page.classification.page_type,
+    city_sub_page: page.classification.city_sub_page,
+    primary_category: page.classification.primary_category,
+    sub_category: page.classification.sub_category,
+    page_audience: page.classification.audience,
     meta_title: page.title,
     meta_description: page.desc,
     header: null,
@@ -27,7 +29,7 @@ export default async (page) => {
 
     page.title = utilities.sanitize($("title").text());
     page.desc = utilities.sanitize(
-      html.find("meta[name='description']").attr("content")
+      html.find("meta[name='description']").attr("content"),
     );
 
     const rows = [];
@@ -41,29 +43,19 @@ export default async (page) => {
       .get();
 
     if (sub_menu.length > 0) {
-      rows.push({
-        location: page.name,
-        page_id: page.id,
-        paragraph_index: -1,
-        home_page: page.home,
-        last_modified: page.lastmod,
-        page_url: page.path,
-        page_type: page.page_type,
-        page_category: page.page_category,
-        page_audience: page.page_audience,
-        meta_title: page.title,
-        meta_description: page.desc,
-        header: "sub-menu",
-        paragraphs: "",
-        sub_menu: `<ul>${sub_menu.join("")}</ul>`,
-        images: null,
-      });
+      let row = new_row(page);
+      row.paragraph_index = -1;
+      row.header = "sub-menu";
+      row.paragraphs = "";
+      row.sub_menu = `<ul>${sub_menu.join("")}</ul>`;
+      rows.push(row);
     }
 
     // look for the content elements on the page
     const mainContent = $(
-      "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone, #LocalStaffSystemV1"
+      "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone, #LocalStaffSystemV1",
     );
+
     const elements = mainContent
       .find("h1,h2,h3,h4,h5,p,ul")
       .map((i, el) => {

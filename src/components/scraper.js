@@ -37,15 +37,15 @@ export const scrape_location_pages = async (locations) => {
       lastmod: page.last_mod,
       home: location.scorpion_url,
       name: location.location_name.replace(" ", "_"),
-    }))
+    })),
   );
 
   return await Promise.all(
     flattened.map((page) =>
       limit(() =>
-        scrape(page.id, page.path, page.lastmod, page.home, page.name)
-      )
-    )
+        scrape(page.id, page.path, page.lastmod, page.home, page.name),
+      ),
+    ),
   );
 };
 
@@ -58,18 +58,19 @@ export const scrape_corporate_urls = async (pages) => {
           p.path,
           p.lastmod,
           "https://www.servicemasterrestore.com/",
-          "corporate"
-        )
-      )
-    )
+          "corporate",
+        ),
+      ),
+    ),
   );
 };
 
 export const scrape = async (id, path, lastmod, home, name) => {
-  const page_type = utilities.page_type(path, home);
-  const page_audience = utilities.page_audience(path) || "all";
-  const page_category =
-    page_type === "service" ? utilities.page_category(path) : "";
+  const classification = utilities.classify_url(path);
+
+  const page_type = classification.page_type;
+  const page_audience = classification.audience;
+  const page_category = classification.primary_category;
   const template = utilities.scrape_template(page_type);
 
   const content = await scraper[template]({
@@ -81,6 +82,7 @@ export const scrape = async (id, path, lastmod, home, name) => {
     page_type,
     page_category,
     page_audience,
+    classification,
   });
 
   return content;
