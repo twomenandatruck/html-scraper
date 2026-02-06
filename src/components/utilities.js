@@ -6,7 +6,6 @@ import sanitizeHtml from "sanitize-html";
 import * as cheerio from "cheerio";
 
 import { dirname } from "path";
-import { execSync } from "child_process";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -31,7 +30,7 @@ export const get = async (url) => {
 export const title_case = (str) => {
   return str.replace(
     /\w\S*/g,
-    (text) => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase()
+    (text) => text.charAt(0).toUpperCase() + text.substring(1).toLowerCase(),
   );
 };
 
@@ -56,7 +55,7 @@ const remove_empty_p = (str) => {
 export const sanitize = (
   str,
   html = false,
-  tags = ["b", "i", "em", "strong", "a", "p", "br", "li", "ol", "ul", "img"]
+  tags = ["b", "i", "em", "strong", "a", "p", "br", "li", "ol", "ul", "img"],
 ) => {
   str = force_utf8(str);
   str = remove_line_breaks(str);
@@ -117,7 +116,7 @@ export const write_csv = async (file, data, delim = "\t") => {
           if (val && typeof val === "object") val = JSON.stringify(val);
           return escapeCsv(val);
         })
-        .join(delim)
+        .join(delim),
     ),
   ];
 
@@ -146,7 +145,14 @@ export const read_dom = async (url) => {
 };
 
 export const page_type = (path, home = "/") => {
-  const service_terms = ["damage", "trauma", "bio-hazard", "mold"];
+  const service_terms = [
+    "damage",
+    "trauma",
+    "bio-hazard",
+    "mold",
+    "specialty-service",
+    "pre-loss",
+  ];
 
   if (path.includes("blog")) return "blog";
   if (service_terms.some((t) => path.includes(t))) return "service";
@@ -157,6 +163,7 @@ export const page_type = (path, home = "/") => {
   if (path.includes("career")) return "careers";
   if (path.includes("testimonials")) return "reviews";
   if (`${path}` == `${home}/`) return "main";
+  if (path.includes("faq")) return "faq";
 
   return "basic";
 };
@@ -171,15 +178,75 @@ export const page_category = (url) => {
   if (["trauma", "bio-hazard"].some((v) => url.includes(v)))
     return `bio-hazard`;
   if (["odor-damage"].some((v) => url.includes(v))) return `odor damange`;
+  if (["pre-loss"].some((v) => url.includes(v))) return `pre-loss`;
   // ... else ...
   return `specialty`;
 };
 
 export const page_audience = (url) => {
-  return url.includes("residential") ? "residential" : "commercial";
+  if (/\/residential\//i.test(url)) return "residential";
+  if (/\/commercial\//i.test(url)) return "commercial";
+  return "all";
+};
+
+export const classify_url = (url) => {
+  const pattern = new RegExp(
+    "^https?\:\/\/[^\/]+\/([^\/]+)?\/?(residential|commercial)\/([^/]+)(?:\/([^\/]+))?\/?$",
+  );
+
+  url = url.replaceAll("https://www.servicemasterrestore.com/", "");
+  url = url.replace(/\/$/, "");
+  const segments = url.split("/");
+
+  const classification = {
+    url: url,
+    location:
+      /commercial|residential|blog|blog-system|locations|why-us|video-center|dsi-locations|do-not-sell-or-share-my-personal-information|your-privacy-choices|privacy-policy|site-map/i.test(
+        segments[0],
+      )
+        ? "corporate"
+        : segments[0],
+    page_type: page_type(url),
+    city_sub_page: page_type(url) === "service" && /areas-we-serve/i.test(url),
+    audience: page_audience(url) || "all",
+    primary_category: "none",
+    sub_category: "none",
+  };
+
+  if (classification.page_type === "service") {
+    if (classification.location === "corporate") {
+      classification.primary_category = segments[1];
+      classification.sub_category = segments[2] || "";
+    } else {
+      classification.primary_category = segments[2];
+      classification.sub_category = segments[3] || "";
+    }
+  }
+
+  if (classification.page_type === "blog") {
+    if (classification.location === "corporate") {
+      classification.primary_category = segments[1];
+    }
+  }
+
+  return classification;
 };
 
 export const scrape_template = (page_type) => {
   if (page_type === "corp_blog") return "corp_blog";
   return "basic";
 };
+
+/*
+console.log(
+  classify_url(
+    // "https://www.servicemasterrestore.com/servicemaster-services-tyler/areas-we-serve/smith-county/water-damage/",
+    //"https://www.servicemasterrestore.com/servicemaster-fire-and-water-recovery-by-qrt/residential/specialty-services/trauma-and-biohazard/",
+    //"https://www.servicemasterrestore.com/residential/specialty-services/",
+    //"https://www.servicemasterrestore.com/blog/some-blog-title",
+    // "https://www.servicemasterrestore.com/servicemaster-fire-and-water-recovery-by-qrt/commercial/pre-loss-planning/",
+    // "https://www.servicemasterrestore.com/residential-reconstruction-services-faq/",
+    "https://www.servicemasterrestore.com/blog/water-damage/navigating-water-damage-insurance-claims-vs-paying-out-of-pocket/",
+  ),
+);
+*/
