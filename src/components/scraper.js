@@ -32,11 +32,11 @@ export const scrape_pages = async (pages) => {
 export const scrape_location_pages = async (locations) => {
   const flattened = locations.flatMap((location) =>
     location.pages.map((page) => ({
-      id: page.id,
+      id: page["Location ID"],
       path: page.path,
       lastmod: page.last_mod,
-      home: location.scorpion_url,
-      name: location.location_name.replace(" ", "_"),
+      home: location["Website URL"],
+      name: location["Internal Location Name"].replace(" ", "_"),
     })),
   );
 
@@ -66,7 +66,7 @@ export const scrape_corporate_urls = async (pages) => {
 };
 
 export const scrape = async (id, path, lastmod, home, name) => {
-  const classification = utilities.classify_url(path);
+  const classification = utilities.classify_url(path, home);
 
   const page_type = classification.page_type;
   const page_audience = classification.audience;

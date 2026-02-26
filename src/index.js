@@ -5,7 +5,6 @@ import {
 } from "./components/scraper.js";
 
 import locations from "./locations.json" with { type: "json" };
-const uat_group = locations.filter((l) => l.uat_group === true);
 const test_group = locations.filter((l) => l.test_group === true);
 
 import * as utilities from "./components/utilities.js";
@@ -15,7 +14,7 @@ const run_local = async (sitemap) => {
   // find matching pages from the sitemap
   const results = test_group.map((l) => ({
     ...l,
-    pages: sitemap.filter((p) => p.path.includes(l.scorpion_url)),
+    pages: sitemap.filter((p) => p.path.includes(l["Website URL"])),
   }));
 
   const content_rows = (await scrape_location_pages(results)).flat();
@@ -42,12 +41,26 @@ const run_corp = async (sitemap) => {
   await utilities.write_csv("../outputs/corp_pages.txt", corp_results);
 };
 
+const run_all = async (sitemap) => {
+  const results = (await scrape_corporate_urls(sitemap)).flat();
+  await utilities.write_csv("../outputs/all_pages.txt");
+  await utilities.write_csv(
+    "../outputs/all_pages.txt",
+    Object.keys(results[0]),
+  );
+  await utilities.write_csv("../outputs/all_pages.txt", results);
+};
+
 (async () => {
   const sitemap = await load_sitemap(
     `https://www.servicemasterrestore.com/sitemap.xml`,
+    //"https://www.srmcat.com/sitemap.xml",
+    //"https://www.srmcat.ca/sitemap.xml"
   );
 
-  await run_local(sitemap);
+  // await run_local(sitemap);
 
-  await run_corp(sitemap);
+  // await run_corp(sitemap);
+
+  await run_local(sitemap);
 })();
