@@ -53,7 +53,7 @@ export default async (page) => {
 
     // look for the content elements on the page
     const mainContent = $(
-      "#LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #MainContent, #ContentZone, #LocalStaffSystemV1",
+      "#MainZone, #LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #ArticlesV1Entry, #ArticlesV1Category, #MainContent, #ContentZone, #LocalStaffSystemV1, #OurTeamSystem, #FeaturedProjects",
     );
 
     const elements = mainContent

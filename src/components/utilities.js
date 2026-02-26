@@ -154,6 +154,7 @@ export const page_type = (path, home = "/") => {
     "pre-loss",
   ];
 
+  if (`/${path}` == `${home}`) return "main";
   if (path.includes("blog")) return "blog";
   if (service_terms.some((t) => path.includes(t))) return "service";
   if (path.includes("areas-we-serve")) return "city";
@@ -162,7 +163,6 @@ export const page_type = (path, home = "/") => {
   if (path.includes("about-us")) return "about";
   if (path.includes("career")) return "careers";
   if (path.includes("testimonials")) return "reviews";
-  if (`${path}` == `${home}/`) return "main";
   if (path.includes("faq")) return "faq";
 
   return "basic";
@@ -189,7 +189,7 @@ export const page_audience = (url) => {
   return "all";
 };
 
-export const classify_url = (url) => {
+export const classify_url = (url, home) => {
   const pattern = new RegExp(
     "^https?\:\/\/[^\/]+\/([^\/]+)?\/?(residential|commercial)\/([^/]+)(?:\/([^\/]+))?\/?$",
   );
@@ -206,7 +206,7 @@ export const classify_url = (url) => {
       )
         ? "corporate"
         : segments[0],
-    page_type: page_type(url),
+    page_type: page_type(url, home),
     city_sub_page: page_type(url) === "service" && /areas-we-serve/i.test(url),
     audience: page_audience(url) || "all",
     primary_category: "none",
