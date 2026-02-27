@@ -29,10 +29,10 @@ export const scrape_pages = async (pages) => {
   return results;
 };
 
-export const scrape_location_pages = async (locations) => {
+export const scrape_location_pages = async (locations, filename) => {
   const flattened = locations.flatMap((location) =>
     location.pages.map((page) => ({
-      id: page["Location ID"],
+      id: page.id,
       path: page.path,
       lastmod: page.last_mod,
       home: location["Website URL"],
@@ -43,13 +43,20 @@ export const scrape_location_pages = async (locations) => {
   return await Promise.all(
     flattened.map((page) =>
       limit(() =>
-        scrape(page.id, page.path, page.lastmod, page.home, page.name),
+        scrape(
+          page.id,
+          page.path,
+          page.lastmod,
+          page.home,
+          page.name,
+          filename,
+        ),
       ),
     ),
   );
 };
 
-export const scrape_corporate_urls = async (pages) => {
+export const scrape_corporate_urls = async (pages, filename) => {
   return await Promise.all(
     pages.map((p) =>
       limit(() =>
@@ -59,13 +66,14 @@ export const scrape_corporate_urls = async (pages) => {
           p.lastmod,
           "https://www.servicemasterrestore.com/",
           "corporate",
+          filename,
         ),
       ),
     ),
   );
 };
 
-export const scrape = async (id, path, lastmod, home, name) => {
+export const scrape = async (id, path, lastmod, home, name, filename) => {
   const classification = utilities.classify_url(path, home);
 
   const page_type = classification.page_type;
@@ -73,7 +81,7 @@ export const scrape = async (id, path, lastmod, home, name) => {
   const page_category = classification.primary_category;
   const template = utilities.scrape_template(page_type);
 
-  const content = await scraper[template]({
+  let content = await scraper[template]({
     id,
     path,
     lastmod,
@@ -85,7 +93,13 @@ export const scrape = async (id, path, lastmod, home, name) => {
     classification,
   });
 
-  return content;
+  if (!content || !Array.isArray(content)) return false;
+  content = content.sort((a, b) => a.paragraph_index - b.paragraph_index);
+
+  //console.log(content);
+  //exit();
+
+  return await utilities.write_rows(filename, content);
 };
 
 /**** Use this for testing an individual page */

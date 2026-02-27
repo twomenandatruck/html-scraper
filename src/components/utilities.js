@@ -55,7 +55,20 @@ const remove_empty_p = (str) => {
 export const sanitize = (
   str,
   html = false,
-  tags = ["b", "i", "em", "strong", "a", "p", "br", "li", "ol", "ul", "img"],
+  tags = [
+    "b",
+    "i",
+    "em",
+    "strong",
+    "a",
+    "p",
+    "br",
+    "li",
+    "ol",
+    "ul",
+    "img",
+    "div",
+  ],
 ) => {
   str = force_utf8(str);
   str = remove_line_breaks(str);
@@ -82,14 +95,22 @@ const escapeCsv = (value) => {
   return /[,"\n\r]/.test(str) ? `"${str.replace(/"/g, '""')}"` : str;
 };
 
+export const write_rows = (filename, data) => {
+  return Promise.all(data.map((r) => write_row(filename, r)));
+};
+
 export const write_row = async (file, data, delim = "\t") => {
   const filename = path.join(__dirname, file);
-  const headers = Object.keys(data);
-  const values = Object.values(data);
+  const values = Object.values(data).map((v) => {
+    return escapeCsv(v);
+  });
 
-  console.log({ headers, values });
+  await fs.promises.appendFile(filename, values.join(delim).trim() + "\n");
+};
 
-  await fs.promises.appendFile(filename, values.join(delim) + "\n");
+export const write_header = async (file, data, delim = "\t") => {
+  let filename = path.join(__dirname, file);
+  await fs.promises.writeFile(filename, Object.keys(data).join(delim) + "\n");
 };
 
 export const write_csv = async (file, data, delim = "\t") => {
@@ -230,6 +251,48 @@ export const classify_url = (url, home) => {
   }
 
   return classification;
+};
+
+export const define_page = (id, path, lastmod, home, name) => {
+  const classification = classify_url(path, home);
+
+  const page_type = classification.page_type;
+  const page_audience = classification.audience;
+  const page_category = classification.primary_category;
+
+  return {
+    id,
+    path,
+    lastmod,
+    home,
+    name,
+    page_type,
+    page_category,
+    page_audience,
+    classification,
+  };
+};
+
+export const new_row = (page) => {
+  return {
+    location: page.name,
+    page_id: page.id,
+    paragraph_index: -1,
+    home_page: page.home,
+    last_modified: page.lastmod,
+    page_url: page.path,
+    page_type: page.classification.page_type,
+    city_sub_page: page.classification.city_sub_page,
+    primary_category: page.classification.primary_category,
+    sub_category: page.classification.sub_category,
+    page_audience: page.classification.audience,
+    meta_title: page.title,
+    meta_description: page.desc,
+    header: null,
+    paragraphs: "",
+    sub_menu: null,
+    images: null,
+  };
 };
 
 export const scrape_template = (page_type) => {

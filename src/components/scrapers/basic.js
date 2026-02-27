@@ -1,26 +1,5 @@
 import * as utilities from "../utilities.js";
-
-const new_row = (page) => {
-  return {
-    location: page.name,
-    page_id: page.id,
-    paragraph_index: -1,
-    home_page: page.home,
-    last_modified: page.lastmod,
-    page_url: page.path,
-    page_type: page.classification.page_type,
-    city_sub_page: page.classification.city_sub_page,
-    primary_category: page.classification.primary_category,
-    sub_category: page.classification.sub_category,
-    page_audience: page.classification.audience,
-    meta_title: page.title,
-    meta_description: page.desc,
-    header: null,
-    paragraphs: "",
-    sub_menu: null,
-    images: null,
-  };
-};
+import { new_row } from "../utilities.js";
 
 export default async (page) => {
   try {
@@ -52,9 +31,10 @@ export default async (page) => {
     }
 
     // look for the content elements on the page
-    const mainContent = $(
-      "#MainZone, #LocalValuesV1, #LocalContentV1Content, #ReviewsSystemV1List, #BlogEntry, #ArticlesEntry, #ArticlesV1Entry, #ArticlesV1Category, #MainContent, #ContentZone, #LocalStaffSystemV1, #OurTeamSystem, #FeaturedProjects",
-    );
+    $(
+      "#HeaderZone, #FooterZone, #LocalMapDisplay, #CalloutV2B, #KnowUsPopOut",
+    ).remove();
+    const mainContent = $("body");
 
     const elements = mainContent
       .find("h1,h2,h3,h4,h5,p,ul")

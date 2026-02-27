@@ -117,7 +117,8 @@
     "Unpaid Phone": "",
     "Region": "NC",
     "CareerPlug Link": "https://servicemaster-restore-usa-careers.careerplug.com/jobs",
-    "Location Lead Notification Emails": "gloria@svmrestorationbymccoy.com; greg@svmrestorationbymccoy.com"
+    "Location Lead Notification Emails": "gloria@svmrestorationbymccoy.com; greg@svmrestorationbymccoy.com",
+    "test_group": true
   },
   {
     "Has local webpage": 1,
