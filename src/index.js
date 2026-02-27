@@ -10,12 +10,16 @@ const test_group = locations.filter((l) => l.test_group === true);
 import * as utilities from "./components/utilities.js";
 import corporate_urls from "./corporate.json" with { type: "json" };
 
+import exclusions from "./exclusions.json" with { type: "json" };
+
 const run_local = async (sitemap) => {
   // find matching pages from the sitemap
-  const results = test_group.map((l) => ({
-    ...l,
-    pages: sitemap.filter((p) => p.path.includes(l["Website URL"])),
-  }));
+  const results = locations
+    .filter((l) => l["Has local webpage"])
+    .map((l) => ({
+      ...l,
+      pages: sitemap.filter((p) => p.path.includes(l["Website URL"])),
+    }));
 
   const content_rows = (await scrape_location_pages(results)).flat();
 
