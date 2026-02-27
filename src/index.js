@@ -21,14 +21,26 @@ const run_local = async (sitemap) => {
       pages: sitemap.filter((p) => p.path.includes(l["Website URL"])),
     }));
 
-  const content_rows = (await scrape_location_pages(results)).flat();
+  // use page, and row defining functions to create a header row
+  let tmp = results[0];
+  let first_page = utilities.new_row(
+    utilities.define_page(
+      tmp.pages[0].id,
+      tmp.pages[0].path,
+      tmp.pages[0].last_mod,
+      tmp["Website URL"],
+      tmp["Internal Location Name"],
+    ),
+  );
 
-  await utilities.write_csv("../outputs/pages.txt"); // clear text file
-  await utilities.write_csv(
-    "../outputs/pages.txt",
-    Object.keys(content_rows[0]),
-  ); // write headers to text file
-  await utilities.write_csv("../outputs/pages.txt", content_rows); // write content to text file
+  let filename = "../outputs/location_pages.txt";
+
+  // clear file and write headers
+  await utilities.write_header(filename, first_page);
+  first_page = null;
+
+  // scrape pages
+  await scrape_location_pages(results, filename);
 };
 
 const run_corp = async (sitemap) => {
