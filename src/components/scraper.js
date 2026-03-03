@@ -94,12 +94,20 @@ export const scrape = async (id, path, lastmod, home, name, filename) => {
   });
 
   if (!content || !Array.isArray(content)) return false;
-  content = content.sort((a, b) => a.paragraph_index - b.paragraph_index);
+  content.sort((a, b) => a.paragraph_index - b.paragraph_index);
 
   //console.log(content);
   //exit();
 
   return await utilities.write_rows(filename, content);
+};
+
+export const scrape_map_links = async (urls) => {
+  return await Promise.all(
+    urls.map(async (u) => {
+      return { path: u, map_link: await scraper["map_links"](u) };
+    }),
+  );
 };
 
 /**** Use this for testing an individual page */

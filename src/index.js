@@ -1,6 +1,7 @@
 import {
   scrape_location_pages,
   scrape_corporate_urls,
+  scrape_map_links,
   load_sitemap,
 } from "./components/scraper.js";
 
@@ -11,6 +12,15 @@ import * as utilities from "./components/utilities.js";
 import corporate_urls from "./corporate.json" with { type: "json" };
 
 import exclusions from "./exclusions.json" with { type: "json" };
+
+const map_links = async (locations) => {
+  const results = locations
+    .filter((l) => l["Has local webpage"])
+    .map((l) => l["Website URL"]);
+
+  const links = await scrape_map_links(results);
+  console.log(links);
+};
 
 const run_local = async (sitemap) => {
   // find matching pages from the sitemap
@@ -78,5 +88,8 @@ const run_all = async (sitemap) => {
 
   // await run_corp(sitemap);
 
-  await run_local(sitemap);
+  // await run_local(sitemap);
+
+  const results = await map_links(locations);
+  utilities.write_csv("../outputs/map_links.txt", results, "\t");
 })();
