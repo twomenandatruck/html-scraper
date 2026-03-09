@@ -32,7 +32,7 @@ export default async (page) => {
 
     // look for the content elements on the page
     $(
-      "#HeaderZone, #FooterZone, #SideZone, #AccoladesV1List, #LocalMapDisplay, #CalloutV2B, #KnowUsPopOut, #AccessOptionsMenu, #help_center_widget_con, .text-highlight.v2, .thin.anm_fl.ui-repeater",
+      "#HeaderZone, #FooterZone, #SideZone, #AccoladesV1List, #AccessibilityZone, #LocalMapDisplay, #CalloutV2B, #KnowUsPopOut, #help_center_widget_con, .text-highlight.v2, .thin.anm_fl.ui-repeater",
     ).remove();
     const mainContent = $("body");
 
