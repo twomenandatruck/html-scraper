@@ -186,6 +186,7 @@ export const page_type = (path, home = "/") => {
   if (path.includes("career")) return "careers";
   if (path.includes("testimonials")) return "reviews";
   if (path.includes("faq")) return "faq";
+  if (/\/residential|commercial\/$/i.test(path)) return "service";
 
   return "basic";
 };
