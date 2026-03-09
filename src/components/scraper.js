@@ -56,18 +56,15 @@ export const scrape_location_pages = async (locations, filename) => {
   );
 };
 
-export const scrape_corporate_urls = async (pages, filename) => {
+export const scrape_corporate_urls = async (
+  pages,
+  home_path = "https://www.servicemasterrestore.com/",
+  filename,
+) => {
   return await Promise.all(
     pages.map((p) =>
       limit(() =>
-        scrape(
-          p.id,
-          p.path,
-          p.lastmod,
-          "https://www.servicemasterrestore.com/",
-          "corporate",
-          filename,
-        ),
+        scrape(p.id, p.path, p.lastmod, home_path, "corporate", filename),
       ),
     ),
   );

@@ -19,7 +19,7 @@ const map_links = async (locations) => {
     .map((l) => l["Website URL"]);
 
   const links = await scrape_map_links(results);
-  console.log(links);
+  await utilities.write_csv("../outputs/map_links.txt", links, "\t");
 };
 
 const run_local = async (sitemap) => {
@@ -67,29 +67,38 @@ const run_corp = async (sitemap) => {
   await utilities.write_csv("../outputs/corp_pages.txt", corp_results);
 };
 
-const run_all = async (sitemap) => {
-  const results = (await scrape_corporate_urls(sitemap)).flat();
-  await utilities.write_csv("../outputs/all_pages.txt");
-  await utilities.write_csv(
-    "../outputs/all_pages.txt",
-    Object.keys(results[0]),
+const run_all = async (sitemap, home_path, filename) => {
+  // use page, and row defining functions to create a header row
+  let first_page = utilities.new_row(
+    utilities.define_page(
+      sitemap[0].id,
+      sitemap[0].path,
+      sitemap[0].last_mod,
+      home_path,
+      "corporate",
+    ),
   );
-  await utilities.write_csv("../outputs/all_pages.txt", results);
+
+  // clear file and write headers
+  await utilities.write_header(`../outputs/${filename}`, first_page);
+  first_page = null;
+
+  // scrape pages
+  await scrape_corporate_urls(sitemap, home_path, filename);
 };
 
 (async () => {
   const sitemap = await load_sitemap(
     `https://www.servicemasterrestore.com/sitemap.xml`,
     //"https://www.srmcat.com/sitemap.xml",
-    //"https://www.srmcat.ca/sitemap.xml"
+    // "https://www.srmcat.ca/sitemap.xml",
   );
 
   // await run_local(sitemap);
 
   // await run_corp(sitemap);
 
-  // await run_local(sitemap);
+  // await run_all(sitemap, "https://www.srmcat.ca", "srm_cat_ca.txt");
 
-  const results = await map_links(locations);
-  utilities.write_csv("../outputs/map_links.txt", results, "\t");
+  // await map_links(locations);
 })();
