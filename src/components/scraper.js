@@ -78,7 +78,7 @@ export const scrape = async (id, path, lastmod, home, name, filename) => {
   const page_category = classification.primary_category;
   const template = utilities.scrape_template(page_type);
 
-  let content = await scraper[template]({
+  let content = await scraper["basic"]({
     id,
     path,
     lastmod,

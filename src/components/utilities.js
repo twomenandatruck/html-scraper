@@ -110,6 +110,7 @@ export const write_row = async (file, data, delim = "\t") => {
 
 export const write_header = async (file, data, delim = "\t") => {
   let filename = path.join(__dirname, file);
+  await fs.promises.writeFile(filename, ""); // clear the file
   await fs.promises.writeFile(filename, Object.keys(data).join(delim) + "\n");
 };
 
@@ -296,7 +297,6 @@ export const new_row = (page) => {
 };
 
 export const scrape_template = (page_type) => {
-  if (page_type === "corp_blog") return "corp_blog";
   return "basic";
 };
 

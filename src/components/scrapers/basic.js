@@ -31,9 +31,22 @@ export default async (page) => {
     }
 
     // look for the content elements on the page
-    $(
-      "#HeaderZone, #FooterZone, #SideZone, #AccoladesV1List, #AccessibilityZone, #LocalMapDisplay, #CalloutV2B, #KnowUsPopOut, #help_center_widget_con, .text-highlight.v2, .thin.anm_fl.ui-repeater",
-    ).remove();
+    const selectors = [
+      "#HeaderZone",
+      "#FooterZone",
+      "#SideZone",
+      "#AccoladesV1List",
+      "#AccessibilityZone",
+      "#LocalMapDisplay",
+      "#CalloutV2B",
+      "#KnowUsPopOut",
+      "#help_center_widget_con",
+      ".text-highlight.v2",
+      ".thin.anm_fl.ui-repeater",
+    ];
+
+    selectors.forEach((sel) => $(sel).remove());
+
     const mainContent = $("body");
 
     const elements = mainContent
