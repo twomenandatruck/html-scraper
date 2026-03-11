@@ -45,7 +45,7 @@ const remove_line_breaks = (str) => {
 };
 
 const remove_tabs = (str) => {
-  return str.replaceAll("\t", " ");
+  return str.replaceAll("\t", " ").replace(/\s+/g, " ").trim();
 };
 
 const remove_empty_p = (str) => {
