@@ -41,6 +41,7 @@ export default async (page) => {
       "#CalloutV2B",
       "#KnowUsPopOut",
       "#help_center_widget_con",
+      "LocalArticlesV1",
       ".text-highlight.v2",
       ".thin.anm_fl.ui-repeater",
     ];
