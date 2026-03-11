@@ -44,6 +44,7 @@ export default async (page) => {
       "LocalArticlesV1",
       ".text-highlight.v2",
       ".thin.anm_fl.ui-repeater",
+      "Form_LocalContactFormV1"
     ];
 
     selectors.forEach((sel) => $(sel).remove());
