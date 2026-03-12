@@ -9,9 +9,9 @@ import locations from "./locations.json" with { type: "json" };
 const test_group = locations.filter((l) => l.test_group === true);
 
 import * as utilities from "./components/utilities.js";
-import corporate_urls from "./corporate.json" with { type: "json" };
 
 import exclusions from "./exclusions.json" with { type: "json" };
+import { cpSync } from "fs";
 
 const map_links = async (locations) => {
   const results = locations
@@ -25,10 +25,10 @@ const map_links = async (locations) => {
 const run_local = async (sitemap) => {
   // find matching pages from the sitemap
   const results = locations
-    .filter((l) => l["Has local webpage"])
+    .filter((l) => l["Has local webpage"] == 1)
     .map((l) => ({
       ...l,
-      pages: sitemap.filter((p) => p.path.includes(l["Website URL"])),
+      pages: sitemap.filter((p) => p.path.includes(`${l["Website URL"]}/`)),
     }));
 
   // use page, and row defining functions to create a header row
@@ -51,20 +51,6 @@ const run_local = async (sitemap) => {
 
   // scrape pages
   await scrape_location_pages(results, filename);
-};
-
-const run_corp = async (sitemap) => {
-  const filtered = sitemap.filter((obj) =>
-    corporate_urls.some((val) => obj.path.includes(val)),
-  );
-  const corp_results = (await scrape_corporate_urls(filtered)).flat();
-
-  await utilities.write_csv("../outputs/corp_pages.txt");
-  await utilities.write_csv(
-    "../outputs/corp_pages.txt",
-    Object.keys(corp_results[0]),
-  );
-  await utilities.write_csv("../outputs/corp_pages.txt", corp_results);
 };
 
 const run_all = async (sitemap, home_path, filename) => {
@@ -94,11 +80,23 @@ const run_all = async (sitemap, home_path, filename) => {
     // "https://www.srmcat.ca/sitemap.xml",
   );
 
-  // await run_local(sitemap);
+  const exclusionSet = new Set(exclusions);
+  const filtered = sitemap.filter((p) => {
+    let path = p.path.replace("https://www.servicemasterrestore.com", "");
+    return !exclusionSet.has(path);
+  });
 
-  // await run_corp(sitemap);
+  const location_pages = utilities.location_pages(filtered, locations);
+  const corporate_pages = utilities.corporate_pages(filtered, locations);
+  const team_pages = utilities.team_pages(filtered, locations);
 
-  // await run_all(sitemap, "https://www.srmcat.ca", "srm_cat_ca.txt");
+  // await run_local(location_pages);
+
+  await run_all(
+    corporate_pages,
+    "https://www.servicemaster.com/",
+    "corp_pages.txt",
+  );
 
   // await map_links(locations);
 })();
