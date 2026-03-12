@@ -301,6 +301,67 @@ export const scrape_template = (page_type) => {
   return "basic";
 };
 
+export const location_pages = (
+  sitemap,
+  locations,
+  domain = "https://www.servicemasterrestore.com",
+) => {
+  const prefixes = [
+    ...new Set(
+      locations
+        .filter((l) => l["Has local webpage"] === 1)
+        .map((l) => `${l["Website URL"]}/`),
+    ),
+  ];
+
+  return sitemap
+    .filter(
+      (s) =>
+        !s.path.includes("meet-the-team") &&
+        !s.path.includes("contact-us") &&
+        prefixes.some((prefix) => s.path.includes(prefix)),
+    )
+    .map((s) => s.path.replace(domain, ""));
+};
+
+export const corporate_pages = (
+  sitemap,
+  locations,
+  domain = "https://www.servicemasterrestore.com",
+) => {
+  const localPrefixes = [
+    ...new Set(
+      locations
+        .filter((l) => l["Has local webpage"] === 1)
+        .map((l) => `${l["Website URL"]}/`),
+    ),
+  ];
+
+  return sitemap
+    .filter((s) => !localPrefixes.some((prefix) => s.path.includes(prefix)))
+    .map((s) => s.path.replace(domain, ""));
+};
+
+export const team_pages = (
+  sitemap,
+  locations,
+  domain = "https://www.servicemasterrestore.com",
+) => {
+  const prefixes = new Set(
+    locations
+      .filter((l) => l["Has local webpage"] === 1)
+      .map((l) => `${l["Website URL"]}/`),
+  );
+
+  return sitemap.filter((s) => {
+    const path = s.path.replace(domain, "");
+    return (
+      s.path.includes("meet-the-team") &&
+      Array.from(prefixes).some((prefix) => path.includes(prefix))
+    );
+  });
+};
+
 /*
 console.log(
   classify_url(
