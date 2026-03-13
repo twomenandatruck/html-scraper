@@ -16,7 +16,10 @@ export const load_sitemap = async (url) => {
   });
 
   await utilities.write_csv("../outputs/sitemap.txt", entries);
-  return entries;
+
+  return entries.map((e) => {
+    return { ...e, classification: utilities.classify_url(e.path) };
+  });
 };
 4;
 

@@ -157,6 +157,18 @@ export const write_file = async (data, file) => {
   }
 };
 
+export const write_json = async (data, file) => {
+  try {
+    const filename = path.join(__dirname, file);
+    await fs.promises.writeFile(filename, JSON.stringify(data, null, 2));
+
+    return true;
+  } catch (err) {
+    console.error(err);
+    return false;
+  }
+};
+
 export const read_dom = async (url) => {
   try {
     const data = await get(url);
@@ -168,6 +180,8 @@ export const read_dom = async (url) => {
 
 export const page_type = (path, home = "/") => {
   const service_terms = [
+    "commercial",
+    "residential",
     "damage",
     "trauma",
     "bio-hazard",
@@ -177,16 +191,16 @@ export const page_type = (path, home = "/") => {
   ];
 
   if (`/${path}` == `${home}`) return "main";
+  if (path.includes("faq")) return "faq";
   if (path.includes("blog")) return "blog";
-  if (service_terms.some((t) => path.includes(t))) return "service";
   if (path.includes("areas-we-serve")) return "city";
   if (path.includes("team")) return "team";
   if (path.includes("contact")) return "contact";
   if (path.includes("about-us")) return "about";
   if (path.includes("career")) return "careers";
   if (path.includes("testimonials")) return "reviews";
-  if (path.includes("faq")) return "faq";
-  if (/\/residential|commercial\/$/i.test(path)) return "service";
+
+  if (service_terms.some((t) => path.includes(t))) return "service";
 
   return "basic";
 };
@@ -222,9 +236,9 @@ export const classify_url = (url, home) => {
   const segments = url.split("/");
 
   const classification = {
-    url: url,
+    url: `/${url}`,
     location:
-      /commercial|residential|blog|blog-system|locations|why-us|video-center|dsi-locations|do-not-sell-or-share-my-personal-information|your-privacy-choices|privacy-policy|site-map/i.test(
+      /commercial|residential|blog|blog-system|locations|why-us|video-center|dsi-locations|do-not-sell-or-share-my-personal-information|your-privacy-choices|privacy-policy|site-map|insurance|faq/i.test(
         segments[0],
       )
         ? "corporate"
@@ -306,22 +320,19 @@ export const location_pages = (
   locations,
   domain = "https://www.servicemasterrestore.com",
 ) => {
-  const prefixes = [
-    ...new Set(
-      locations
-        .filter((l) => l["Has local webpage"] === 1)
-        .map((l) => `${l["Website URL"]}/`),
-    ),
-  ];
+  const prefixes = new Set(
+    locations
+      .filter((l) => l["Has local webpage"] === 1)
+      .map((l) => `${l["Website URL"]}/`),
+  );
 
-  return sitemap
-    .filter(
-      (s) =>
-        !s.path.includes("meet-the-team") &&
-        !s.path.includes("contact-us") &&
-        prefixes.some((prefix) => s.path.includes(prefix)),
-    )
-    .map((s) => s.path.replace(domain, ""));
+  return sitemap.filter(
+    (s) =>
+      !s.path.includes("meet-the-team") &&
+      !s.path.includes("contact-us") &&
+      s.classification.location != "corporate" &&
+      Array.from(prefixes).some((prefix) => s.path.includes(prefix)),
+  );
 };
 
 export const corporate_pages = (
@@ -329,17 +340,17 @@ export const corporate_pages = (
   locations,
   domain = "https://www.servicemasterrestore.com",
 ) => {
-  const localPrefixes = [
-    ...new Set(
-      locations
-        .filter((l) => l["Has local webpage"] === 1)
-        .map((l) => `${l["Website URL"]}/`),
-    ),
-  ];
+  const localPrefixes = new Set(
+    locations
+      .filter((l) => l["Has local webpage"] === 1)
+      .map((l) => `${l["Website URL"]}/`),
+  );
 
-  return sitemap
-    .filter((s) => !localPrefixes.some((prefix) => s.path.includes(prefix)))
-    .map((s) => s.path.replace(domain, ""));
+  return sitemap.filter(
+    (s) =>
+      !Array.from(localPrefixes).some((p) => s.path.includes(p)) &&
+      s.classification.location == "corporate",
+  );
 };
 
 export const team_pages = (

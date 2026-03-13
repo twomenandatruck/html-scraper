@@ -22,15 +22,16 @@ const map_links = async (locations) => {
   await utilities.write_csv("../outputs/map_links.txt", links, "\t");
 };
 
-const run_local = async (sitemap) => {
+const run_local = async (sitemap, filename) => {
   // find matching pages from the sitemap
   const results = locations
     .filter((l) => l["Has local webpage"] == 1)
     .map((l) => ({
       ...l,
       pages: sitemap.filter((p) => p.path.includes(`${l["Website URL"]}/`)),
-    }));
-
+    }))
+    .filter((r) => r.pages.length > 0);
+    
   // use page, and row defining functions to create a header row
   let tmp = results[0];
   let first_page = utilities.new_row(
@@ -42,8 +43,6 @@ const run_local = async (sitemap) => {
       tmp["Internal Location Name"],
     ),
   );
-
-  let filename = "../outputs/location_pages.txt";
 
   // clear file and write headers
   await utilities.write_header(filename, first_page);
@@ -90,13 +89,18 @@ const run_all = async (sitemap, home_path, filename) => {
   const corporate_pages = utilities.corporate_pages(filtered, locations);
   const team_pages = utilities.team_pages(filtered, locations);
 
-  // await run_local(location_pages);
-
-  await run_all(
+  await utilities.write_json(
     corporate_pages,
-    "https://www.servicemaster.com/",
-    "corp_pages.txt",
+    "../outputs/corporate_pages.json",
   );
+  await utilities.write_json(location_pages, "../outputs/location_pages.json");
+  await utilities.write_json(team_pages, "../outputs/team_pages.json");
+
+  //await run_local(location_pages, "../outputs/location_pages.txt");
+
+  await run_local(team_pages, "../outputs/team_pages.txt");
+
+  // await run_all( corporate_pages, "https://www.servicemaster.com/", "../outputs/corporate_pages.txt", );
 
   // await map_links(locations);
 })();
