@@ -39,13 +39,12 @@ export default async (page) => {
       "#AccessibilityZone",
       "#LocalMapDisplay",
       "#CalloutV2B",
-      "CalloutV5",
+      "#CalloutV5",
       "#KnowUsPopOut",
       "#help_center_widget_con",
-      "LocalArticlesV1",
-      ".text-highlight.v2",
+      "#LocalArticlesV1",
       ".thin.anm_fl.ui-repeater",
-      "Form_LocalContactFormV1",
+      "#Form_LocalContactFormV1",
       ".text-highlight",
     ];
 
