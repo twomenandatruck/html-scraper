@@ -22,3 +22,4 @@ outputs/*
 
 # Don't monitor the site mirror
 restore_bkup
+restore_bkup.zip
