@@ -349,6 +349,7 @@ export const corporate_pages = (
   return sitemap.filter(
     (s) =>
       !Array.from(localPrefixes).some((p) => s.path.includes(p)) &&
+      !/^\/locations/g.test(s.path) &&
       s.classification.location == "corporate",
   );
 };
