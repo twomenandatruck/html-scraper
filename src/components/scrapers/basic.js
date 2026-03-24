@@ -43,9 +43,9 @@ export default async (page) => {
       "#KnowUsPopOut",
       "#help_center_widget_con",
       "#LocalArticlesV1",
-      ".thin.anm_fl.ui-repeater",
       "#Form_LocalContactFormV1",
       ".text-highlight",
+      ".thin.anm_fl.ui-repeater",
     ];
 
     selectors.forEach((sel) => $(sel).remove());

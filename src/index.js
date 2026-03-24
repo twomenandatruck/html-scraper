@@ -31,7 +31,7 @@ const run_local = async (sitemap, filename) => {
       pages: sitemap.filter((p) => p.path.includes(`${l["Website URL"]}/`)),
     }))
     .filter((r) => r.pages.length > 0);
-    
+
   // use page, and row defining functions to create a header row
   let tmp = results[0];
   let first_page = utilities.new_row(
@@ -98,9 +98,9 @@ const run_all = async (sitemap, home_path, filename) => {
 
   //await run_local(location_pages, "../outputs/location_pages.txt");
 
-  await run_local(team_pages, "../outputs/team_pages.txt");
+  //await run_local(team_pages, "../outputs/team_pages.txt");
 
-  // await run_all( corporate_pages, "https://www.servicemaster.com/", "../outputs/corporate_pages.txt", );
+  await run_all( corporate_pages, "https://www.servicemaster.com/", "../outputs/corporate_pages.txt", );
 
   // await map_links(locations);
 })();
