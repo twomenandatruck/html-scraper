@@ -19,3 +19,6 @@ node_modules
 # Don't monitor script outputs
 outputs
 outputs/*
+
+# Don't monitor the site mirror
+restore_bkup
